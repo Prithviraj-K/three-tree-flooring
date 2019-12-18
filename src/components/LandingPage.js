@@ -4,9 +4,9 @@ import classNames from "classnames";
 import Parallax from "./Parallax/Parallax.js";
 import GridContainer from "./Grid/GridContainer.js";
 import GridItem from "./Grid/GridItem.js";
-// eslint-disable-next-line
 import Card from '@material-ui/core/Card/Card';
 import CardContent from '@material-ui/core/CardContent/CardContent';
+import Typography from '@material-ui/core/Typography/Typography';
 
 import styles from "../assets/img/jss/components.js";
 import { makeStyles } from '@material-ui/core';
@@ -18,7 +18,7 @@ const LandingPage = (props) => {
     return (
         <div>
             <NavBar/>
-            <Parallax image={require("../assets/img/bg.jpg")}>
+            <Parallax image={require("../assets/img/bg2j.jpg")}>
                 <div className={classes.container}>
                 <GridContainer>
                     <GridItem>
@@ -32,33 +32,11 @@ const LandingPage = (props) => {
                 </GridContainer>
                 </div>
             </Parallax>
-            <div className={classNames(classes.main, classes.mainRaised)}>
-                <Card>
-                    <CardContent className={classes.card}>
-                        <h1>Certifications</h1>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardContent className={classes.card}>
-                        <h1>Certifications</h1>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardContent className={classes.card}>
-                        <h1>Certifications</h1>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardContent className={classes.card}>
-                        <h1>Certifications</h1>
-                    </CardContent>
-                </Card>
-                <Card>
-                    <CardContent className={classes.card}>
-                        <h1>Certifications</h1>
-                    </CardContent>
-                </Card>
-                <Card>
+            <div className={classNames(classes.main, classes.mainRaised)} style={{height: "1000px"}}>
+                <Typography variant="h2" align="center" style={{paddingTop: "1.5em"}}>
+                    Certifications
+                </Typography>
+                <Card style={{marginTop: "5em", marginRight: "20em"}} className={classes.mainRaised}>
                     <CardContent className={classes.card}>
                         <h1>Certifications</h1>
                     </CardContent>
