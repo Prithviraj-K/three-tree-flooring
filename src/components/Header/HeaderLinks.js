@@ -5,6 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -12,7 +13,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, Store, Contacts } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -53,6 +54,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           className={classes.navLink}
         >
+          <Store />
           <Link to="/Retailers" style={{ color: 'inherit', textDecoration: 'inherit'}}>
             Retailers
           </Link>
@@ -63,6 +65,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           className={classes.navLink}
         >
+          <Contacts />
           <Link to="/Contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
             Contact
           </Link>

@@ -4,7 +4,9 @@ import classNames from "classnames";
 import Parallax from "./Parallax/Parallax.js";
 import GridContainer from "./Grid/GridContainer.js";
 import GridItem from "./Grid/GridItem.js";
+// eslint-disable-next-line
 import Card from '@material-ui/core/Card/Card';
+import CardContent from '@material-ui/core/CardContent/CardContent';
 
 import styles from "../assets/img/jss/components.js";
 import { makeStyles } from '@material-ui/core';
@@ -16,11 +18,11 @@ const LandingPage = (props) => {
     return (
         <div>
             <NavBar/>
-            <Parallax image={require("../assets/img/bg.png")}>
+            <Parallax image={require("../assets/img/bg.jpg")}>
                 <div className={classes.container}>
                 <GridContainer>
                     <GridItem>
-                    <div className={classes.brand}>
+                    <div>
                         <h1 className={classes.title}>Three Trees Flooring</h1>
                         <h3 className={classes.subtitle}>
                         Excellent design, mastered hardwood.
@@ -32,36 +34,37 @@ const LandingPage = (props) => {
             </Parallax>
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <Card>
-                    <h1> Hello </h1>
+                    <CardContent className={classes.card}>
+                        <h1>Certifications</h1>
+                    </CardContent>
                 </Card>
                 <Card>
-                    <h1> Hello </h1>
+                    <CardContent className={classes.card}>
+                        <h1>Certifications</h1>
+                    </CardContent>
                 </Card>
                 <Card>
-                    <h1> Hello </h1>
+                    <CardContent className={classes.card}>
+                        <h1>Certifications</h1>
+                    </CardContent>
                 </Card>
                 <Card>
-                    <h1> Hello </h1>
+                    <CardContent className={classes.card}>
+                        <h1>Certifications</h1>
+                    </CardContent>
                 </Card>
                 <Card>
-                    <h1> Hello </h1>
+                    <CardContent className={classes.card}>
+                        <h1>Certifications</h1>
+                    </CardContent>
                 </Card>
                 <Card>
-                    <h1> Hello </h1>
-                </Card>
-                <Card>
-                    <h1> Hello </h1>
-                </Card>
-                <Card>
-                    <h1> Hello </h1>
-                </Card>
-                <Card>
-                    <h1> Hello </h1>
-                </Card>
-                <Card>
-                    <h1> Hello </h1>
+                    <CardContent className={classes.card}>
+                        <h1>Certifications</h1>
+                    </CardContent>
                 </Card>
             </div>
+            
         </div>
     );
 }

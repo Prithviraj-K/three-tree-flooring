@@ -41,7 +41,6 @@ import {
     },
     container: {
       ...container,
-      minHeight: "50px",
       flex: "1",
       alignItems: "center",
       justifyContent: "space-between",
@@ -147,11 +146,13 @@ import {
       paddingLeft: "0",
       ...transition
     },
-    card: {
-      maxWidth: 345,
+    linkBtn: {
+      margin: "0",
+      padding: "0"
     },
-    media: {
-      maxHeight: 140,
+    navLink: {
+      margin: "0",
+      padding: "0"
     }
   };
   

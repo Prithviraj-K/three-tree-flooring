@@ -1,4 +1,4 @@
-import { container } from "./material-react.js";
+import { container} from "./material-react.js";
 
 const componentsStyle = {
   container,
@@ -11,12 +11,13 @@ const componentsStyle = {
     fontWeight: "600",
     display: "inline-block",
     position: "relative",
-    color: "d2e154"
+    color: "#FFF"
   },
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px 0 0"
+    margin: "5px 0 0",
+    color: "#d2e154"
   },
   main: {
     background: "#FFFFFF",

@@ -16,8 +16,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "./headerStyle.js";
 
-import logo from "../../assets/img/3treeslogo.png";
-import Button from "../CustomButtons/Button.js";
+import logo from "../../assets/img/logo-white.png";
 
 const useStyles = makeStyles(styles);
 
@@ -64,13 +63,11 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   return (
-    <AppBar className={appBarClasses}>
+    <AppBar className={appBarClasses} style={{marginBottom: "0"}}>
       <Toolbar className={classes.container}>
-        <Button color="transparent" className={classes.navLink}>
-          <Link to="/">
-            <img src={logo} alt="logo"/>
-          </Link>
-        </Button>
+        <Link to="/" className={classes.linkBtn}>
+          <img src={logo} alt="logo"/>
+        </Link>
         <Hidden smDown implementation="css">
           {rightLinks}
         </Hidden>
@@ -80,7 +77,7 @@ export default function Header(props) {
             aria-label="open drawer"
             onClick={handleDrawerToggle}
           >
-            <Menu />
+            <Menu/>
           </IconButton>
         </Hidden>
       </Toolbar>
@@ -92,6 +89,7 @@ export default function Header(props) {
           classes={{
             paper: classes.drawerPaper
           }}
+          style = {{backgroundColor: "#333231 !important"}}
           onClose={handleDrawerToggle}
         >
           <div className={classes.appResponsive}>
@@ -105,7 +103,7 @@ export default function Header(props) {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "dark"
 };
 
 Header.propTypes = {

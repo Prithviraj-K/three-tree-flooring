@@ -8,7 +8,7 @@ const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)"
 };
 
-const conatinerFluid = {
+const containerFluid = {
   paddingRight: "15px",
   paddingLeft: "15px",
   marginRight: "auto",
@@ -16,7 +16,7 @@ const conatinerFluid = {
   width: "100%"
 };
 const container = {
-  ...conatinerFluid,
+  ...containerFluid,
   "@media (min-width: 576px)": {
     maxWidth: "540px"
   },
@@ -44,7 +44,7 @@ const card = {
   boxShadow: "0 1px 4px 0 rgba(0, 0, 0, 0.14)",
   borderRadius: "3px",
   color: "rgba(0, 0, 0, 0.87)",
-  background: "#fff"
+  background: "#d2e154"
 };
 
 const defaultFont = {
@@ -53,7 +53,7 @@ const defaultFont = {
   lineHeight: "1.5em"
 };
 
-const primaryColor = "#d1e154";
+const primaryColor = "#d2e154";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
@@ -140,7 +140,7 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: "#3C4858",
+  color: "#d2e154",
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
@@ -168,7 +168,7 @@ export {
   drawerWidth,
   transition,
   container,
-  conatinerFluid,
+  containerFluid,
   boxShadow,
   card,
   defaultFont,
