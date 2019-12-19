@@ -52,6 +52,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Button
           color="transparent"
+          round
           className={classes.navLink}
         >
           <Store />
@@ -63,11 +64,12 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Button
           color="transparent"
+          round
           className={classes.navLink}
         >
           <Contacts />
           <Link to="/Contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
-            Contact
+            Contact Us
           </Link>
         </Button>
       </ListItem>
