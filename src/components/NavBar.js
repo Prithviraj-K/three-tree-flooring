@@ -10,7 +10,7 @@ export default function Navbar(props) {
       <Header
         rightLinks={<HeaderLinks />}
         fixed
-        color="dark"
+        color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "white"

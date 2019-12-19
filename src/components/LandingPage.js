@@ -18,27 +18,29 @@ const LandingPage = (props) => {
     return (
         <div>
             <NavBar/>
-            <Parallax image={require("../assets/img/bg2j.jpg")}>
+            <Parallax image={require("../assets/img/bg3.jpg")}>
                 <div className={classes.container}>
                 <GridContainer>
                     <GridItem>
-                    <div>
+                    <div style={{backgroundColor: "0,0,0,0.5"}}>
                         <h1 className={classes.title}>Three Trees Flooring</h1>
                         <h3 className={classes.subtitle}>
-                        Excellent design, mastered hardwood.
+                            Three Times The Quality
                         </h3>
                     </div>
                     </GridItem>
                 </GridContainer>
                 </div>
             </Parallax>
-            <div className={classNames(classes.main, classes.mainRaised)} style={{height: "1000px"}}>
-                <Typography variant="h2" align="center" style={{paddingTop: "1.5em"}}>
-                    Certifications
+            <div className={classNames(classes.main, classes.mainRaised)} style={{height: "1000px", backgroundColor: "#84817b"}}>
+                <Typography variant="h3" align="center" style={{paddingTop: "1.5em"}}>
+                    We <span style={{color: "#d2e154"}}>mastered</span> hardwood
                 </Typography>
-                <Card style={{marginTop: "5em", marginRight: "20em"}} className={classes.mainRaised}>
+                <Card style={{marginTop: "2em", height: "30em", width: "50%", backgroundColor:"#333230"}} className={classes.mainRaised}>
                     <CardContent className={classes.card}>
-                        <h1>Certifications</h1>
+                        <Typography variant="h4" align="center" style={{color: "white"}}>
+                            Our Guarantee
+                        </Typography>
                     </CardContent>
                 </Card>
             </div>
