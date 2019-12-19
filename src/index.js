@@ -2,19 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import { createBrowserHistory } from "history";
+import {BrowserRouter} from 'react-router-dom';
 
 import * as serviceWorker from './serviceWorker';
-import { Router, Route, Switch } from "react-router-dom";
 
-var hist = createBrowserHistory();
+const app =(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+);
 
-ReactDOM.render(
-    <Router history={hist}>
-        <Switch>
-            <Route path="/" component={App} />
-        </Switch>
-    </Router>,
-    document.getElementById('root'));
+ReactDOM.render(app, document.getElementById('root'));
 
 serviceWorker.unregister();

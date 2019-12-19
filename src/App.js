@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import LandingPage from './components/LandingPage';
+import { Router, Route, Switch } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import HardwoodPage from "./components/HardwoodPage/HardwoodPage";
+
+
+var hist = createBrowserHistory();
 
 class App extends Component {
   render(){
     return(
-        <div>
-            <LandingPage/>
-        </div>
+      <Router history={hist}>
+        <Switch>
+            <Route path="/" exact component={LandingPage} />
+            <Route path="/Hardwood" component={HardwoodPage}/>
+        </Switch>
+    </Router>
     );
   }
 }
