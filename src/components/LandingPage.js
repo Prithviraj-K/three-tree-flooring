@@ -2,12 +2,13 @@
 import React from 'react';
 import classNames from "classnames";
 //Components
-import NavBar from "./NavBar";
 import Parallax from "./Parallax/Parallax.js";
 import GridContainer from "./Grid/GridContainer.js";
 import GridItem from "./Grid/GridItem.js";
 import SectionPills from './SectionPills/SectionPills';
-//import Footer from './Footer/Footer';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import HeaderLinks from './Header/HeaderLinks';
 //Material
 import Typography from '@material-ui/core/Typography/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -22,7 +23,15 @@ const LandingPage = (props) => {
     const classes = useStyles();
     return (
         <div>
-            <NavBar/>
+            <Header
+                rightLinks={<HeaderLinks />}
+                fixed
+                color="dark"
+                changeColorOnScroll={{
+                height: 400,
+                color: "white"
+                }}
+            />
             <Parallax image={require("../assets/img/bg4.jpg")}>
                 <div className={classes.container}>
                 <GridContainer>
@@ -30,7 +39,7 @@ const LandingPage = (props) => {
                     <div>
                         <h1 className={classes.title}>Three Trees Flooring</h1>
                         <h3 className={classes.subtitle}>
-                            Excellent design meets perfect craftsmanship
+                            Subtitle
                         </h3>
                     </div>
                     </GridItem>
@@ -55,8 +64,7 @@ const LandingPage = (props) => {
                 </div>
                 
             </div>
-            {/*<Footer/>*/}
-            <div style={{height: "3em"}}></div>
+            <Footer/>
         </div>
     );
 }

@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
 import { Apps, Store, Contacts } from "@material-ui/icons";
+import HomeIcon from '@material-ui/icons/Home';
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -27,6 +27,20 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+
+      <ListItem className={classes.listItem}>
+          <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <Button
+              color="transparent"
+              round
+              className={classes.navLink}
+            >
+              <HomeIcon />
+              Home
+            </Button>
+          </Link>
+      </ListItem>
+
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -49,30 +63,35 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        <Button
-          color="transparent"
-          round
-          className={classes.navLink}
-        >
-          <Store />
-          <Link to="/Retailers" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+        <Link to="/Retailers" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+          <Button
+            color="transparent"
+            round
+            className={classes.navLink}
+          >
+            <Store />
             Retailers
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        <Button
-          color="transparent"
-          round
-          className={classes.navLink}
-        >
-          <Contacts />
+        
+         
           <Link to="/Contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
-            Contact Us
+            <Button
+              color="transparent"
+              round
+              className={classes.navLink}
+            >
+               <Contacts />
+               Contact Us
+            </Button>
           </Link>
-        </Button>
       </ListItem>
+      
       {/*<ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
