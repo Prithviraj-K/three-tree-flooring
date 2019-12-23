@@ -104,14 +104,13 @@ import {
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)"
     },
     transparent: {
-      backgroundColor: "transparent !important",
+      backgroundColor: "rgba(33, 33, 33, 0.6)",
       boxShadow: "none",
-      paddingTop: "25px",
-      color: "#FFFFFF"
+      color: "#FFFFFF",
     },
     dark: {
+      backgroundColor: "rgba(33, 33, 33, 1)",
       color: "#FFFFFF",
-      backgroundColor: "#212121 !important",
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)"
     },

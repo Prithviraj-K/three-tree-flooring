@@ -20,14 +20,14 @@ const componentsStyle = {
     color: "#d2e154"
   },
   main: {
-    background: "#FFFFFF",
+    background: "#8f8f8e",
     position: "relative",
     zIndex: "3",
     alignItems: "center",
     alignContent: "center"
   },
   mainRaised: {
-    margin: "-60px 30px 0px",
+    margin: "0.5em 0.5em 0.5em",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"

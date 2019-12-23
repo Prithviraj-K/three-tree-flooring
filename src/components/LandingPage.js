@@ -28,8 +28,8 @@ const LandingPage = (props) => {
                 fixed
                 color="dark"
                 changeColorOnScroll={{
-                height: 400,
-                color: "white"
+                    height: 400,
+                    color: "transparent"
                 }}
             />
             <Parallax image={require("../assets/img/bg4.jpg")}>
@@ -46,7 +46,7 @@ const LandingPage = (props) => {
                 </GridContainer>
                 </div>
             </Parallax>
-            <div className={classNames(classes.main, classes.mainRaised)} style={{paddingBottom: "2em", backgroundColor: "#8f8f8e"}}>
+            <div className={classNames(classes.main, classes.mainRaised)} style={{paddingBottom: "2em"}}>
                 <Typography variant="h4" align="left" color="textPrimary" style={{paddingTop: "1.5em", paddingLeft: "2em"}}>
                     <span style={{textShadow: "1px 1px #000000"}}>Premium Finished Hardwood</span>
                 </Typography>

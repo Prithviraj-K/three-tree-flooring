@@ -24,7 +24,7 @@ const HardwoodPage = () => {
                 color="dark"
                 changeColorOnScroll={{
                     height: 400,
-                    color: "dark"
+                    color: "transparent"
                 }}
             />
             <div className={classNames(classes.main, classes.mainRaised)} style={{backgroundColor: "#8f8f8e"}}>
