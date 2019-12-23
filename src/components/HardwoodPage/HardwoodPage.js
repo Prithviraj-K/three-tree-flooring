@@ -11,6 +11,8 @@ import {Link} from 'react-router-dom'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
+import ScrollUpButton from "react-scroll-up-button";
+
 import src1 from '../../assets/img/bg.jpg';
 
 import styles from "../../assets/img/jss/components.js";
@@ -86,6 +88,7 @@ const HardwoodPage = () => {
                 </div>
             </ScrollAnimation>
             <Divider style={{paddingRight: "12em", paddingLeft: "6em", marginRight: "5em", marginLeft: "5em"}}/>
+            <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
                 <Grid container
                 spacing={1}
