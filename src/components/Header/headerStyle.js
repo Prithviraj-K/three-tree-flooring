@@ -26,18 +26,13 @@ import {
         "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
       transition: "all 150ms ease 0s",
       alignItems: "center",
-      flexFlow: "row nowrap",
-      justifyContent: "flex-start",
-      position: "relative",
-      zIndex: "unset"
+      flexFlow: "row nowrap"
     },
     absolute: {
-      position: "absolute",
-      zIndex: "1100"
+      position: "absolute"
     },
     fixed: {
-      position: "fixed",
-      zIndex: "1100"
+      position: "fixed"
     },
     container: {
       ...container,
@@ -58,6 +53,7 @@ import {
       textTransform: "none",
       color: "inherit",
       padding: "8px 16px",
+      textAlign: "center",
       letterSpacing: "unset",
       "&:hover,&:focus": {
         color: "inherit",

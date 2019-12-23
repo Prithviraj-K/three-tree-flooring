@@ -17,6 +17,9 @@ import Button from "../CustomButtons/Button.js";
 
 import styles from "./pillsStyle.js";
 
+import backgroundHome from "../../assets/img/bg.jpg"
+import { Card } from "material-ui";
+
 const useStyles = makeStyles(styles);
 
 export default function SectionPills() {
@@ -25,11 +28,11 @@ export default function SectionPills() {
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="navigation-pills">
-          <div className={classes.title}>
-            <h2 style={{color: "black"}}>Why Choose Three Trees?</h2>
-          </div>
-          <GridContainer>
-            <GridItem>
+        <GridContainer>
+          <GridItem xs={12} s={12} md={6} lg={6}>
+            <div className={classes.title}>
+              <h2 style={{color: "black"}}>Why Choose Three Trees?</h2>
+            </div>
               <NavPills
                 color="primary"
                 horizontal={{
@@ -126,6 +129,11 @@ export default function SectionPills() {
                   }
                 ]}
               />
+            </GridItem>
+            <GridItem xs={12} s={12} md={6} lg={6}>
+                <div className={classes.imgHome}>
+
+                </div>
             </GridItem>
           </GridContainer>
         </div>
