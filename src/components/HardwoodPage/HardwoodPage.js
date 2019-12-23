@@ -58,7 +58,7 @@ const HardwoodPage = () => {
     const classes = useStyles();
 
     const listItems = listDetails.map((number)=> 
-        <Grid item xs={6} md={4} lg={4} align="center">
+        <Grid item xs={12} md={6} lg={4} align="center" style={{width: "100%"}}>
             <WoodCard name={number.name} description={number.description}/>
         </Grid>
     );
@@ -68,7 +68,7 @@ const HardwoodPage = () => {
     }
 
     return(
-        <div>
+        <div style={{backgroundImage: require('../../assets/img/whiteOakTexture.jpg')}}>
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
@@ -78,18 +78,20 @@ const HardwoodPage = () => {
                     color: "transparent"
                 }}
             />
-            <div style={{alignItems: "center", padding: "1em", backgroundColor: "#FFFFFF"}}>
-                <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
-                    <Typography variant="h2" style={{marginTop: "1em", textAlign: "center", padding: "1em"}}>
+            <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
+                <div>
+                    <Typography variant="h1" style={{marginTop: "1em", textAlign: "center", padding: "1em"}}>
                         Hardwood
                     </Typography>
-                </ScrollAnimation>
-                <Divider style={{paddingRight: "12em", paddingLeft: "6em", marginRight: "5em", marginLeft: "5em"}}/>
+                </div>
+            </ScrollAnimation>
+            <Divider style={{paddingRight: "12em", paddingLeft: "6em", marginRight: "5em", marginLeft: "5em"}}/>
+            <div>
                 <Grid container
                 spacing={1}
                 alignItems="center"
                 justify="center"
-                style={{marginTop: "2em"}}>
+                style={{marginTop: "2em", width: "100%"}}>
                     {listItems}                   
                 </Grid>
                 <Divider style={{marginTop: "2em"}}/>

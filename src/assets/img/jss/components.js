@@ -28,7 +28,7 @@ const componentsStyle = {
   },
   mainRaised: {
     margin: "0.5em 0.5em 0.5em",
-    borderRadius: "6px",
+    borderRadius: "2em",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
   },
@@ -37,6 +37,9 @@ const componentsStyle = {
   },
   textCenter: {
     textAlign: "center"
+  },
+  woodText: {
+    backgroundImage: "url(../whiteOakTexture.jpg)"
   }
 };
 

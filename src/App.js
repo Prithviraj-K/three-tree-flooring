@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import LandingPage from './components/LandingPage';
 import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import HardwoodPage from "./components/HardwoodPage/HardwoodPage";
 import ScrollToTop from './ScrollToTop';
+
+
+import LandingPage from './components/LandingPage';
+import HardwoodPage from "./components/HardwoodPage/HardwoodPage";
+import Retailers from './components/Retailers/Retailers';
+
 
 var history = createBrowserHistory();
 
@@ -15,6 +19,7 @@ class App extends Component {
           <Switch>
               <Route path="/" exact component={LandingPage} />
               <Route path="/Hardwood" component={HardwoodPage}/>
+              <Route path="/Retailers" component={Retailers}/>
           </Switch>
         </ScrollToTop>  
     </Router>

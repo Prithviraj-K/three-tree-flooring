@@ -34,22 +34,27 @@ const LandingPage = (props) => {
                     color: "transparent"
                 }}
             />
-            <Parallax image={require("../assets/img/bg4.jpg")}>
-                <div className={classes.container}>
-                    <GridContainer>
-                        <GridItem >
-                            <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
-                                <div>
-                                    <h1 className={classes.title}>Three Trees Flooring</h1>
-                                </div>
-                            </ScrollAnimation>
-                        </GridItem>
-                    </GridContainer>
-                </div>
-            </Parallax>
+            <ScrollAnimation animateIn="fadeInDown" animateOnce>
+                <Parallax image={require("../assets/img/bg4.jpg")}>
+                    <div className={classes.container}>
+                        <GridContainer>
+                            <GridItem >
+                                <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
+                                    <div>
+                                        <Typography variant="h1" className={classes.title}>
+                                            Three Trees Flooring
+                                        </Typography>
+                                    </div>
+                                </ScrollAnimation>
+                            </GridItem>
+                        </GridContainer>
+                    </div>
+                </Parallax>
+            </ScrollAnimation>
+            
             <div>
                 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                    <Typography variant="h4" align="left" color="textPrimary" style={{textAlign: "center", paddingTop: "1.5em", paddingLeft: "2em"}}>
+                    <Typography variant="h4" align="left" color="textPrimary" style={{fontSize: "4vw", textAlign: "center", paddingTop: "1.5em", paddingLeft: "2em"}}>
                         <span style={{textShadow: "1px 1px #000000"}}>Premium Finished Hardwood</span>
                     </Typography>
                 </ScrollAnimation>

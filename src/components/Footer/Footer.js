@@ -30,7 +30,7 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <ScrollAnimation animateIn="flipInX" animateOnce>
+    <ScrollAnimation animateIn="flipInX" animateOut="flipOutX" duration={0.5} offset={50}>
       <footer className={footerClasses}>
         <div className={classes.container}>
           <div className={classes.left}>

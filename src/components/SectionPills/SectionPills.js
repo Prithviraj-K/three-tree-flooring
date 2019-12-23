@@ -132,7 +132,7 @@ export default function SectionPills() {
             </GridItem>
             <GridItem xs={12} s={12} md={6} lg={6}>
                 <div className={classes.imgHome}>
-
+                
                 </div>
             </GridItem>
           </GridContainer>
