@@ -23,7 +23,7 @@ const Retailers = () => {
                     color: "transparent"
                 }}
             />
-            <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
+            <ScrollAnimation animateIn="slideInDown" animateOnce>
                 <div>
                     <Typography variant="h1" style={{marginTop: "1em", textAlign: "center", padding: "1em"}}>
                         Retailers
