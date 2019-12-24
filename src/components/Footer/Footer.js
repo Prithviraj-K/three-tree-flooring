@@ -30,66 +30,63 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <ScrollAnimation animateIn="flipInX" animateOut="flipOutX" duration={0.5} offset={50}>
-      <footer className={footerClasses}>
-        <div className={classes.container}>
-          <div className={classes.left}>
-            <List className={classes.list}>
-              <ListItem className={classes.inlineBlock}>
-                <a
-                  className={classes.block}
-                  target="_blank"
-                >
-                  Hardwood
-                </a>
-              </ListItem>
-              <ListItem className={classes.inlineBlock}>
-                <a
-                  className={classes.block}
-                  target="_blank"
-                >
-                  Wall Panelling
-                </a>
-              </ListItem>
-              <ListItem className={classes.inlineBlock}>
-                <a
-                  className={classes.block}
-                  target="_blank"
-                >
-                  Care & Maintenance
-                </a>
-              </ListItem>
-              <ListItem className={classes.inlineBlock}>
-                <a
-                  className={classes.block}
-                  target="_blank"
-                >
-                  Contact Us
-                </a>
-              </ListItem>
-            </List>
-          </div>
-          <div className={classes.right}>
-            20 Alness, Unit 1
-            Toronto, ON
-            Canada
+    <footer className={footerClasses}>
+      <div className={classes.container}>
+        <div className={classes.left}>
+          <List className={classes.list}>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                className={classes.block}
+                target="_blank"
+              >
+                Hardwood
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                className={classes.block}
+                target="_blank"
+              >
+                Wall Panelling
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                className={classes.block}
+                target="_blank"
+              >
+                Care & Maintenance
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                className={classes.block}
+                target="_blank"
+              >
+                Contact Us
+              </a>
+            </ListItem>
+          </List>
+        </div>
+        <div className={classes.right}>
+          20 Alness, Unit 1
+          Toronto, ON
+          Canada
+          <div>
+            Monday - Friday:
             <div>
-              Monday - Friday:
+              9:00 am - 5:00 pm
+            </div>
+            <div>
+              Saturday - Sunday:
               <div>
-                9:00 am - 5:00 pm
-              </div>
-              <div>
-                Saturday - Sunday:
-                <div>
-                  Closed
-                </div>
+                Closed
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </ScrollAnimation>
-    
+      </div>
+    </footer>    
   );
 }
 

@@ -4,8 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import Button from '../CustomButtons/Button';
 import Typography from '@material-ui/core/Typography';
 
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -38,7 +36,7 @@ export default function MediaCard(props) {
       <Card className={classes.card}>
         <CardActionArea>
         <CardMedia style = {{ height: 350}}
-          image={require ("../../assets/img/boher.png")} />
+          image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}.png`)} />
           <CardContent style={{backgroundColor: "#68a739", color: "#FFF"}}>
             <Typography gutterBottom variant="h5" component="h2">
               {props.name}

@@ -39,7 +39,7 @@ const LandingPage = (props) => {
                     <div className={classes.container}>
                         <GridContainer>
                             <GridItem >
-                                <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
+                                <ScrollAnimation animateIn="flipInX" animateOnce>
                                     <div>
                                         <Typography variant="h1" className={classes.title}>
                                             Three Trees Flooring
@@ -53,20 +53,20 @@ const LandingPage = (props) => {
             </ScrollAnimation>
             
             <div>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <ScrollAnimation animateIn="fadeIn" animateOnce>
                     <Typography variant="h4" align="left" color="textPrimary" style={{fontSize: "4vw", textAlign: "center", paddingTop: "1.5em", paddingLeft: "2em"}}>
                         <span style={{textShadow: "1px 1px #000000"}}>Premium Finished Hardwood</span>
                     </Typography>
                 </ScrollAnimation>
                 <Divider style={{marginTop: "2em"}}/>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <ScrollAnimation animateIn="fadeIn" animateOnce>
                     <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
                         <SectionPills/>
                     </div>
                 </ScrollAnimation>
                 <Divider style={{marginTop: "2em"}}/>
                 <div>
-                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce>
                         <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>
                             Inspired by the company’s European roots we provide engineered hardwood flooring 
                             encompassed with European quality, design and innovation with a Canadian touch.

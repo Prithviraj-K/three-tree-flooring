@@ -22,38 +22,32 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(styles);
  
 const listDetails = [
-    {name: "Boher", description: "Veneto", link: ""},
-    {name: "Citadella", description: "Veneto", link: ""},
-    {name: "Cittanova", description: "Veneto", link: ""},
-    {name: "Conegliano", description: "Veneto", link: ""},
-    {name: "Cremona", description: "Veneto", link: ""},
-    {name: "Floyen", description: "Veneto", link: ""},
-    {name: "Jesolo", description: "Veneto", link: ""},
-    {name: "Kalmar", description: "Veneto", link: ""},
-    {name: "Kronberg", description: "Veneto", link: ""},
-    {name: "Lublin", description: "Veneto", link: ""},
-    {name: "Marcon", description: "Veneto", link: ""},
-    {name: "Merano", description: "Veneto", link: ""},
-    {name: "Modena", description: "Veneto", link: ""},
-    {name: "Montebelluna", description: "Veneto", link: ""},
-    {name: "Oslo", description: "Veneto", link: ""},
-    {name: "Pavia", description: "Veneto", link: ""},
-    {name: "Ponzano", description: "Veneto", link: ""},
-    {name: "Roman", description: "Veneto", link: ""},
-    {name: "Trento", description: "Veneto", link: ""},
-    {name: "Treviso", description: "Veneto", link: ""},
-    {name: "Vasa", description: "Veneto", link: ""},
-    {name: "Vazzolo", description: "Veneto", link: ""},
-    {name: "Vicenza", description: "Veneto", link: ""},
-    {name: "Villa del Conte", description: "Veneto", link: ""},
-    {name: "Floyen", description: "Nordic", link: ""},
-    {name: "Kalmar", description: "Nordic", link: ""},
-    {name: "Kronberg", description: "Nordic", link: ""},
-    {name: "Oslo", description: "Nordic", link: ""},
-    {name: "Vasa", description: "Nordic", link: ""},
+    {name: "Boher", description: "Veneto"},
+    {name: "Citadella", description: "Veneto"},
+    {name: "Cittanova", description: "Veneto"},
+    {name: "Conegliano", description: "Veneto"},
+    {name: "Cremona", description: "Veneto"},
+    {name: "Floyen", description: "Nordic"},
+    {name: "Jesolo", description: "Veneto"},
+    {name: "Kalmar", description: "Nordic"},
+    {name: "Kronberg", description: "Nordic"},
+    {name: "Lublin", description: "Veneto"},
+    {name: "Marcon", description: "Veneto"},
+    {name: "Merano", description: "Veneto"},
+    {name: "Modena", description: "Veneto"},
+    {name: "Montebelluna", description: "Veneto"},
+    {name: "Oslo", description: "Nordic"},
+    {name: "Pavia", description: "Veneto"},
+    {name: "Ponzano", description: "Veneto"},
+    {name: "Roman", description: "Veneto"},
+    {name: "Trento", description: "Veneto"},
+    {name: "Treviso", description: "Veneto"},
+    {name: "Vasa", description: "Nordic"},
+    {name: "Vazzola", description: "Veneto"},
+    {name: "Vicenza", description: "Veneto"},
+    {name: "Villa del Conte", description: "Veneto"},
+    {name: "Vittorio", description: "Veneto"}
 ];
-
-
 
 const HardwoodPage = () => {
     
@@ -70,7 +64,7 @@ const HardwoodPage = () => {
     }
 
     return(
-        <div style={{backgroundImage: require('../../assets/img/whiteOakTexture.jpg')}}>
+        <div>
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed

@@ -31,7 +31,6 @@ const Retailers = () => {
                 </div>
             </ScrollAnimation>
             <Footer/>
-            
         </div>
     );
 }
