@@ -60,7 +60,7 @@ const HardwoodPage = () => {
     const classes = useStyles();
 
     const listItems = listDetails.map((number)=> 
-        <Grid item xs={12} md={6} lg={4} align="center" style={{width: "100%"}}>
+        <Grid item xs={12} md={6} lg={4} xl={3} align="center" style={{width: "100%"}}>
             <WoodCard name={number.name} description={number.description}/>
         </Grid>
     );
