@@ -1,4 +1,4 @@
-import { container, title, boxShadow } from "../../assets/img/jss/material-react.js";
+import { container, title} from "../../assets/img/jss/material-react.js";
 import image from "../../assets/img/bg.jpg"
 
 const pillsStyle = {

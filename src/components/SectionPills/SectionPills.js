@@ -17,9 +17,6 @@ import Button from "../CustomButtons/Button.js";
 
 import styles from "./pillsStyle.js";
 
-import backgroundHome from "../../assets/img/bg.jpg"
-import { Card } from "material-ui";
-
 const useStyles = makeStyles(styles);
 
 export default function SectionPills() {

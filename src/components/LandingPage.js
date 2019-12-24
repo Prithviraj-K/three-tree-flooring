@@ -1,6 +1,5 @@
 //React
 import React from 'react';
-import classNames from "classnames";
 //Components
 import Parallax from "./Parallax/Parallax.js";
 import GridContainer from "./Grid/GridContainer.js";
