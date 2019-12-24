@@ -32,7 +32,7 @@ export default function MediaCard(props) {
   const classes = useStyles();
 
   return (
-    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" offset={150} duration={0.3}>
+    <ScrollAnimation animateIn="slideInUp" animateOnce offset={150}>
       <Card className={classes.card}>
         <CardActionArea>
         <CardMedia style = {{ height: 350}}

@@ -38,13 +38,11 @@ const LandingPage = (props) => {
                     <div className={classes.container}>
                         <GridContainer>
                             <GridItem >
-                                <ScrollAnimation animateIn="flipInX" animateOnce>
-                                    <div>
-                                        <Typography variant="h1" className={classes.title}>
-                                            Three Trees Flooring
-                                        </Typography>
-                                    </div>
-                                </ScrollAnimation>
+                                <div>
+                                    <Typography variant="h1" className={classes.title}>
+                                        Three Trees Flooring
+                                    </Typography>
+                                </div>
                             </GridItem>
                         </GridContainer>
                     </div>

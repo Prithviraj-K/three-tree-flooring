@@ -56,15 +56,18 @@ const HardwoodPage = () => {
                 fixed
                 color="dark"
                 changeColorOnScroll={{
-                    height: 100,
+                    height: 200,
                     color: "transparent"
                 }}
             />
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
                 <div style={{backgroundColor: "rgba(255,255,255,0.5)"}}>
-                    <ScrollAnimation animateIn="flipInX" animateOnce>
-                        <Typography variant="h1" style={{marginTop: "1em", textAlign: "center", padding: "1em"}}>
+                    <ScrollAnimation animateIn="slideInDown" animateOnce>
+                        <Typography variant="h1" style={{marginTop: "1em", textAlign: "center", paddingTop: "1em"}}>
                             Hardwood
+                        </Typography>
+                        <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
+                            Contact us for free samples
                         </Typography>
                     </ScrollAnimation>
                     <Divider variant="middle" style={{marginBottom: "2em"}}/>
