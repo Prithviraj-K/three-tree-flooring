@@ -99,7 +99,7 @@ export default function MediaCard(props) {
       >
         <Fade in={open}>
           <div style={{justifyContent: "center"}} className={classes.paper}>
-            <h3>{props.name} Specifications</h3>
+            <h3 style={{textAlign: "center"}}>{props.name} Specifications</h3>
             <div>
               <TableContainer>
                 <Table>
