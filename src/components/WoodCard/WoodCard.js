@@ -6,6 +6,15 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
+import Fade from '@material-ui/core/Fade';
+import Backdrop from '@material-ui/core/Backdrop';
+
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -28,14 +37,19 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     position: 'absolute',
-    width: "80%",
-    marginLeft: "5%",
-    marginTop: "3%",
     height: "80%",
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    overflow: "scroll"
+  },
+  modalS: {
+    position: "absolute",
+    overflow: "hidden",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
   }
 }));
 
@@ -76,13 +90,78 @@ export default function MediaCard(props) {
         aria-describedby="simple-modal-description"
         open={open}
         onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+        className={classes.modalS}
       >
-        <div style={{display: "flex", alignItems: "center", justifyContent: "center"}} className={classes.paper}>
-          <h2 id="simple-modal-title">{props.name}</h2>
-          <p id="simple-modal-description">
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </p>
-        </div>
+        <Fade in={open}>
+          <div style={{justifyContent: "center"}} className={classes.paper}>
+            <h3>{props.name} Specifications</h3>
+            <div>
+              <TableContainer>
+                <Table>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Species</TableCell>
+                      <TableCell align="right">{props.species}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Grades</TableCell>
+                      <TableCell align="right">{props.grades}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Origin of Wood</TableCell>
+                      <TableCell align="right">{props.origin}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Width</TableCell>
+                      <TableCell align="right">{props.width}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Thickness</TableCell>
+                      <TableCell align="right">{props.thickness}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Wear Layer</TableCell>
+                      <TableCell align="right">{props.wearLayer}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Bevel</TableCell>
+                      <TableCell align="right">{props.bevel}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Texture</TableCell>
+                      <TableCell align="right">{props.texture}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Gloss</TableCell>
+                      <TableCell align="right">{props.gloss}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Finish</TableCell>
+                      <TableCell align="right">{props.finish}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Construction</TableCell>
+                      <TableCell align="right">{props.construction}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Plank Lengths</TableCell>
+                      <TableCell align="right">{props.plankL}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell>Certification</TableCell>
+                      <TableCell align="right">{props.cert}</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </div>
+          </div>
+        </Fade>        
       </Modal>
     </div>
      
