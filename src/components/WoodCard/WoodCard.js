@@ -104,55 +104,55 @@ export default function MediaCard(props) {
               <TableContainer>
                 <Table>
                   <TableBody>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Species</TableCell>
                       <TableCell align="right">{props.species}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Grades</TableCell>
                       <TableCell align="right">{props.grades}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Origin of Wood</TableCell>
                       <TableCell align="right">{props.origin}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Width</TableCell>
                       <TableCell align="right">{props.width}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Thickness</TableCell>
                       <TableCell align="right">{props.thickness}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Wear Layer</TableCell>
                       <TableCell align="right">{props.wearLayer}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Bevel</TableCell>
                       <TableCell align="right">{props.bevel}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Texture</TableCell>
                       <TableCell align="right">{props.texture}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Gloss</TableCell>
                       <TableCell align="right">{props.gloss}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Finish</TableCell>
                       <TableCell align="right">{props.finish}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Construction</TableCell>
                       <TableCell align="right">{props.construction}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Plank Lengths</TableCell>
                       <TableCell align="right">{props.plankL}</TableCell>
                     </TableRow>
-                    <TableRow>
+                    <TableRow hover>
                       <TableCell>Certification</TableCell>
                       <TableCell align="right">{props.cert}</TableCell>
                     </TableRow>
