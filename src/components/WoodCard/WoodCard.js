@@ -71,7 +71,7 @@ export default function MediaCard(props) {
       <ScrollAnimation animateIn="slideInUp" animateOnce offset={150}>
         <Card className={classes.card}>
           <CardActionArea onClick={handleOpen}>
-            <CardMedia style = {{ height: 350}}
+            <CardMedia style = {{ height: 250}}
               image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}.png`)} />
             <CardContent style={{backgroundColor: "#68a739", color: "#FFF"}}>
               <Typography gutterBottom variant="h5" component="h2">

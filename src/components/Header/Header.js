@@ -16,7 +16,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "./headerStyle.js";
 
-import logo from "../../assets/img/logo-white.png";
+import logo from "../../assets/img/logo-black.png";
 
 const useStyles = makeStyles(styles);
 

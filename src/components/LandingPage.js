@@ -9,6 +9,7 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
 import ScrollAnimation from 'react-animate-on-scroll';
+import HomeCarousel from './HomeCarousel/HomeCarousel';
 //Material
 import Typography from '@material-ui/core/Typography/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -27,14 +28,23 @@ const LandingPage = (props) => {
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
-                color="dark"
+                color="transparent"
                 changeColorOnScroll={{
                     height: 400,
-                    color: "transparent"
+                    color: "white"
                 }}
             />
             <ScrollAnimation animateIn="fadeInDown" animateOnce>
-                <Parallax image={require("../assets/img/bg4.jpg")}>
+                <div style={{marginTop: "8em"}}>
+                    <Typography variant="h4" align="center">
+                        THREE TREES FLOORING
+                    </Typography>
+                    <div style={{width: "30%", margin: "auto"}}>
+                        <Divider/>
+                    </div>
+                </div>
+                <HomeCarousel/>
+                {/*<Parallax image={require("../assets/img/bg4.jpg")}>
                     <div className={classes.container}>
                         <GridContainer>
                             <GridItem >
@@ -46,12 +56,12 @@ const LandingPage = (props) => {
                             </GridItem>
                         </GridContainer>
                     </div>
-                </Parallax>
+                </Parallax>*/}
             </ScrollAnimation>
             
             <div>
                 <ScrollAnimation animateIn="fadeIn" animateOnce>
-                    <Typography variant="h4" align="left" color="textPrimary" style={{fontSize: "4vw", textAlign: "center", paddingTop: "1.5em", paddingLeft: "2em"}}>
+                    <Typography variant="h3" align="center" color="textPrimary" style={{textAlign: "center"}}>
                         <span style={{textShadow: "1px 1px #000000"}}>Premium Finished Hardwood</span>
                     </Typography>
                 </ScrollAnimation>
