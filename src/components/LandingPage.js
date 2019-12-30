@@ -30,22 +30,22 @@ const LandingPage = (props) => {
                 fixed
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 100,
+                    height: 50,
                     color: "white"
                 }}
             />
             <ScrollAnimation animateIn="fadeInDown" animateOnce>
-                <div style={{marginTop: "8em"}}>
+                <div style={{marginTop: "7em"}}>
                     <Typography variant="h4" align="center">
                         THREE TREES FLOORING
                     </Typography>
-                    <div style={{width: "30%", margin: "auto", marginBottom: "2em"}}>
+                    <div style={{width: "30%", margin: "auto", marginBottom: "0", backgroundColor: "#432711"}}>
                         <Divider/>
                     </div>
                 </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" animateOnce>
-                <div style={{margin: '2em'}}>
+                <div style={{margin: '1em', marginTop: "0"}}>
                     {/*<Parallax image={require("../assets/img/bg4.jpg")}/>*/}
                     <Gallery/>
                 </div>
@@ -57,12 +57,16 @@ const LandingPage = (props) => {
                     </Typography>
                 </ScrollAnimation>
                 <Divider style={{marginTop: "2em"}}/>
+            </div>
+            <div>
                 <ScrollAnimation animateIn="fadeIn" animateOnce>
                     <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
                         <SectionPills/>
                     </div>
                 </ScrollAnimation>
-                <Divider style={{marginTop: "2em"}}/>
+            </div>
+            <div>
+                <Divider/>
                 <div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce>
                         <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>

@@ -11,6 +11,8 @@ import Divider from '@material-ui/core/Divider';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
+import homebg from '../../assets/img/homebg.jpg';
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
@@ -30,7 +32,7 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <footer className={footerClasses}>
+    <footer className={footerClasses} style={{backgroundImage: `url(${homebg})`}}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>

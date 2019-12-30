@@ -73,7 +73,7 @@ const HardwoodPage = () => {
                 fixed
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 200,
+                    height: 50,
                     color: "white"
                 }}
             />

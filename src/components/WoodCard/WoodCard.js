@@ -73,7 +73,7 @@ export default function MediaCard(props) {
           <CardActionArea onClick={handleOpen}>
             <CardMedia style = {{ height: 250}}
               image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}.png`)} />
-            <CardContent style={{backgroundColor: "#68a739", color: "#FFF"}}>
+            <CardContent style={{backgroundColor: "#3f301d", color: "#FFF"}}>
               <Typography gutterBottom variant="h5" component="h2">
                 {props.name}
               </Typography>
