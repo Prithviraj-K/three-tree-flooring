@@ -4,6 +4,7 @@ import React from 'react';
 import Parallax from "./Parallax/Parallax.js";
 import GridContainer from "./Grid/GridContainer.js";
 import GridItem from "./Grid/GridItem.js";
+import Gallery from './Gallery/Gallery';
 import SectionPills from './SectionPills/SectionPills';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
@@ -45,10 +46,10 @@ const LandingPage = (props) => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" animateOnce>
                 <div style={{margin: '2em'}}>
-                    <Parallax image={require("../assets/img/bg4.jpg")}/>
+                    {/*<Parallax image={require("../assets/img/bg4.jpg")}/>*/}
+                    <Gallery/>
                 </div>
             </ScrollAnimation>
-            
             <div>
                 <ScrollAnimation animateIn="fadeIn" animateOnce>
                     <Typography variant="h5" align="center" color="textPrimary" style={{textAlign: "center"}}>
