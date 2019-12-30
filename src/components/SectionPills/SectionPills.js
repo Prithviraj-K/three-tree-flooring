@@ -26,7 +26,7 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
         <GridContainer>
-          <GridItem xs={12} s={12} md={6} lg={6}>
+          <GridItem xs={12} s={12} md={12} lg={12}>
             <div className={classes.title}>
               <h2 style={{color: "black"}}>Why Choose Three Trees?</h2>
             </div>
@@ -127,11 +127,11 @@ export default function SectionPills() {
                 ]}
               />
             </GridItem>
-            <GridItem xs={12} s={12} md={6} lg={6}>
+            {/*<GridItem xs={12} s={12} md={6} lg={6}>
                 <div className={classes.imgHome}>
                 
                 </div>
-            </GridItem>
+              </GridItem>*/}
           </GridContainer>
         </div>
       </div>

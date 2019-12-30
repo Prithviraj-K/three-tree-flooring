@@ -9,7 +9,6 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
 import ScrollAnimation from 'react-animate-on-scroll';
-import HomeCarousel from './HomeCarousel/HomeCarousel';
 //Material
 import Typography from '@material-ui/core/Typography/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -30,7 +29,7 @@ const LandingPage = (props) => {
                 fixed
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 400,
+                    height: 100,
                     color: "white"
                 }}
             />
@@ -39,30 +38,21 @@ const LandingPage = (props) => {
                     <Typography variant="h4" align="center">
                         THREE TREES FLOORING
                     </Typography>
-                    <div style={{width: "30%", margin: "auto"}}>
+                    <div style={{width: "30%", margin: "auto", marginBottom: "2em"}}>
                         <Divider/>
                     </div>
                 </div>
-                <HomeCarousel/>
-                {/*<Parallax image={require("../assets/img/bg4.jpg")}>
-                    <div className={classes.container}>
-                        <GridContainer>
-                            <GridItem >
-                                <div>
-                                    <Typography variant="h1" className={classes.title}>
-                                        Three Trees Flooring
-                                    </Typography>
-                                </div>
-                            </GridItem>
-                        </GridContainer>
-                    </div>
-                </Parallax>*/}
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInUp" animateOnce>
+                <div style={{margin: '2em'}}>
+                    <Parallax image={require("../assets/img/bg4.jpg")}/>
+                </div>
             </ScrollAnimation>
             
             <div>
                 <ScrollAnimation animateIn="fadeIn" animateOnce>
-                    <Typography variant="h3" align="center" color="textPrimary" style={{textAlign: "center"}}>
-                        <span style={{textShadow: "1px 1px #000000"}}>Premium Finished Hardwood</span>
+                    <Typography variant="h5" align="center" color="textPrimary" style={{textAlign: "center"}}>
+                        Premium Finished Hardwood
                     </Typography>
                 </ScrollAnimation>
                 <Divider style={{marginTop: "2em"}}/>
