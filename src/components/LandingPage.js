@@ -10,6 +10,7 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollUpButton from 'react-scroll-up-button';
 //Material
 import Typography from '@material-ui/core/Typography/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -45,11 +46,11 @@ const LandingPage = (props) => {
                 </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" animateOnce>
-                <div style={{margin: '1em', marginTop: "0"}}>
-                    {/*<Parallax image={require("../assets/img/bg4.jpg")}/>*/}
+                <div style={{margin: '0', marginTop: "1em", marginBottom: "2em"}}>
                     <Gallery/>
                 </div>
             </ScrollAnimation>
+            <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
                 <ScrollAnimation animateIn="fadeIn" animateOnce>
                     <Typography variant="h5" align="center" color="textPrimary" style={{textAlign: "center"}}>

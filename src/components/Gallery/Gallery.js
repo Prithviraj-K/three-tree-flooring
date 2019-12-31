@@ -23,7 +23,7 @@ function SampleNextArrow(props) {
   return (
     <NextArrow 
       className={className}
-      style={{ ...style, display: "block", color: "#432711"}}
+      style={{ ...style, display: "block", color: "white", right: "2%", zIndex: "10"}}
       onClick={onClick}
     />
   );
@@ -34,7 +34,7 @@ function SamplePrevArrow(props) {
   return (
     <PrevArrow 
       className={className}
-      style={{ ...style, display: "block", color: "#432711"}}
+      style={{ ...style, display: "block", color: "white", left: "2%", zIndex: "10"}}
       onClick={onClick}
     />
   );
@@ -52,7 +52,7 @@ export default function Gallery() {
     prevArrow: <SamplePrevArrow />
   };
   return (
-    <div style={{padding: "1.5em"}}>
+    <div>
       <Carousel {...settings}>
         <div>
           <Parallax image={require("../../assets/img/bg4.jpg")}/>

@@ -12,8 +12,10 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
-import { Apps, Store, Contacts } from "@material-ui/icons";
+import Store from '@material-ui/icons/Store';
 import HomeIcon from '@material-ui/icons/Home';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import Contacts from '@material-ui/icons/Contacts';
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -49,7 +51,7 @@ export default function HeaderLinks(props) {
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Apps}
+          buttonIcon={MenuBookIcon}
           dropdownList={[
             <Link to="/Hardwood" className={classes.dropdownLink}>
               Hardwood

@@ -80,14 +80,14 @@ const HardwoodPage = () => {
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
                 <div style={{backgroundColor: "rgba(255,255,255,0.7)"}}>
                     <ScrollAnimation animateIn="slideInDown" animateOnce>
-                        <Typography variant="h1" style={{paddingTop: "1em", textAlign: "center"}}>
+                        <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
                             Collection
                         </Typography>
                         <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
                             Contact us for free samples
                         </Typography>
                     </ScrollAnimation>
-                    <Divider style={{margin: "auto", marginBottom: "2em", width: "50%", backgroundColor: "#030303"}}/>
+                    <Divider style={{margin: "auto", marginBottom: "2em", width: "30%", backgroundColor: "#030303"}}/>
                     <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                     <div>
                         <Grid container

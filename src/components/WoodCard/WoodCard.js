@@ -21,15 +21,15 @@ import "animate.css/animate.min.css";
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 360,
+    maxWidth: 375,
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.8) !important",
     "&:hover": {
       boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.8) !important"
     },
-    borderRadius: "2em"
+    borderRadius: "1em"
   },
   media: {
-    height: 350,
+    height: 300,
   },
   sampleBtn: {
     width: "100%",
@@ -73,8 +73,8 @@ export default function MediaCard(props) {
           <CardActionArea onClick={handleOpen}>
             <CardMedia style = {{ height: 250}}
               image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}.png`)} />
-            <CardContent style={{backgroundColor: "#3f301d", color: "#FFF"}}>
-              <Typography gutterBottom variant="h5" component="h2">
+            <CardContent style={{marginTop: "0", padding: "0.5em", backgroundColor: "#000000", color: "#FFF"}}>
+              <Typography gutterBottom variant="h6">
                 {props.name}
               </Typography>
               <Typography variant="body2" component="p">

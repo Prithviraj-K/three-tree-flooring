@@ -1,5 +1,5 @@
-/*eslint-disable*/
 import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -9,6 +9,7 @@ import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from '@material-ui/core/Divider';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Button from '../CustomButtons/Button';
 import "animate.css/animate.min.css";
 
 import homebg from '../../assets/img/homebg.jpg';
@@ -32,41 +33,44 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <footer className={footerClasses} style={{backgroundImage: `url(${homebg})`}}>
+    <footer className={footerClasses} style={{backgroundColor: "black", color: "#FFF"}}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-                Hardwood
-              </a>
+            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/" style={{textDecoration: "none", color: "#FFF"}}>
+                <Button color="transparent">
+                  Home
+                </Button>
+              </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-                Wall Panelling
-              </a>
+            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Hardwood" style={{textDecoration: "none", color: "#FFF"}}>
+                <Button color="transparent">
+                  Collection
+                </Button>
+              </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-                Care & Maintenance
-              </a>
+            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Care" style={{textDecoration: "none", color: "#FFF"}}>
+                <Button color="transparent">
+                  Care & Maintenance
+                </Button>
+              </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                className={classes.block}
-                target="_blank"
-              >
-                Contact Us
-              </a>
+            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Retailers" style={{textDecoration: "none", color: "#FFF"}}>
+                <Button color="transparent">
+                  Retailers
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Contact" style={{textDecoration: "none", color: "#FFF"}}>
+                <Button color="transparent">
+                  Contact Us
+                </Button>
+              </Link>
             </ListItem>
           </List>
         </div>

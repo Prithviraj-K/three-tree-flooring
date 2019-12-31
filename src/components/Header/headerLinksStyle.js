@@ -28,7 +28,7 @@ const headerLinksStyle = theme => ({
         content: '""',
         display: "block",
         height: "1px",
-        marginLeft: "15px",
+        marginLeft: "1em",
         backgroundColor: "#e5e5e5"
       }
     }
@@ -54,7 +54,7 @@ const headerLinksStyle = theme => ({
     },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
-      marginLeft: "15px",
+      marginLeft: "1em",
       marginBottom: "8px",
       marginTop: "8px",
       textAlign: "left",
@@ -110,7 +110,7 @@ const headerLinksStyle = theme => ({
   },
   ...tooltip,
   marginRight5: {
-    marginRight: "5px"
+    marginRight: "1em"
   },
 });
 
