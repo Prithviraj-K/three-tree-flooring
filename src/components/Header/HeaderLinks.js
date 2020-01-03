@@ -77,8 +77,6 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-        
-         
           <Link to="/Contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
             <Button
               color="transparent"

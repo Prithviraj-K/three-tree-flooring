@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -16,13 +16,18 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "./headerStyle.js";
 
-import logo from "../../assets/img/logo-black.png";
+const logoWhite = require ('../../assets/img/logo-white.png');
+const logoBlack = require ('../../assets/img/logo-black-large.png');
+const logos = {logoWhite, logoBlack};
 
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  
+  const [logoSrc, setLogoSrc] = useState (props.logoC);
+
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -46,6 +51,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      setLogoSrc(logos.logoBlack);
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -53,6 +59,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      setLogoSrc(props.logoC);
     }
   };
   const { color, rightLinks, leftLinks, fixed, absolute } = props;
@@ -66,7 +73,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses} style={{marginBottom: "0"}}>
       <Toolbar className={classes.container}>
         <Link to="/" className={classes.linkBtn}>
-          <img src={logo} alt="logo"/>
+          <img src={logoSrc} alt="logo"/>
         </Link>
         <Hidden smDown implementation="css">
           {rightLinks}

@@ -7,15 +7,8 @@ import classNames from "classnames";
 // material-ui core components
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Divider from '@material-ui/core/Divider';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Button from '../CustomButtons/Button';
 import "animate.css/animate.min.css";
-
-import homebg from '../../assets/img/homebg.jpg';
-
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "./footerStyle.js";
 
@@ -28,12 +21,10 @@ export default function Footer(props) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
   });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
+  
   return (
-    <footer className={footerClasses} style={{backgroundColor: "black", color: "#FFF"}}>
+    <footer className={footerClasses} style={{backgroundColor: "black", color: "#FFF", boxShadow:
+    "0 -2px 20px 0px rgba(0, 0, 0, 0.14), 0 -4px 12px 5px rgba(33, 33, 33, 0.46)"}}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>

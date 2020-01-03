@@ -6,7 +6,6 @@ import {
     successColor,
     warningColor,
     dangerColor,
-    roseColor,
     transition,
     boxShadow,
     drawerWidth
@@ -94,15 +93,15 @@ import {
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(244, 67, 54, 0.46)"
     },
     rose: {
-      backgroundColor: roseColor,
-      color: "#FFFFFF",
+      backgroundColor: "transparent !important",
+      color: "#000000",
       boxShadow:
-        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)"
+        "none"
     },
     transparent: {
       backgroundColor: "transparent !important",
       boxShadow: "none",
-      color: "##030303",
+      color: "#FFFFFF",
     },
     dark: {
       backgroundColor: "rgba(33, 33, 33 , 1)",
@@ -114,7 +113,7 @@ import {
       border: "0",
       padding: "0.625rem 0",
       marginBottom: "20px",
-      color: "#555",
+      color: "#000000",
       backgroundColor: "#fff !important",
       boxShadow:
         "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)"

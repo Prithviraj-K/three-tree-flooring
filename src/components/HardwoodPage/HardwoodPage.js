@@ -14,32 +14,48 @@ import ScrollUpButton from "react-scroll-up-button";
 import imgBg from "../../assets/img/whiteOakTexture.jpg";
  
 const listDetails = [
-    {key: 1, name: "Boher", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4.25, 5.5, 7.5, 9.5", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 2, name: "Citadella", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 3, name: "Cittanova", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 4, name: "Conegliano", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 5, name: "Cremona", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 6, name: "Floyen", description: "Nordic", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 7, name: "Jesolo", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 8, name: "Kalmar", description: "Nordic", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 9, name: "Kronberg", description: "Nordic", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 10, name: "Lublin", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 11, name: "Marcon", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 12, name: "Merano", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 13, name: "Modena", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 14, name: "Montebelluna", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 15, name: "Oslo", description: "Nordic", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 16, name: "Pavia", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 17, name: "Ponzano", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 18, name: "Roman", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 19, name: "Trento", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 20, name: "Treviso", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 21, name: "Vasa", description: "Nordic", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 22, name: "Vazzola", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 23, name: "Vicenza", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 24, name: "Villa del Conte", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"},
-    {key: 25, name: "Vittorio", description: "Veneto", species: "White Oak", grades: "Character, Select & Better", origin: "Europe", width: "4 1/4, 5 1/2, 7 1/2, 9 1/2", thickness: "3/4, 5/8", wearLayer: "4 mm", bevel: "Micro-bevel", texture: "Wire-brush", gloss: "Matte", finish: "Osmo Hardwax-Oil", construction: "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core", plankL: "5.7 ft - 7.7 ft", cert: "100% FSC Certified"}
+    {key: 1, name: "Boher", description: "Veneto"},
+    {key: 2, name: "Citadella", description: "Veneto"},
+    {key: 3, name: "Cittanova", description: "Veneto"},
+    {key: 4, name: "Conegliano", description: "Veneto"},
+    {key: 5, name: "Cremona", description: "Veneto"},
+    {key: 6, name: "Floyen", description: "Nordic"},
+    {key: 7, name: "Jesolo", description: "Veneto"},
+    {key: 8, name: "Kalmar", description: "Nordic"},
+    {key: 9, name: "Kronberg", description: "Nordic"},
+    {key: 10, name: "Lublin", description: "Veneto"},
+    {key: 11, name: "Marcon", description: "Veneto"},
+    {key: 12, name: "Merano", description: "Veneto"},
+    {key: 13, name: "Modena", description: "Veneto"},
+    {key: 14, name: "Montebelluna", description: "Veneto"},
+    {key: 15, name: "Oslo", description: "Nordic"},
+    {key: 16, name: "Pavia", description: "Veneto"},
+    {key: 17, name: "Ponzano", description: "Veneto"},
+    {key: 18, name: "Roman", description: "Veneto"},
+    {key: 19, name: "Trento", description: "Veneto"},
+    {key: 20, name: "Treviso", description: "Veneto"},
+    {key: 21, name: "Vasa", description: "Nordic"},
+    {key: 22, name: "Vazzola", description: "Veneto"},
+    {key: 23, name: "Vicenza", description: "Veneto"},
+    {key: 24, name: "Villa del Conte", description: "Veneto"},
+    {key: 25, name: "Vittorio", description: "Veneto"}
 ];
+
+const species = "White Oak";
+const grades = "Character, Select & Better";
+const origin = "Europe";
+const width = "4 1/4, 5 1/2, 7 1/2, 9 1/2";
+const thickness = "3/4, 5/8";
+const wearLayer = "4mm";
+const bevel = "Micro-bevel";
+const texture = "Wire-brush";
+const gloss = "Matte";
+const finish = "Osmo Hardwax-Oil";
+const construction = "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core";
+const plankL = "5.7 ft - 7.7 ft";
+const cert = "100% FSC Certified";
+
+const logoBlack = require ('../../assets/img/logo-black-large.png');
 
 const HardwoodPage = () => {
 
@@ -49,19 +65,19 @@ const HardwoodPage = () => {
                 key={number.key}
                 name={number.name} 
                 description={number.description} 
-                species={number.species}
-                grades={number.grades}
-                origin={number.origin}
-                width={number.width}
-                thickness={number.thickness}
-                wearLayer={number.wearLayer}
-                bevel={number.bevel}
-                texture={number.texture}
-                gloss={number.gloss}
-                finish={number.finish}
-                construction={number.construction}
-                plankL={number.plankL}
-                cert={number.cert}
+                species={species}
+                grades={grades}
+                origin={origin}
+                width={width}
+                thickness={thickness}
+                wearLayer={wearLayer}
+                bevel={bevel}
+                texture={texture}
+                gloss={gloss}
+                finish={finish}
+                construction={construction}
+                plankL={plankL}
+                cert={cert}
             />
         </Grid>
     );
@@ -71,9 +87,10 @@ const HardwoodPage = () => {
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
-                color="transparent"
+                logoC={logoBlack}
+                color="rose"
                 changeColorOnScroll={{
-                    height: 50,
+                    height: 100,
                     color: "white"
                 }}
             />
@@ -87,7 +104,7 @@ const HardwoodPage = () => {
                             Contact us for free samples
                         </Typography>
                     </ScrollAnimation>
-                    <Divider style={{margin: "auto", marginBottom: "2em", width: "30%", backgroundColor: "#030303"}}/>
+                    <Divider style={{margin: "auto", marginBottom: "2em", width: "30%", backgroundColor: "#000000"}}/>
                     <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                     <div>
                         <Grid container
