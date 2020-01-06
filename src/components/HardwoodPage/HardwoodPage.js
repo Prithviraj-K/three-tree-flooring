@@ -88,11 +88,7 @@ const HardwoodPage = () => {
                 rightLinks={<HeaderLinks />}
                 fixed
                 logoC={logoBlack}
-                color="rose"
-                changeColorOnScroll={{
-                    height: 100,
-                    color: "white"
-                }}
+                color="white"
             />
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
                 <div style={{backgroundColor: "rgba(255,255,255,0.7)"}}>

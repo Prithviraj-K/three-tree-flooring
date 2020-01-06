@@ -8,6 +8,7 @@ import FormatColorFillIcon from '@material-ui/icons/FormatColorFill';
 import BuildIcon from '@material-ui/icons/Build';
 
 import FSCLogo from "../../assets/img/FSC.png";
+import osmoLogo from "../../assets/img/osmo-logo.png"
 
 // core components
 import GridContainer from "../Grid/GridContainer.js";
@@ -38,32 +39,6 @@ export default function SectionPills() {
                 }}
                 tabs={[
                   {
-                    tabButton: "Eco-friendly & FSC Certified",
-                    tabIcon: EcoIcon,
-                    tabContent: (
-                      <span>
-                        <p style={{marginBottom: "0", padding: "0"}}>
-                          Three Trees Flooring’s Eco-Friendly promise starts from the raw material to the finish of our flooring.
-                          Our flooring is imported unfinished directly from Europe. We use only the highest quality white oak to 
-                          produce our flooring sourcing the wood directly from FSC certified forests of Europe. Three Trees 
-                          Flooring strives to provide a sustainable, eco-friendly, durable and stylish hardwood flooring option.
-                          <div style={{padding: "0",margin: "0", textAlign: "center"}}>
-                            <img src={FSCLogo} alt="FSC"/>
-                          </div>
-                          <div style={{padding: "0",margin: "0", textAlign: "center"}}>
-                            <Button
-                              color="primary"
-                              round
-                              href="https://ca.fsc.org/en-ca"
-                            >
-                              Forest Stewardship Council
-                            </Button>
-                          </div>
-                        </p>
-                      </span>
-                    )
-                  },
-                  {
                     tabButton: "Hardwax Oil Finishing",
                     tabIcon: FormatColorFillIcon,
                     tabContent: (
@@ -71,9 +46,52 @@ export default function SectionPills() {
                         <p>
                           Osmo® Hardwax-Oil is trusted world-wide for its quality reputation.
                           Hardwax Oil soaks in, lightly colors the wood and forms a protective film 
-                          on the surface of the wood. It's perfect for home owners that want a more 
-                          natural wood finish while also having a protective layer on the surface.
+                          on the surface of the wood. wood finish that is derived from natural vegetable 
+                          oils and waxes. Resistant to water, dirt, beer, wine, cola and saliva, Osmo 
+                          Polyx-Oil is microporous and molecularly bonds with the wood, meaning it does 
+                          not crack, flake, peel or blister. Can be spot-repaired and/or restored/renewed 
+                          with no sanding required, therefore wood never needs complete sanding and 
+                          refinishing again.
+                          <div style={{padding: "0",margin: "0", textAlign: "center"}}>
+                            <img src={osmoLogo} alt="Osmo"/>
+                          </div>
                         </p>
+                        <div style={{padding: "0",margin: "0", textAlign: "center"}}>
+                            <Button
+                              color="primary"
+                              round
+                              href="https://osmo.ca/"
+                            >
+                              Visit Osmo®
+                            </Button>
+                          </div>
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Eco-friendly & FSC Certified",
+                    tabIcon: EcoIcon,
+                    tabContent: (
+                      <span>
+                        <p style={{marginBottom: "0", padding: "0"}}>
+                          Three Trees Flooring’s Eco-Friendly promise starts from the raw material to the finish of our flooring.
+                          Our flooring is imported unfinished directly from Europe. We use only the highest quality white oak to 
+                          produce our flooring sourcing the wood directly from FSC certified (Forest Stewardship Council) forests 
+                          of Europe. Three Trees Flooring strives to provide a sustainable, eco-friendly, durable and stylish 
+                          hardwood flooring option.
+                          <div style={{padding: "0",margin: "0", textAlign: "center"}}>
+                            <img src={FSCLogo} alt="FSC"/>
+                          </div>
+                        </p>
+                          <div style={{padding: "0",margin: "0", textAlign: "center"}}>
+                            <Button
+                              color="primary"
+                              round
+                              href="https://ca.fsc.org/en-ca"
+                            >
+                              Visit FSC
+                            </Button>
+                          </div>
                       </span>
                     )
                   },

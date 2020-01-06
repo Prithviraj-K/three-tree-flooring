@@ -4,6 +4,7 @@ import { createBrowserHistory } from "history";
 import ScrollToTop from './ScrollToTop';
 
 
+import CarePage from './components/Care/Care';
 import LandingPage from './components/LandingPage';
 import HardwoodPage from "./components/HardwoodPage/HardwoodPage";
 import Retailers from './components/Retailers/Retailers';
@@ -22,6 +23,7 @@ class App extends Component {
               <Route path="/Hardwood" component={HardwoodPage}/>
               <Route path="/Retailers" component={Retailers}/>
               <Route path="/Contact" component={Contact}/>
+              <Route path="/Care" component={CarePage}/>
           </Switch>
         </ScrollToTop>  
     </Router>

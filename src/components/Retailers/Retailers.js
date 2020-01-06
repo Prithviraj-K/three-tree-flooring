@@ -32,12 +32,8 @@ const Retailers = () => {
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
-                color="rose"
+                color="white"
                 logoC={logoBlack}
-                changeColorOnScroll={{
-                    height: 150,
-                    color: "white"
-                }}
             />
             <ScrollAnimation animateIn="slideInDown" animateOnce>
                 <div>

@@ -7,7 +7,6 @@ import {
     warningColor,
     dangerColor,
     transition,
-    boxShadow,
     drawerWidth
   } from "../../assets/img/jss/material-react.js";
   
@@ -21,8 +20,6 @@ import {
       color: "#555",
       width: "100%",
       backgroundColor: "#fff",
-      boxShadow:
-        "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
       transition: "all 150ms ease 0s",
       alignItems: "center",
       flexFlow: "row nowrap"
@@ -100,23 +97,19 @@ import {
     },
     transparent: {
       backgroundColor: "transparent !important",
+      backdropFilter: "blur(10px)",
       boxShadow: "none",
-      color: "#FFFFFF",
+      color: "#FFFFFF"
     },
     dark: {
-      backgroundColor: "rgba(33, 33, 33 , 1)",
-      color: "#FFFFFF",
-      boxShadow:
-        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)"
+      backgroundColor: "black",
+      color: "#FFFFFF"
     },
     white: {
-      border: "0",
-      padding: "0.625rem 0",
-      marginBottom: "20px",
       color: "#000000",
-      backgroundColor: "#fff !important",
-      boxShadow:
-        "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)"
+      backdropFilter: "blur(10px)",
+      backgroundColor: "transparent !important",
+      boxShadow: "none"
     },
     drawerPaper: {
       border: "none",
@@ -125,7 +118,6 @@ import {
       transitionDuration: ".2s, .2s, .35s",
       transitionTimingFunction: "linear, linear, ease",
       width: drawerWidth,
-      ...boxShadow,
       position: "fixed",
       display: "block",
       top: "0",
