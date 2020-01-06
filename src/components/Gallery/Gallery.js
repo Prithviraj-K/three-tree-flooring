@@ -46,13 +46,18 @@ export default function Gallery() {
       <Carousel {...settings}>
         <div>
           <Parallax image={require("../../assets/img/bg.jpg")}/>
-          
         </div>
         <div>
-            <Parallax image={require("../../assets/img/bg2.jpg")}/>
+          <Parallax image={require("../../assets/img/bg2.jpg")}/>
         </div>
         <div>
-            <Parallax image={require("../../assets/img/bg3.jpg")}/>
+          <Parallax image={require("../../assets/img/bg3.jpg")}/>
+        </div>
+        <div>
+          <Parallax image={require("../../assets/img/bg4.jpg")}/>
+        </div>
+        <div>
+          <Parallax image={require("../../assets/img/bg5.jpg")}/>
         </div>
       </Carousel>
     </div>
