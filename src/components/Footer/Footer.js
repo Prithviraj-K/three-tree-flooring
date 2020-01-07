@@ -28,37 +28,37 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+            <ListItem className={classes.inlineBlock}>
               <Link to="/" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent">
+                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
                   Home
                 </Button>
               </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+            <ListItem className={classes.inlineBlock}>
               <Link to="/Hardwood" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent">
+                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
                   Collection
                 </Button>
               </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+            <ListItem className={classes.inlineBlock}>
               <Link to="/Care" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent">
+                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
                   Care & Maintenance
                 </Button>
               </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+            <ListItem className={classes.inlineBlock}>
               <Link to="/Retailers" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent">
+                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
                   Retailers
                 </Button>
               </Link>
             </ListItem>
-            <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+            <ListItem className={classes.inlineBlock}>
               <Link to="/Contact" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent">
+                <Button color="transparent"style={{marginRight: "3px", borderBottom: "1px solid white"}}>
                   Contact Us
                 </Button>
               </Link>

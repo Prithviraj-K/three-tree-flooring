@@ -29,7 +29,7 @@ const LandingPage = (props) => {
                 logoC={logos.logoWhite}
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 750,
+                    height: 600,
                     color: "white"
                 }}
             />
@@ -40,11 +40,6 @@ const LandingPage = (props) => {
             </ScrollAnimation>
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
-                <ScrollAnimation animateIn="fadeIn" animateOnce>
-                    <Typography variant="h3" align="center" color="textPrimary" style={{textAlign: "center"}}>
-                        Premium Finished Hardwood
-                    </Typography>
-                </ScrollAnimation>
                 <Divider style={{marginTop: "2em"}}/>
             </div>
             <div>
@@ -63,7 +58,7 @@ const LandingPage = (props) => {
                             encompassed with European quality, design and innovation with a Canadian touch.
                         </Typography>
                     </ScrollAnimation>
-                <Divider style={{marginTop: "2em"}}/>
+                    <Divider style={{marginTop: "2em"}}/>
                 </div>
                 
             </div>

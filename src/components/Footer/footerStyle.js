@@ -1,6 +1,6 @@
 import { container, primaryColor } from "../../assets/img/jss/material-react.js";
 
-const footerStyle = {
+const footerStyle = theme => ({
   block: {
     color: "inherit",
     padding: "0.9375rem",
@@ -19,7 +19,12 @@ const footerStyle = {
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right!important"
+    [theme.breakpoints.up('992px')]: {
+      textAlign: 'right',
+    },
+    [theme.breakpoints.between('0px', '991px')]: {
+      textAlign: 'center',
+    }
   },
   footer: {
     padding: "0.9375rem 0",
@@ -56,5 +61,5 @@ const footerStyle = {
     position: "relative",
     top: "3px"
   }
-};
+});
 export default footerStyle;

@@ -20,6 +20,8 @@ import Contacts from '@material-ui/icons/Contacts';
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button.js";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 import styles from "./headerLinksStyle.js";
 
@@ -28,66 +30,65 @@ const useStyles = makeStyles(styles);
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
-    <List className={classes.list}>
+      <List className={classes.list}>
+        <ListItem className={classes.listItem}>
+            <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+              <Button
+                color="transparent"
+                round
+                className={classes.navLink}
+              >
+                <HomeIcon />
+                Home
+              </Button>
+            </Link>
+        </ListItem>
 
-      <ListItem className={classes.listItem}>
-          <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+        <ListItem className={classes.listItem}>
+          <CustomDropdown
+            noLiPadding
+            buttonText="Products"
+            buttonProps={{
+              className: classes.navLink,
+              color: "transparent"
+            }}
+            buttonIcon={MenuBookIcon}
+            dropdownList={[
+              <Link to="/Hardwood" className={classes.dropdownLink}>
+                Hardwood
+              </Link>,
+              <Link to="/Care" className={classes.dropdownLink}>
+                Care & Maintenance
+              </Link>,
+            ]}
+          />
+        </ListItem>
+
+        <ListItem className={classes.listItem}>
+          <Link to="/Retailers" style={{ color: 'inherit', textDecoration: 'inherit'}}>
             <Button
               color="transparent"
               round
               className={classes.navLink}
             >
-              <HomeIcon />
-              Home
+              <Store />
+              Retailers
             </Button>
           </Link>
-      </ListItem>
+        </ListItem>
 
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Products"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={MenuBookIcon}
-          dropdownList={[
-            <Link to="/Hardwood" className={classes.dropdownLink}>
-              Hardwood
-            </Link>,
-            <Link to="/Care" className={classes.dropdownLink}>
-              Care & Maintenance
-            </Link>,
-          ]}
-        />
-      </ListItem>
-
-      <ListItem className={classes.listItem}>
-        <Link to="/Retailers" style={{ color: 'inherit', textDecoration: 'inherit'}}>
-          <Button
-            color="transparent"
-            round
-            className={classes.navLink}
-          >
-            <Store />
-            Retailers
-          </Button>
-        </Link>
-      </ListItem>
-
-      <ListItem className={classes.listItem}>
-          <Link to="/Contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
-            <Button
-              color="transparent"
-              round
-              className={classes.navLink}
-            >
-               <Contacts />
-               Contact Us
-            </Button>
-          </Link>
-      </ListItem>
+        <ListItem className={classes.listItem}>
+            <Link to="/Contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+              <Button
+                color="transparent"
+                round
+                className={classes.navLink}
+              >
+                <Contacts />
+                Contact Us
+              </Button>
+            </Link>
+        </ListItem>
       
       {/*<ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">

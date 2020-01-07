@@ -5,6 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 // core components
 import styles from "./parallaxStyle.js";
@@ -22,6 +23,7 @@ export default function Parallax(props) {
     [classes.small]: small,
     [className]: className !== undefined
   });
+  
   return (
     <div
       className={parallaxClasses}
@@ -30,7 +32,9 @@ export default function Parallax(props) {
         backgroundImage: "url(" + image + ")"
       }}
     >
-      {children}
+      <div className={classes.imgText}>
+        {children}
+      </div>
     </div>
   );
 }

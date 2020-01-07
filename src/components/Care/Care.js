@@ -14,11 +14,14 @@ const useStyles = makeStyles(theme => ({
       borderRadius: "1em",
       border: "10px solid #12ba04",
       width: "40vw",
-      height: "30em"
+      height: "wrap"
     },
     textCard: {
-        padding: "5em",
+        padding: "2em",
         justify: "center"
+    },
+    title: {
+        marginTop: "2em"
     }
   }));
 
@@ -50,7 +53,7 @@ const Care = () => {
                 style={{padding: "2em", margin: "auto"}}>
                     <Grid item xs={12} md={6} lg={6} xl={6} align="center">
                         <Card className={classes.card}>
-                                <CardContent>
+                                <CardContent className={classes.title}>
                                    <Typography variant="h5">
                                         OSMO WASH & CARE CONCENTRATE
                                    </Typography>
@@ -70,7 +73,7 @@ const Care = () => {
                     </Grid>
                     <Grid item xs={12} md={6} lg={6} xl={6} align="center">
                         <Card className={classes.card}>
-                                <CardContent>
+                                <CardContent className={classes.title}>
                                     <Typography variant="h5">
                                         OSMO MAINTENANCE OIL
                                     </Typography>
