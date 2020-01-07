@@ -19,7 +19,7 @@ const FooterLink = (props) => {
 
     return (
 
-        const classes = useStyles();
+        
 
         <div>
             <ListItem className={classes.inlineBlock} style={{marginRight: "3px", borderBottom: "1px solid white"}}>
