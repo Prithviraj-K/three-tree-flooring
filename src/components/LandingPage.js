@@ -29,7 +29,7 @@ const LandingPage = (props) => {
                 logoC={logos.logoWhite}
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 550,
+                    height: 750,
                     color: "white"
                 }}
             />
