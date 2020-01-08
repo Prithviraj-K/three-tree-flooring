@@ -58,7 +58,6 @@ const cert = "100% FSC Certified";
 const logoBlack = require ('../../assets/img/logo-black-large.png');
 
 const HardwoodPage = () => {
-
     const listItems = listDetails.map((number)=> 
         <Grid item xs={12} md={6} lg={4} xl={3} align="center" style={{width: "100%", marginBottom: "3em"}}>
             <WoodCard

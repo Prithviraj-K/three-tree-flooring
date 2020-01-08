@@ -17,14 +17,9 @@ const footerStyle = theme => ({
     display: "block"
   },
   right: {
-    padding: "15px 0",
+    padding: "2em 2em",
     margin: "0",
-    [theme.breakpoints.up('992px')]: {
-      textAlign: 'right',
-    },
-    [theme.breakpoints.between('0px', '991px')]: {
-      textAlign: 'center',
-    }
+    textAlign: "right"
   },
   footer: {
     padding: "0.9375rem 0",

@@ -16,7 +16,6 @@ import Typography from '@material-ui/core/Typography';
 
 import ScrollUpButton from 'react-scroll-up-button';
 
-
 import styles from './retailerStyle';
 
 const useStyles = makeStyles(styles);

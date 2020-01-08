@@ -85,7 +85,7 @@ export default function HeaderLinks(props) {
                 className={classes.navLink}
               >
                 <Contacts />
-                Contact Us
+                  Contact Us
               </Button>
             </Link>
         </ListItem>
