@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/three-tree-flooring/precache-manifest.2f04b532ef9fab258335ea46a559fa40.js"
+  "/three-tree-flooring/precache-manifest.67dbcfc53decbb7bdbb2ef63472fee92.js"
 );
 
 self.addEventListener('message', (event) => {
