@@ -57,6 +57,7 @@ const cert = "100% FSC Certified";
 
 const logoBlack = require ('../../assets/img/logo-black-large.png');
 
+
 const HardwoodPage = () => {
     const listItems = listDetails.map((number)=> 
         <Grid item xs={12} md={6} lg={4} xl={3} align="center" style={{width: "100%", marginBottom: "3em"}}>
@@ -92,14 +93,14 @@ const HardwoodPage = () => {
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
                 <div style={{backgroundColor: "rgba(255,255,255,0.7)"}}>
                     <ScrollAnimation animateIn="slideInDown" animateOnce>
-                        <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
+                        <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
                             Collection
                         </Typography>
                         <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
                             Contact us for free samples
                         </Typography>
                     </ScrollAnimation>
-                    <Divider style={{margin: "auto", marginBottom: "2em", width: "30%", backgroundColor: "#000000"}}/>
+                    <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#000000"}}/>
                     <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                     <div>
                         <Grid container

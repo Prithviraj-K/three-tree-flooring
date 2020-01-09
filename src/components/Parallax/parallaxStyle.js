@@ -33,7 +33,7 @@ const parallaxStyle = {
   imgText: {
     color: "rgba(255,255,255,0.8)",
     marginLeft: "10vw",
-    marginTop: "60vh"
+    marginTop: "70vh"
   }
 };
 

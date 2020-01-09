@@ -3,7 +3,7 @@ const contactFormStyle = {
         width: "100%",
         marginTop: "2em",
         alignContent: "center",
-        height: "80vh"
+        marginBottom: "2em"
     },
     fieldText: {
         width: "90%",

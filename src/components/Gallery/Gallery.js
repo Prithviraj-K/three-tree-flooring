@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 import NextArrow from '@material-ui/icons/ArrowForwardIos';
 import PrevArrow from '@material-ui/icons/ArrowBackIos';
+import Divider from '@material-ui/core/Divider';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -34,7 +35,7 @@ export default function Gallery() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -47,16 +48,12 @@ export default function Gallery() {
       <Carousel {...settings}>
         <div>
           <Parallax image={require("../../assets/img/bg.jpg")}>
-            <Typography variant="h4">
-              Premium Finished Hardwood
-            </Typography>
+          
           </Parallax>
         </div>
         <div>
           <Parallax image={require("../../assets/img/bg2.jpg")}>
-            <Typography variant="h4">
-              Osmo Finished
-            </Typography>
+            
           </Parallax>
         </div>
         <div>

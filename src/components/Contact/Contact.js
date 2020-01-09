@@ -40,8 +40,8 @@ const Contact = () => {
                 color="white"
                 logoC={logoBlack}
             />
-            <div style={{width: "100%", height: "100%"}}>
-                <div style={{backgroundColor: "rgba(255,255,255,0.6)"}}>
+            <div style={{width: "100%"}}>
+                <div style={{backgroundColor: "rgba(255,255,255,0.8)"}}>
                     <ScrollAnimation animateIn="slideInDown" animateOnce>
                         <div>
                             <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
@@ -49,10 +49,10 @@ const Contact = () => {
                             </Typography>
                         </div>
                     </ScrollAnimation>
-                    <Divider style={{margin: "auto", marginBottom: "2em", width: "30%", backgroundColor: "#030303"}}/>
+                    <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
                     <div>
                         <Grid container justify="center" alignItems="center">
-                            <GridItem xs={12} s={12} lg={12} style={{height: "80vh", padding: "0"}}>
+                            <GridItem xs={12} s={12} lg={12} style={{height: "35em", padding: "0"}}>
                                 <ContactMap/>
                             </GridItem>
                             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>

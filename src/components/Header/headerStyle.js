@@ -97,7 +97,7 @@ import {
     },
     transparent: {
       backgroundColor: "transparent !important",
-      backdropFilter: "blur(10px)",
+      backdropFilter: "blur(7px)",
       boxShadow: "none",
       color: "#FFFFFF"
     },
@@ -107,7 +107,7 @@ import {
     },
     white: {
       color: "#000000",
-      backdropFilter: "blur(10px)",
+      backdropFilter: "blur(7px)",
       backgroundColor: "transparent !important",
       boxShadow: "none"
     },

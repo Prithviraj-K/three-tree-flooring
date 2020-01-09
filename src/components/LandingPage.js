@@ -41,16 +41,6 @@ const LandingPage = (props) => {
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
                 <Divider style={{marginTop: "2em"}}/>
-            </div>
-            <div>
-                <ScrollAnimation animateIn="fadeIn" animateOnce>
-                    <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
-                        <SectionPills/>
-                    </div>
-                </ScrollAnimation>
-            </div>
-            <div>
-                <Divider/>
                 <div>
                     <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce>
                         <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>
@@ -60,7 +50,13 @@ const LandingPage = (props) => {
                     </ScrollAnimation>
                     <Divider style={{marginTop: "2em"}}/>
                 </div>
-                
+            </div>
+            <div style={{marginBottom: "2em"}}>
+                <ScrollAnimation animateIn="fadeIn" animateOnce>
+                    <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
+                        <SectionPills/>
+                    </div>
+                </ScrollAnimation>
             </div>
             <Footer/>
         </div>
