@@ -12,7 +12,7 @@ const PaperRetailers = (props) => {
     const classes = useStyles();
     return(
         <div>
-            <Paper variant="outlined" className={classes.gridPaper} style={{marginBottom: "1.5em"}}>
+            <Paper elevation={3} variant="outlined" className={classes.gridPaper} style={{marginBottom: "1.5em"}}>
                 <Typography variant="body1" className={classes.retailTitle}>
                     <div style={{textDecoration: "underline"}}>
                         {props.label}
