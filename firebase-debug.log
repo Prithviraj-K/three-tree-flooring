@@ -1,0 +1,25 @@
+[debug] [2020-01-09T14:18:43.910Z] ----------------------------------------------------------------------
+[debug] [2020-01-09T14:18:43.912Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prith\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-01-09T14:18:43.913Z] CLI Version:   7.11.0
+[debug] [2020-01-09T14:18:43.913Z] Platform:      win32
+[debug] [2020-01-09T14:18:43.913Z] Node Version:  v13.5.0
+[debug] [2020-01-09T14:18:43.914Z] Time:          Thu Jan 09 2020 09:18:43 GMT-0500 (Eastern Standard Time)
+[debug] [2020-01-09T14:18:43.914Z] ----------------------------------------------------------------------
+[debug] [2020-01-09T14:18:43.914Z] 
+[debug] [2020-01-09T14:18:43.921Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-09T14:18:43.921Z] > authorizing via signed-in user
+[debug] [2020-01-09T14:18:43.922Z] [iam] checking project three-tree-flooring-5e85a for permissions ["firebase.projects.get"]
+[debug] [2020-01-09T14:18:43.923Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/three-tree-flooring-5e85a:testIamPermissions  
+
+[debug] [2020-01-09T14:18:44.245Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-09T14:18:44.246Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/three-tree-flooring-5e85a  
+ 
+[debug] [2020-01-09T14:18:44.463Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\prith\Desktop\3T\three-tree-flooring'...
+[info] 
+[debug] [2020-01-09T14:18:44.466Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/three-tree-flooring-5e85a/webApps/-/config  
+ 
+[debug] [2020-01-09T14:18:44.719Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000
