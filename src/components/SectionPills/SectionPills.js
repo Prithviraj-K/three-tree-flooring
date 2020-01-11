@@ -61,6 +61,7 @@ export default function SectionPills() {
                               color="primary"
                               round
                               href="https://osmo.ca/"
+                              target="_blank"
                             >
                               Visit Osmo®
                             </Button>
@@ -88,6 +89,7 @@ export default function SectionPills() {
                               color="primary"
                               round
                               href="https://ca.fsc.org/en-ca"
+                              target="_blank"
                             >
                               Visit FSC
                             </Button>

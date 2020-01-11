@@ -13,6 +13,11 @@ const retailerStyle = {
     },
     retailTitle: {
         fontWeight: "bold"
+    },
+    divide: {
+        width: "85%",
+        margin: "auto",
+        marginBottom: "1em"
     }
 };
 

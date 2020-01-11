@@ -50,7 +50,7 @@ const Retailers = () => {
                             <RetailMaps/>
                         </GridItem>
                         <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers 
                                 label="A"
                                 name="LV Hardwood Flooring"
@@ -59,7 +59,7 @@ const Retailers = () => {
                                 link="https://lvflooring.ca/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="B"
                                 name="Acadian Flooring Centre"
@@ -68,7 +68,7 @@ const Retailers = () => {
                                 link="http://www.acadianflooring.com/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="C"
                                 name="Greenvalley Flooring"
@@ -77,7 +77,7 @@ const Retailers = () => {
                                 link="http://www.greenvalleyflooring.ca/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers 
                                 label="D"
                                 name="Capital Hardwood Floors"
@@ -86,7 +86,7 @@ const Retailers = () => {
                                 link="http://www.capitalfloor.com/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers 
                                 label="E"
                                 name="Jonathon's Perron Floor Coverings"
@@ -95,7 +95,7 @@ const Retailers = () => {
                                 link="https://www.jonathonsperron.com/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="F"
                                 name="Exotic Woods Inc"
@@ -104,7 +104,7 @@ const Retailers = () => {
                                 link="https://exotic-woods.com/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="G"                     
                                 name="Flatout Flooring"
@@ -113,7 +113,7 @@ const Retailers = () => {
                                 link="https://flatoutflooring.ca/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="H"
                                 name="Emporium Carpet & Flooring"
@@ -122,7 +122,7 @@ const Retailers = () => {
                                 link="http://carpetemporium.ca/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="I"
                                 name="Fabbri Tile & Carpet Inc."
@@ -131,7 +131,7 @@ const Retailers = () => {
                                 link="https://www.fabbritileandcarpet.ca/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="J"
                                 name="FloorBank"
@@ -140,7 +140,7 @@ const Retailers = () => {
                                 link="http://floorbank.ca"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers
                                 label="K" 
                                 name="Bolton Carpet & Interiors"
@@ -149,7 +149,7 @@ const Retailers = () => {
                                 link="http://boltoncarpet.com/"
                             />
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <PaperRetailers 
                                 label="L"
                                 name="Roman’s Hardwood Floor & Stairs"
