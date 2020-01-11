@@ -14,9 +14,13 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
+import WoodCardZoom from './WoodCardZoom';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
+
+//Zoom images
+import boher from '../../assets/img/hardwood/zoom/boher-small.jpg';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -49,6 +53,9 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
+  },
+  zoom: {
+    alignContent: "center"
   }
 }));
 
@@ -98,6 +105,7 @@ export default function MediaCard(props) {
       >
         <Fade in={open}>
           <div style={{justifyContent: "center"}} className={classes.paper}>
+            <WoodCardZoom className={classes.zoom} srced={boher}/>
             <h3 style={{textAlign: "center"}}>{props.name} Specifications</h3>
             <div>
               <TableContainer>
