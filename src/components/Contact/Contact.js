@@ -33,7 +33,8 @@ const Contact = () => {
     const classes = useStyles();
 
     return (
-        <div style={{backgroundImage: `url(${backgroundImg})`}}>
+        <div>
+            {/*<div style={{backgroundImage: `url(${backgroundImg})`}}>*/}
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
@@ -78,7 +79,7 @@ const Contact = () => {
                             </GridItem>
                         </Grid>
                     </div>
-                    <ScrollAnimation animateIn="fadeInUp" animateOnce offset={50}>
+                    <ScrollAnimation animateIn="pulse" animateOnce offset={20}>
                         <Footer/>
                     </ScrollAnimation>
                 </div>

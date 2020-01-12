@@ -28,8 +28,10 @@ const Retailers = () => {
     const classes = useStyles();
 
     return (
-        <div style={{backgroundImage: `url(${backgroundImg})`}}>
-            <div style={{backgroundColor: "rgba(255,255,255,0.9)"}}>
+        <div>
+            <div>
+        {/*</div><div style={{backgroundImage: `url(${backgroundImg})`}}>
+            <div style={{backgroundColor: "rgba(255,255,255,0.9)"}}>*/}
                 <Header
                     rightLinks={<HeaderLinks />}
                     fixed
@@ -186,7 +188,7 @@ const Retailers = () => {
                         </GridItem>
                     </Grid>
                 </div>
-                <ScrollAnimation animateIn="fadeInUp" animateOnce offset={50}>
+                <ScrollAnimation animateIn="pulse" animateOnce offset={50}>
                     <Footer/>
                 </ScrollAnimation>
             </div>

@@ -58,7 +58,7 @@ const LandingPage = (props) => {
                     </div>
                 </ScrollAnimation>
             </div>
-            <ScrollAnimation animateIn="fadeInUp" animateOnce offset={50}>
+            <ScrollAnimation animateIn="pulse" animateOnce offset={50}>
                 <Footer/>
             </ScrollAnimation>
         </div>
