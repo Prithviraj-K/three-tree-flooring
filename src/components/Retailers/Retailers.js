@@ -52,7 +52,7 @@ const Retailers = () => {
                             </ScrollAnimation>
                         </GridItem>
                         <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers 
                                     label="A"
@@ -63,7 +63,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="B"
@@ -74,7 +74,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="C"
@@ -85,7 +85,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers 
                                     label="D"
@@ -96,7 +96,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers 
                                     label="E"
@@ -107,7 +107,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="F"
@@ -118,7 +118,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="G"                     
@@ -129,7 +129,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="H"
@@ -140,7 +140,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="I"
@@ -151,7 +151,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="J"
@@ -162,7 +162,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers
                                     label="K" 
@@ -173,7 +173,7 @@ const Retailers = () => {
                                 />
                             </ScrollAnimation>
                         </GridItem>
-                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.gridItem}>
+                        <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
                             <ScrollAnimation animateIn="fadeIn" animateOnce>
                                 <PaperRetailers 
                                     label="L"
