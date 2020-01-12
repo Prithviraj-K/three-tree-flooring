@@ -71,7 +71,7 @@ export default function MediaCard(props) {
 
   return (
     <div>
-      <ScrollAnimation animateIn="slideInUp" animateOnce offset={150}>
+      <ScrollAnimation animateIn="slideInUp" animateOnce>
         <Card className={classes.card}>
           <CardActionArea onClick={handleOpen}>
             <CardMedia style = {{ height: 250}}
