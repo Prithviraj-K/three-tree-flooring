@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import Divider from '@material-ui/core/Divider';
 
 import { makeStyles } from '@material-ui/core';
 import styles from './retailerStyle';
@@ -14,11 +15,12 @@ const PaperRetailers = (props) => {
         <div>
             <Paper elevation={3} variant="outlined" className={classes.gridPaper} style={{marginBottom: "1.5em"}}>
                 <Typography variant="body1" className={classes.retailTitle}>
-                    <div style={{textDecoration: "underline"}}>
+                    <div>
                         {props.label}
                     </div>
                     <div>
                         {props.name}
+                        <Divider className={classes.divide}/>
                     </div>
                 </Typography>
                 <Typography variant="body2" className={classes.location}>

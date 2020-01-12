@@ -19,9 +19,6 @@ import WoodCardZoom from './WoodCardZoom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
-//Zoom images
-import boher from '../../assets/img/hardwood/zoom/boher-small.jpg';
-
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 375,
@@ -74,11 +71,11 @@ export default function MediaCard(props) {
 
   return (
     <div>
-      <ScrollAnimation animateIn="slideInUp" animateOnce offset={150}>
+      <ScrollAnimation animateIn="slideInUp" animateOnce>
         <Card className={classes.card}>
           <CardActionArea onClick={handleOpen}>
             <CardMedia style = {{ height: 250}}
-              image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}.png`)} />
+              image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}-icon.jpg`)} />
             <CardContent style={{marginTop: "0", padding: "0.5em", backgroundColor: "#000000", color: "#FFF"}}>
               <Typography gutterBottom variant="h6">
                 {props.name}
@@ -105,7 +102,6 @@ export default function MediaCard(props) {
       >
         <Fade in={open}>
           <div style={{justifyContent: "center"}} className={classes.paper}>
-            <WoodCardZoom className={classes.zoom} srced={boher}/>
             <h3 style={{textAlign: "center"}}>{props.name} Specifications</h3>
             <div>
               <TableContainer>

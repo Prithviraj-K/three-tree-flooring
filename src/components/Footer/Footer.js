@@ -8,6 +8,7 @@ import classNames from "classnames";
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from '../CustomButtons/Button';
+import NewReleasesIcon from '@material-ui/icons/NewReleases';
 import "animate.css/animate.min.css";
 
 import styles from "./footerStyle.js";
@@ -78,6 +79,10 @@ export default function Footer(props) {
               Saturday - Sunday:
               <div>
                 Closed
+                <div>
+                  <NewReleasesIcon style={{justify: "center", marginRight: "0.5em"}}/>
+                  We are not open to the public. Please call for a meeting.
+                </div>
               </div>
             </div>
           </div>
