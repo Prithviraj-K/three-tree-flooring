@@ -6,8 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
-import Fade from '@material-ui/core/Fade';
+import FadeMaterial from '@material-ui/core/Fade';
 import Backdrop from '@material-ui/core/Backdrop';
+import Fade from 'react-reveal/Fade'
 
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -15,9 +16,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
 import WoodCardZoom from './WoodCardZoom';
-
-import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -71,7 +69,7 @@ export default function MediaCard(props) {
 
   return (
     <div>
-      <ScrollAnimation animateIn="slideInUp" animateOnce>
+      <Fade bottom>
         <Card className={classes.card}>
           <CardActionArea onClick={handleOpen}>
             <CardMedia style = {{ height: 250}}
@@ -86,7 +84,7 @@ export default function MediaCard(props) {
             </CardContent>
           </CardActionArea>
         </Card>
-      </ScrollAnimation>   
+      </Fade>   
       
       <Modal
         aria-labelledby="simple-modal-title"
@@ -100,7 +98,7 @@ export default function MediaCard(props) {
         }}
         className={classes.modalS}
       >
-        <Fade in={open}>
+        <FadeMaterial in={open}>
           <div style={{justifyContent: "center"}} className={classes.paper}>
             <h3 style={{textAlign: "center"}}>{props.name} Specifications</h3>
             <div>
@@ -164,7 +162,7 @@ export default function MediaCard(props) {
               </TableContainer>
             </div>
           </div>
-        </Fade>        
+        </FadeMaterial>        
       </Modal>
     </div>
      

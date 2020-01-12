@@ -6,8 +6,8 @@ import { Typography} from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
 import WoodCard from '../WoodCard/WoodCard';
 import Footer from '../Footer/Footer';
-import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 import ScrollUpButton from "react-scroll-up-button";
 
@@ -92,14 +92,14 @@ const HardwoodPage = () => {
             />
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
                 <div style={{backgroundColor: "rgba(255,255,255,0.7)"}}>
-                    <ScrollAnimation animateIn="slideInDown" animateOnce>
+                    <Fade top>
                         <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
                             Collection
                         </Typography>
                         <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
                             Contact us for free samples
                         </Typography>
-                    </ScrollAnimation>
+                    </Fade>
                     <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#000000"}}/>
                     <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                     <div>
@@ -111,9 +111,9 @@ const HardwoodPage = () => {
                             {listItems}                   
                         </Grid>
                         <Divider style={{marginTop: "2em"}}/>
-                        <ScrollAnimation animateIn="pulse" animateOnce offset={50}>
+                        <Pulse>
                             <Footer/>
-                        </ScrollAnimation>
+                        </Pulse>
                     </div>
                 </div>
             </div>

@@ -9,14 +9,15 @@ import ContactDetails from './ContactDetails';
 
 //Styles
 import { makeStyles } from '@material-ui/core';
-import "animate.css/animate.min.css";
 import Footer from '../Footer/Footer';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Typography from '@material-ui/core/Typography';
 import ContactMap from './ContactMap';
 import ContactForm from './ContactForm';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+import Pulse from 'react-reveal/Pulse';
 
 import ScrollUpButton from 'react-scroll-up-button';
 
@@ -43,45 +44,45 @@ const Contact = () => {
             />
             <div style={{width: "100%"}}>
                 <div style={{backgroundColor: "rgba(255,255,255,0.8)"}}>
-                    <ScrollAnimation animateIn="slideInDown" animateOnce>
+                    <Fade top>
                         <div>
                             <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
                                 Contact Us
                             </Typography>
                         </div>
-                    </ScrollAnimation>
+                    </Fade>
                     <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
                     <div>
                         <Grid container justify="center" alignItems="center">
                             <GridItem xs={12} s={12} lg={12} style={{height: "35em", padding: "0"}}>
-                                <ScrollAnimation animateIn="fadeIn" animateOnce delay={250}>
+                                <Fade bottom>
                                     <ContactMap/>
-                                </ScrollAnimation>
+                                </Fade>
                             </GridItem>
                             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                             <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
-                                <ScrollAnimation animateIn="slideInLeft" animateOnce>
+                                <Slide left>
                                     <Card className={classes.cardForm}>
                                         <CardContent>
                                             <ContactForm/>
                                         </CardContent>
                                     </Card>
-                                </ScrollAnimation>
+                                </Slide>
                             </GridItem>
                             <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
-                                <ScrollAnimation animateIn="slideInRight" animateOnce>
+                                <Slide right>
                                     <Card className={classes.cardForm}>
                                         <CardContent>
                                             <ContactDetails/>
                                         </CardContent>
                                     </Card>
-                                </ScrollAnimation>
+                                </Slide>
                             </GridItem>
                         </Grid>
                     </div>
-                    <ScrollAnimation animateIn="pulse" animateOnce offset={20}>
+                    <Pulse>
                         <Footer/>
-                    </ScrollAnimation>
+                    </Pulse>
                 </div>
             </div>
         </div>

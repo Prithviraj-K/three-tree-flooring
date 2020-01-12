@@ -20,8 +20,6 @@ import Contacts from '@material-ui/icons/Contacts';
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button.js";
-import ScrollAnimation from 'react-animate-on-scroll';
-
 
 import styles from "./headerLinksStyle.js";
 

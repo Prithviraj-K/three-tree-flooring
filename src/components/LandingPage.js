@@ -6,14 +6,13 @@ import SectionPills from './SectionPills/SectionPills';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
-import ScrollAnimation from 'react-animate-on-scroll';
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
+
 import ScrollUpButton from 'react-scroll-up-button';
 //Material
 import Typography from '@material-ui/core/Typography/Typography';
 import Divider from '@material-ui/core/Divider';
-
-//Styles
-import "animate.css/animate.min.css";
 
 const logoWhite = require ('../assets/img/logo-white.png');
 const logoBlack = require ('../assets/img/logo-black-large.png');
@@ -33,34 +32,34 @@ const LandingPage = (props) => {
                     color: "white"
                 }}
             />
-            <ScrollAnimation animateIn="fadeInDown" animateOnce>
+            <Fade top>
                 <div style={{margin: '0', marginBottom: "2em"}}>
                     <Gallery/>
                 </div>
-            </ScrollAnimation>
+            </Fade>
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
                 <Divider style={{marginTop: "2em"}}/>
                 <div>
-                    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" animateOnce>
+                    <Fade bottom>
                         <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>
                             Inspired by the company’s European roots we provide engineered hardwood flooring 
                             encompassed with European quality, design and innovation with a Canadian touch.
                         </Typography>
-                    </ScrollAnimation>
+                    </Fade>
                     <Divider style={{marginTop: "2em"}}/>
                 </div>
             </div>
             <div style={{marginBottom: "2em"}}>
-                <ScrollAnimation animateIn="fadeIn" animateOnce>
+                <Fade bottom>
                     <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
                         <SectionPills/>
                     </div>
-                </ScrollAnimation>
+                </Fade>
             </div>
-            <ScrollAnimation animateIn="pulse" animateOnce offset={50}>
+            <Pulse>
                 <Footer/>
-            </ScrollAnimation>
+            </Pulse>
         </div>
     );
 }

@@ -9,14 +9,14 @@ import PaperRetailers from './PaperRetailers';
 import RetailMaps from './RetailMaps';
 //Styles
 import { makeStyles } from '@material-ui/core';
-import "animate.css/animate.min.css";
 import Footer from '../Footer/Footer';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Typography from '@material-ui/core/Typography';
 
 import ScrollUpButton from 'react-scroll-up-button';
 import backgroundImg from '../../assets/img/collection-bg.jpg';
 
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 import styles from './retailerStyle';
 
 const useStyles = makeStyles(styles);
@@ -38,24 +38,22 @@ const Retailers = () => {
                     color="white"
                     logoC={logoBlack}
                 />
-                <ScrollAnimation animateIn="slideInDown" animateOnce>
+                <Fade top>
                     <div>
                         <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
                             Retailers
                         </Typography>
                     </div>
-                </ScrollAnimation>
+                </Fade>
                 <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
                 <div>
                     <Grid container justify="center" alignItems="center">
                         <GridItem xs={12} s={12} lg={12} style={{height: "35em", margin: "0", padding: "0"}}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce delay={250}>
-                                <RetailMaps/>
-                            </ScrollAnimation>
+                            <RetailMaps/>
                         </GridItem>
                         <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers 
                                     label="A"
                                     name="LV Hardwood Flooring"
@@ -63,10 +61,10 @@ const Retailers = () => {
                                     phone="(647)728-1111"
                                     link="https://lvflooring.ca/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="B"
                                     name="Acadian Flooring Centre"
@@ -74,10 +72,10 @@ const Retailers = () => {
                                     phone="(905)294-9575"
                                     link="http://www.acadianflooring.com/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="C"
                                     name="Greenvalley Flooring"
@@ -85,10 +83,10 @@ const Retailers = () => {
                                     phone="(905)761-1537"
                                     link="http://www.greenvalleyflooring.ca/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers 
                                     label="D"
                                     name="Capital Hardwood Floors"
@@ -96,10 +94,10 @@ const Retailers = () => {
                                     phone="(416)536-2200"
                                     link="http://www.capitalfloor.com/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers 
                                     label="E"
                                     name="Jonathon's Perron Floor Coverings"
@@ -107,10 +105,10 @@ const Retailers = () => {
                                     phone="(905)575-3131"
                                     link="https://www.jonathonsperron.com/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="F"
                                     name="Exotic Woods Inc"
@@ -118,10 +116,10 @@ const Retailers = () => {
                                     phone="(905)335-8066"
                                     link="https://exotic-woods.com/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="G"                     
                                     name="Flatout Flooring"
@@ -129,10 +127,10 @@ const Retailers = () => {
                                     phone="(519)681-7771"
                                     link="https://flatoutflooring.ca/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="H"
                                     name="Emporium Carpet & Flooring"
@@ -140,10 +138,10 @@ const Retailers = () => {
                                     phone="(905)682-0107"
                                     link="http://carpetemporium.ca/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="I"
                                     name="Fabbri Tile & Carpet Inc."
@@ -151,10 +149,10 @@ const Retailers = () => {
                                     phone="(226) 778-4601"
                                     link="https://www.fabbritileandcarpet.ca/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="J"
                                     name="FloorBank"
@@ -162,10 +160,10 @@ const Retailers = () => {
                                     phone="(888)302-5537"
                                     link="http://floorbank.ca"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers
                                     label="K" 
                                     name="Bolton Carpet & Interiors"
@@ -173,10 +171,10 @@ const Retailers = () => {
                                     phone="(905) 951-3588"
                                     link="http://boltoncarpet.com/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                         <GridItem xs={12} s={12} md={6} lg={4} className={classes.gridItem}>
-                            <ScrollAnimation animateIn="fadeIn" animateOnce>
+                            <Fade bottom>
                                 <PaperRetailers 
                                     label="L"
                                     name="Roman’s Hardwood Floor & Stairs"
@@ -184,13 +182,13 @@ const Retailers = () => {
                                     phone="(905)830-4111"
                                     link="http://www.romanshardwood.ca/"
                                 />
-                            </ScrollAnimation>
+                            </Fade>
                         </GridItem>
                     </Grid>
                 </div>
-                <ScrollAnimation animateIn="pulse" animateOnce offset={50}>
+                <Pulse>
                     <Footer/>
-                </ScrollAnimation>
+                </Pulse>
             </div>
         </div>
     );

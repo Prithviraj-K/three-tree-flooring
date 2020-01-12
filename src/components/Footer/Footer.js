@@ -9,7 +9,6 @@ import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from '../CustomButtons/Button';
 import NewReleasesIcon from '@material-ui/icons/NewReleases';
-import "animate.css/animate.min.css";
 
 import styles from "./footerStyle.js";
 
