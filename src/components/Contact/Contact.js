@@ -53,28 +53,36 @@ const Contact = () => {
                     <div>
                         <Grid container justify="center" alignItems="center">
                             <GridItem xs={12} s={12} lg={12} style={{height: "35em", padding: "0"}}>
-                                <ContactMap/>
+                                <ScrollAnimation animateIn="fadeIn" animateOnce delay={250}>
+                                    <ContactMap/>
+                                </ScrollAnimation>
                             </GridItem>
                             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                             <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
-                                <Card className={classes.cardForm}>
-                                    <CardContent>
-                                        <ContactForm/>
-                                    </CardContent>
-                                </Card>
+                                <ScrollAnimation animateIn="slideInLeft" animateOnce>
+                                    <Card className={classes.cardForm}>
+                                        <CardContent>
+                                            <ContactForm/>
+                                        </CardContent>
+                                    </Card>
+                                </ScrollAnimation>
                             </GridItem>
                             <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
-                                <Card className={classes.cardForm}>
-                                    <CardContent>
-                                        <ContactDetails/>
-                                    </CardContent>
-                                </Card>
+                                <ScrollAnimation animateIn="slideInRight" animateOnce>
+                                    <Card className={classes.cardForm}>
+                                        <CardContent>
+                                            <ContactDetails/>
+                                        </CardContent>
+                                    </Card>
+                                </ScrollAnimation>
                             </GridItem>
                         </Grid>
                     </div>
+                    <ScrollAnimation animateIn="fadeInUp" animateOnce offset={50}>
+                        <Footer/>
+                    </ScrollAnimation>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

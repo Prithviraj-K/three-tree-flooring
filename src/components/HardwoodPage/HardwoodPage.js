@@ -111,7 +111,9 @@ const HardwoodPage = () => {
                             {listItems}                   
                         </Grid>
                         <Divider style={{marginTop: "2em"}}/>
-                        <Footer/>
+                        <ScrollAnimation animateIn="fadeInUp" animateOnce offset={50}>
+                            <Footer/>
+                        </ScrollAnimation>
                     </div>
                 </div>
             </div>
