@@ -186,9 +186,7 @@ const Retailers = () => {
                         </GridItem>
                     </Grid>
                 </div>
-                <Pulse>
-                    <Footer/>
-                </Pulse>
+                <Footer/>
             </div>
         </div>
     );

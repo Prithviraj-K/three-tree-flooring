@@ -111,9 +111,7 @@ const HardwoodPage = () => {
                             {listItems}                   
                         </Grid>
                         <Divider style={{marginTop: "2em"}}/>
-                        <Pulse>
-                            <Footer/>
-                        </Pulse>
+                        <Footer/>
                     </div>
                 </div>
             </div>

@@ -57,9 +57,7 @@ const LandingPage = (props) => {
                     </div>
                 </Fade>
             </div>
-            <Pulse>
-                <Footer/>
-            </Pulse>
+            <Footer/>
         </div>
     );
 }

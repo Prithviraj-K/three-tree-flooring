@@ -80,9 +80,7 @@ const Contact = () => {
                             </GridItem>
                         </Grid>
                     </div>
-                    <Pulse>
-                        <Footer/>
-                    </Pulse>
+                    <Footer/>
                 </div>
             </div>
         </div>
