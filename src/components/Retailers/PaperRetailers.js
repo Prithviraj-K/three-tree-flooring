@@ -6,6 +6,7 @@ import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core';
 import styles from './retailerStyle';
 import PhoneIcon from '@material-ui/icons/Phone';
+import WebIcon from '@material-ui/icons/Web';
 
 const useStyles = makeStyles(styles);
 
@@ -13,9 +14,10 @@ const PaperRetailers = (props) => {
     const classes = useStyles();
     return(
         <div>
-            <Paper elevation={3} variant="outlined" className={classes.gridPaper} style={{marginBottom: "1.5em"}}>
+            <Paper elevation={3} variant="outlined" className={classes.gridPaper}>
                 <Typography variant="body1" className={classes.retailTitle}>
                     <div>
+                        <WebIcon style={{float: "left"}}/>
                         {props.label}
                     </div>
                     <div>
@@ -26,7 +28,7 @@ const PaperRetailers = (props) => {
                 <Typography variant="body2" className={classes.location}>
                     {props.address}
                     <div>
-                        <PhoneIcon style={{marginRight: "0.5em"}}/>
+                        <PhoneIcon style={{float: "left", marginRight: "0.5em", marginTop: "0.5em"}}/>
                         {props.phone}
                     </div>
                     <div>
