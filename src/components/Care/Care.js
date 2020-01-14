@@ -11,16 +11,21 @@ import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles(theme => ({
     card: {
-      borderRadius: "1em",
       width: "40vw",
       height: "wrap"
     },
     textCard: {
-        padding: "2em",
+        padding: "1em",
         justify: "center"
     },
     title: {
         marginTop: "2em"
+    },
+    '@media (max-width: 1279px)': {
+        card: {
+            width: "100vw"
+        },
+        
     }
   }));
 
@@ -49,8 +54,8 @@ const Care = () => {
                 spacing={1}
                 alignItems="center"
                 justify="center"
-                style={{padding: "2em", margin: "auto"}}>
-                    <Grid item xs={12} md={6} lg={6} xl={6} align="center">
+                >
+                    <Grid item xs={12} md={12} lg={6} xl={6} align="center">
                         <Card className={classes.card}>
                                 <CardContent className={classes.title}>
                                    <Typography variant="h5">
@@ -70,7 +75,7 @@ const Care = () => {
                                 </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={6} xl={6} align="center">
+                    <Grid item xs={12} md={12} lg={6} xl={6} align="center">
                         <Card className={classes.card}>
                                 <CardContent className={classes.title}>
                                     <Typography variant="h5">

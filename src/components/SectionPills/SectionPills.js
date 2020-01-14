@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -107,12 +108,14 @@ export default function SectionPills() {
                           properly. The key to successfully keep your flooring in the best shape is to ensure care and
                           maintenance is carried throughout the life of the hardwood. The process begins at Three Tree.
                           <div style={{padding: "0",marginTop: "1em",marginBottom: "0", textAlign: "center"}}>
-                            <Button
-                              color="primary"
-                              round
-                            >
-                              More Maintenance Information
-                            </Button>
+                            <Link to="/Care" style={{textDecoration: "none"}}>
+                              <Button
+                                color="primary"
+                                round
+                              >
+                                More Maintenance Information
+                              </Button>
+                            </Link>                            
                           </div>
                         </p>
                         <br/>

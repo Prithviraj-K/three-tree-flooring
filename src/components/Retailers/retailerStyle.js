@@ -24,10 +24,10 @@ const retailerStyle = {
         marginBottom: "1em"
     },
     mapGrid: {
-        height: "90vh"
+        height: "70vh"
     },
     allRetailDiv: {
-        height: "90vh", 
+        height: "70vh", 
         overflowY: "scroll",
     },
     addressText: {

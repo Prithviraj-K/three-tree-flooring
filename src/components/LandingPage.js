@@ -51,11 +51,9 @@ const LandingPage = (props) => {
                 </div>
             </div>
             <div style={{marginBottom: "2em"}}>
-                <Fade bottom>
-                    <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
-                        <SectionPills/>
-                    </div>
-                </Fade>
+                <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
+                    <SectionPills/>
+                </div>
             </div>
             <Footer/>
         </div>

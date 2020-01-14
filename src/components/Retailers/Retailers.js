@@ -46,7 +46,7 @@ const Retailers = () => {
             <div>
                 <Grid container justify="center" alignItems="center" style={{marginTop: "2em", marginBottom: "2em"}}>
                     <GridItem xs={12} s={12} md={12} lg={6} className={classes.mapGrid}>
-                        <RetailMaps className={classes.mapStyle}/>
+                        <RetailMaps/>
                     </GridItem>
                     <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
                     <GridItem xs={12} s={12} md={12} lg={6}>

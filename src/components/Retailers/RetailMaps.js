@@ -10,9 +10,9 @@ const RetailMaps = (props) => {
         <div>
             <Map
                 google={props.google}
-                zoom={8}
+                zoom={7}
                 style={mapStyles}
-                initialCenter={{ lat: 43.534484, lng: -80.390667}}
+                initialCenter={{ lat: 43.534484, lng: -80.690667}}
             >
                 <Marker label="A" position={{ lat: 43.783005, lng: -79.470868}} />
                 <Marker label="B" position={{ lat: 43.876039, lng: -79.278148}} />

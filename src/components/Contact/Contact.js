@@ -51,7 +51,7 @@ const Contact = () => {
                 </Fade>
                 <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
                 <div>
-                    <Grid container justify="center" alignItems="center">
+                    <Grid container justify="center" alignItems="center" style={{marginBottom: "2em"}}>
                         <GridItem xs={12} s={12} lg={12} style={{height: "35em", padding: "0"}}>
                             <Fade bottom>
                                 <ContactMap/>

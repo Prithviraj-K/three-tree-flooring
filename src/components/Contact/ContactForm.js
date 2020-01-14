@@ -12,7 +12,7 @@ const ContactForm = () => {
     const classes = useStyles(useStyles);
 
     return (
-        <div style={{alignItems: "center"}}>
+        <div>
             <form>
                 <Typography variant="h5" style={{textAlign: "center"}}>
                     Contact us via e-mail
@@ -27,7 +27,7 @@ const ContactForm = () => {
                     variant="outlined"
                     className={classes.fieldText}
                 />                
-                <Button className={classes.fieldText}>Submit</Button>
+                <Button disabled className={classes.fieldButton}>Submit</Button>
             </form>
         </div>
     );

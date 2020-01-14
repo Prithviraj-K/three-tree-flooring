@@ -14,28 +14,26 @@ const PaperRetailers = (props) => {
     const classes = useStyles();
     return(
         <div>
-            <Paper elevation={3} variant="outlined" className={classes.gridPaper}>
-                <Typography variant="body1" className={classes.retailTitle}>
-                    <div>
-                        <WebIcon style={{float: "left"}}/>
-                        {props.label}
-                    </div>
-                    <div>
-                        {props.name}
-                        <Divider className={classes.divide}/>
-                    </div>
-                </Typography>
-                <Typography variant="body2" className={classes.location}>
-                    {props.address}
-                    <div>
-                        <PhoneIcon style={{float: "left", marginRight: "0.5em", marginTop: "0.5em"}}/>
-                        {props.phone}
-                    </div>
-                    <div>
-                        {props.link}
-                    </div>
-                </Typography>
-            </Paper>
+            <a href={props.link} target="_blank" style={{textDecoration: "none"}}>
+                <Paper elevation={3} variant="outlined" className={classes.gridPaper}>
+                    <Typography variant="body1" className={classes.retailTitle}>
+                        <div>
+                            <WebIcon style={{float: "left"}}/>
+                            {props.label}
+                        </div>
+                        <div>
+                            {props.name}
+                            <Divider className={classes.divide}/>
+                        </div>
+                    </Typography>
+                    <Typography variant="body2" className={classes.location}>
+                        {props.address}
+                        <div>
+                            {props.phone}
+                        </div>
+                    </Typography>
+                </Paper>
+            </a>
         </div>
     );
 }
