@@ -3,11 +3,9 @@ import React from "react";
 import Carousel from "react-slick";
 // core components
 import Parallax from '../Parallax/Parallax';
-import Typography from '@material-ui/core/Typography';
 
 import NextArrow from '@material-ui/icons/ArrowForwardIos';
 import PrevArrow from '@material-ui/icons/ArrowBackIos';
-import Divider from '@material-ui/core/Divider';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

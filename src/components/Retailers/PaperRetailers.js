@@ -5,7 +5,6 @@ import Divider from '@material-ui/core/Divider';
 
 import { makeStyles } from '@material-ui/core';
 import styles from './retailerStyle';
-import PhoneIcon from '@material-ui/icons/Phone';
 import WebIcon from '@material-ui/icons/Web';
 
 const useStyles = makeStyles(styles);

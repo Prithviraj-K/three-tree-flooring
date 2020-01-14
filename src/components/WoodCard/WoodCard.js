@@ -15,7 +15,6 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
-import WoodCardZoom from './WoodCardZoom';
 
 const useStyles = makeStyles(theme => ({
   card: {

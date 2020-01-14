@@ -7,7 +7,6 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
 import Fade from 'react-reveal/Fade';
-import Pulse from 'react-reveal/Pulse';
 
 import ScrollUpButton from 'react-scroll-up-button';
 //Material
@@ -32,9 +31,11 @@ const LandingPage = (props) => {
                     color: "white"
                 }}
             />
+            <Fade top>
                 <div style={{margin: '0', marginBottom: "2em"}}>
                     <Gallery/>
                 </div>
+            </Fade>
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
                 <Divider style={{marginTop: "2em"}}/>

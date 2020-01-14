@@ -7,7 +7,6 @@ import Divider from '@material-ui/core/Divider';
 import WoodCard from '../WoodCard/WoodCard';
 import Footer from '../Footer/Footer';
 import Fade from 'react-reveal/Fade';
-import Pulse from 'react-reveal/Pulse';
 
 import ScrollUpButton from "react-scroll-up-button";
 

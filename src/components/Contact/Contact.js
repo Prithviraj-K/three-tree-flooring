@@ -17,7 +17,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-import Pulse from 'react-reveal/Pulse';
 
 import ScrollUpButton from 'react-scroll-up-button';
 

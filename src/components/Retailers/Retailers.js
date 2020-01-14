@@ -16,7 +16,6 @@ import ScrollUpButton from 'react-scroll-up-button';
 import backgroundImg from '../../assets/img/collection-bg.jpg';
 
 import Fade from 'react-reveal/Fade';
-import Pulse from 'react-reveal/Pulse';
 import styles from './retailerStyle';
 
 const useStyles = makeStyles(styles);
