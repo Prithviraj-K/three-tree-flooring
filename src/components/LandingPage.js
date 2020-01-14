@@ -32,7 +32,7 @@ const LandingPage = (props) => {
                 }}
             />
             <Fade top>
-                <div style={{margin: '0', marginBottom: "2em"}}>
+                <div style={{height: "90vh"}}>
                     <Gallery/>
                 </div>
             </Fade>
