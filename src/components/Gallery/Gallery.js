@@ -46,7 +46,7 @@ export default function Gallery() {
       <Carousel {...settings}>
         <div>
           <Parallax image={require("../../assets/img/bg.jpg")}>
-          
+
           </Parallax>
         </div>
         <div>

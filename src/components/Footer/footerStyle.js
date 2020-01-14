@@ -17,7 +17,8 @@ const footerStyle = theme => ({
     display: "block"
   },
   right: {
-    padding: "2em 2em",
+    paddingLeft: "2em ",
+    paddingRight: "2em",
     margin: "0",
     textAlign: "right"
   },
@@ -55,6 +56,17 @@ const footerStyle = theme => ({
     height: "18px",
     position: "relative",
     top: "3px"
+  },
+  '@media (max-width: 1300px)': {
+    right: {
+      textAlign: "center",
+      paddingTop: "5em"
+    }
+  },
+  '@media (max-width: 770px)': {
+    right: {
+      paddingTop: "10em"
+    }
   }
 });
 export default footerStyle;
