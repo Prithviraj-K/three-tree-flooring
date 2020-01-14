@@ -12,7 +12,6 @@ import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles(theme => ({
     card: {
       borderRadius: "1em",
-      border: "10px solid #12ba04",
       width: "40vw",
       height: "wrap"
     },

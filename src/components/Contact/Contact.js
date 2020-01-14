@@ -34,8 +34,7 @@ const Contact = () => {
     const classes = useStyles();
 
     return (
-        <div>
-            {/*<div style={{backgroundImage: `url(${backgroundImg})`}}>*/}
+        <div style={{backgroundImage: `url(${backgroundImg})`}}>
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
@@ -43,45 +42,43 @@ const Contact = () => {
                 logoC={logoBlack}
             />
             <div style={{width: "100%"}}>
-                <div style={{backgroundColor: "rgba(255,255,255,0.8)"}}>
-                    <Fade top>
-                        <div>
-                            <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
-                                Contact Us
-                            </Typography>
-                        </div>
-                    </Fade>
-                    <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
+                <Fade top>
                     <div>
-                        <Grid container justify="center" alignItems="center">
-                            <GridItem xs={12} s={12} lg={12} style={{height: "35em", padding: "0"}}>
-                                <Fade bottom>
-                                    <ContactMap/>
-                                </Fade>
-                            </GridItem>
-                            <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
-                            <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
-                                <Slide left>
-                                    <Card className={classes.cardForm}>
-                                        <CardContent>
-                                            <ContactForm/>
-                                        </CardContent>
-                                    </Card>
-                                </Slide>
-                            </GridItem>
-                            <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
-                                <Slide right>
-                                    <Card className={classes.cardForm}>
-                                        <CardContent>
-                                            <ContactDetails/>
-                                        </CardContent>
-                                    </Card>
-                                </Slide>
-                            </GridItem>
-                        </Grid>
+                        <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
+                            Contact Us
+                        </Typography>
                     </div>
-                    <Footer/>
+                </Fade>
+                <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
+                <div>
+                    <Grid container justify="center" alignItems="center">
+                        <GridItem xs={12} s={12} lg={12} style={{height: "35em", padding: "0"}}>
+                            <Fade bottom>
+                                <ContactMap/>
+                            </Fade>
+                        </GridItem>
+                        <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
+                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
+                            <Slide left>
+                                <Card className={classes.cardForm}>
+                                    <CardContent>
+                                        <ContactForm/>
+                                    </CardContent>
+                                </Card>
+                            </Slide>
+                        </GridItem>
+                        <GridItem xs={12} s={12} m={6} lg={6} className={classes.formField}>
+                            <Slide right>
+                                <Card className={classes.cardForm}>
+                                    <CardContent>
+                                        <ContactDetails/>
+                                    </CardContent>
+                                </Card>
+                            </Slide>
+                        </GridItem>
+                    </Grid>
                 </div>
+                <Footer/>
             </div>
         </div>
     );

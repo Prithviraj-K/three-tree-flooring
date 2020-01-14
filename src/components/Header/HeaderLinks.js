@@ -53,7 +53,7 @@ export default function HeaderLinks(props) {
             buttonIcon={MenuBookIcon}
             dropdownList={[
               <Link to="/Hardwood" className={classes.dropdownLink}>
-                Hardwood
+                Engineered White Oak Hardwood
               </Link>,
               <Link to="/Care" className={classes.dropdownLink}>
                 Care & Maintenance

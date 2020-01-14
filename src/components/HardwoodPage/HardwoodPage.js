@@ -91,28 +91,26 @@ const HardwoodPage = () => {
                 color="white"
             />
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
-                <div style={{backgroundColor: "rgba(255,255,255,0.7)"}}>
-                    <Fade top>
-                        <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
-                            Collection
-                        </Typography>
-                        <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
-                            Contact us for free samples
-                        </Typography>
-                    </Fade>
-                    <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#000000"}}/>
-                    <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
-                    <div>
-                        <Grid container
-                        spacing={1}
-                        alignItems="center"
-                        justify="center"
-                        style={{margin: "auto", marginTop: "2em", width: "95%"}}>
-                            {listItems}                   
-                        </Grid>
-                        <Divider style={{marginTop: "2em"}}/>
-                        <Footer/>
-                    </div>
+                <Fade top>
+                    <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
+                        Collection
+                    </Typography>
+                    <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
+                        Contact us for free samples
+                    </Typography>
+                </Fade>
+                <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#000000"}}/>
+                <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
+                <div>
+                    <Grid container
+                    spacing={1}
+                    alignItems="center"
+                    justify="center"
+                    style={{margin: "auto", marginTop: "2em", width: "95%"}}>
+                        {listItems}                   
+                    </Grid>
+                    <Divider style={{marginTop: "2em"}}/>
+                    <Footer/>
                 </div>
             </div>
         </div>  

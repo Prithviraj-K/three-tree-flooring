@@ -28,178 +28,174 @@ const Retailers = () => {
     const classes = useStyles();
 
     return (
-        <div>
-            <div>
-        {/*</div><div style={{backgroundImage: `url(${backgroundImg})`}}>
-            <div style={{backgroundColor: "rgba(255,255,255,0.9)"}}>*/}
-                <Header
-                    rightLinks={<HeaderLinks />}
-                    fixed
-                    color="white"
-                    logoC={logoBlack}
-                />
-                <Fade top>
-                    <div>
-                        <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
-                            Retailers
-                        </Typography>
-                    </div>
-                </Fade>
-                <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
+        <div style={{backgroundImage: `url(${backgroundImg})`, overflow: "hidden"}}>
+            <Header
+                rightLinks={<HeaderLinks />}
+                fixed
+                color="white"
+                logoC={logoBlack}
+            />
+            <Fade top>
                 <div>
-                    <Grid container justify="center" alignItems="center" style={{marginTop: "2em", marginBottom: "2em"}}>
-                        <GridItem xs={12} s={12} md={12} lg={6} className={classes.mapGrid}>
-                            <RetailMaps/>
-                        </GridItem>
-                        <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
-                        <GridItem xs={12} s={12} md={12} lg={6}>
-                            <div className={classes.allRetailDiv}>
-                                <Grid container justify="center" alignItems='center'>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers 
-                                                label="A"
-                                                name="LV Hardwood Flooring"
-                                                address="5050 Dufferin St #101, North York, ON M3H 5T5"
-                                                phone="(647)728-1111"
-                                                link="https://lvflooring.ca/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="B"
-                                                name="Acadian Flooring Centre"
-                                                address="162 Bullock Dr #14, Markham, ON L3P 1W2"
-                                                phone="(905)294-9575"
-                                                link="http://www.acadianflooring.com/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="C"
-                                                name="Greenvalley Flooring"
-                                                address="8820 Jane St, Concord, ON L4K 2M9"
-                                                phone="(905)761-1537"
-                                                link="http://www.greenvalleyflooring.ca/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers 
-                                                label="D"
-                                                name="Capital Hardwood Floors"
-                                                address="1015 Dupont St, Toronto, ON M6H 1Z7"
-                                                phone="(416)536-2200"
-                                                link="http://www.capitalfloor.com/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers 
-                                                label="E"
-                                                name="Jonathon's Perron Floor Coverings"
-                                                address="230 Anchor Rd, Hamilton, ON L8W 3R2"
-                                                phone="(905)575-3131"
-                                                link="https://www.jonathonsperron.com/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="F"
-                                                name="Exotic Woods Inc"
-                                                address="5229 Harvester Rd, Burlington, ON L7L 5L4"
-                                                phone="(905)335-8066"
-                                                link="https://exotic-woods.com/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="G"                     
-                                                name="Flatout Flooring"
-                                                address="3537 White Oak Rd, London, ON N6E 3A1"
-                                                phone="(519)681-7771"
-                                                link="https://flatoutflooring.ca/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="H"
-                                                name="Emporium Carpet & Flooring"
-                                                address="494 Eastchester Ave E, St. Catharines, ON L2M 6S3"
-                                                phone="(905)682-0107"
-                                                link="http://carpetemporium.ca/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="I"
-                                                name="Fabbri Tile & Carpet Inc."
-                                                address="520 Helena St, Point Edward, ON N7V 1R9"
-                                                phone="(226) 778-4601"
-                                                link="https://www.fabbritileandcarpet.ca/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="J"
-                                                name="FloorBank"
-                                                address="1020 Brock Road, Unit #4 Pickering, ON L1W 3H2"
-                                                phone="(888)302-5537"
-                                                link="http://floorbank.ca"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers
-                                                label="K" 
-                                                name="Bolton Carpet & Interiors"
-                                                address="12388 Hwy 50, Bolton, ON L7E 1M7"
-                                                phone="(905) 951-3588"
-                                                link="http://boltoncarpet.com/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                    <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
-                                        <Fade bottom>
-                                            <PaperRetailers 
-                                                label="L"
-                                                name="Roman’s Hardwood Floor & Stairs"
-                                                address="16995 Yonge Street Newmarket, Ontario"
-                                                phone="(905)830-4111"
-                                                link="http://www.romanshardwood.ca/"
-                                            />
-                                        </Fade>
-                                    </GridItem>
-                                </Grid>
-                            </div>
-                        </GridItem>                                                
-                    </Grid>
-                    <Divider/>
-                    <Fade bottom>
-                        <Typography variant="h4" className={classes.addressText}>
-                            Interested in becoming a retailer? Contact info@threetreesflooring.ca.
-                        </Typography>
-                    </Fade>
+                    <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
+                        Retailers
+                    </Typography>
                 </div>
-                <Footer/>
+            </Fade>
+            <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#030303"}}/>
+            <div>
+                <Grid container justify="center" alignItems="center" style={{marginTop: "2em", marginBottom: "2em"}}>
+                    <GridItem xs={12} s={12} md={12} lg={6} className={classes.mapGrid}>
+                        <RetailMaps className={classes.mapStyle}/>
+                    </GridItem>
+                    <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
+                    <GridItem xs={12} s={12} md={12} lg={6}>
+                        <div className={classes.allRetailDiv}>
+                            <Grid container justify="center" alignItems='center'>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers 
+                                            label="A"
+                                            name="LV Hardwood Flooring"
+                                            address="5050 Dufferin St #101, North York, ON M3H 5T5"
+                                            phone="(647)728-1111"
+                                            link="https://lvflooring.ca/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="B"
+                                            name="Acadian Flooring Centre"
+                                            address="162 Bullock Dr #14, Markham, ON L3P 1W2"
+                                            phone="(905)294-9575"
+                                            link="http://www.acadianflooring.com/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="C"
+                                            name="Greenvalley Flooring"
+                                            address="8820 Jane St, Concord, ON L4K 2M9"
+                                            phone="(905)761-1537"
+                                            link="http://www.greenvalleyflooring.ca/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers 
+                                            label="D"
+                                            name="Capital Hardwood Floors"
+                                            address="1015 Dupont St, Toronto, ON M6H 1Z7"
+                                            phone="(416)536-2200"
+                                            link="http://www.capitalfloor.com/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers 
+                                            label="E"
+                                            name="Jonathon's Perron Floor Coverings"
+                                            address="230 Anchor Rd, Hamilton, ON L8W 3R2"
+                                            phone="(905)575-3131"
+                                            link="https://www.jonathonsperron.com/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="F"
+                                            name="Exotic Woods Inc"
+                                            address="5229 Harvester Rd, Burlington, ON L7L 5L4"
+                                            phone="(905)335-8066"
+                                            link="https://exotic-woods.com/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="G"                     
+                                            name="Flatout Flooring"
+                                            address="3537 White Oak Rd, London, ON N6E 3A1"
+                                            phone="(519)681-7771"
+                                            link="https://flatoutflooring.ca/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="H"
+                                            name="Emporium Carpet & Flooring"
+                                            address="494 Eastchester Ave E, St. Catharines, ON L2M 6S3"
+                                            phone="(905)682-0107"
+                                            link="http://carpetemporium.ca/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="I"
+                                            name="Fabbri Tile & Carpet Inc."
+                                            address="520 Helena St, Point Edward, ON N7V 1R9"
+                                            phone="(226) 778-4601"
+                                            link="https://www.fabbritileandcarpet.ca/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="J"
+                                            name="FloorBank"
+                                            address="1020 Brock Road, Unit #4 Pickering, ON L1W 3H2"
+                                            phone="(888)302-5537"
+                                            link="http://floorbank.ca"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers
+                                            label="K" 
+                                            name="Bolton Carpet & Interiors"
+                                            address="12388 Hwy 50, Bolton, ON L7E 1M7"
+                                            phone="(905) 951-3588"
+                                            link="http://boltoncarpet.com/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                                <GridItem xs={12} s={12} md={6} lg={6} className={classes.gridItem}>
+                                    <Fade bottom>
+                                        <PaperRetailers 
+                                            label="L"
+                                            name="Roman’s Hardwood Floor & Stairs"
+                                            address="16995 Yonge Street Newmarket, Ontario"
+                                            phone="(905)830-4111"
+                                            link="http://www.romanshardwood.ca/"
+                                        />
+                                    </Fade>
+                                </GridItem>
+                            </Grid>
+                        </div>
+                    </GridItem>                                                
+                </Grid>
+                <Divider/>
+                <Fade bottom>
+                    <Typography variant="h5" className={classes.addressText}>
+                        Interested in becoming a retailer? Contact info@threetreesflooring.ca.
+                    </Typography>
+                </Fade>
             </div>
+            <Footer/>
         </div>
     );
 }
