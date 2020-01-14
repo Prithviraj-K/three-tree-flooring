@@ -92,7 +92,7 @@ const HardwoodPage = () => {
             />
             <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
                 <Fade top>
-                    <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
+                    <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
                         Collection
                     </Typography>
                     <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>

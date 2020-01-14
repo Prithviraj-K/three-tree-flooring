@@ -15,7 +15,7 @@ const ContactForm = () => {
         <div>
             <form>
                 <Typography variant="h5" style={{textAlign: "center"}}>
-                    Contact us via e-mail
+                    Contact us via e-mail - info@threetreesflooring.ca
                 </Typography>
                 <TextField id="outlined-basic" label="Name" variant="outlined" className={classes.fieldText}/>
                 <TextField id="outlined-baseic" label="Email" variant="outlined" className={classes.fieldText}/>

@@ -37,7 +37,7 @@ const Retailers = () => {
             />
             <Fade top>
                 <div>
-                    <Typography variant="h3" style={{paddingTop: "3em", textAlign: "center"}}>
+                    <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
                         Retailers
                     </Typography>
                 </div>

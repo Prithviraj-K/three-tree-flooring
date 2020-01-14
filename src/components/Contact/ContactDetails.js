@@ -5,6 +5,10 @@ import Divider from '@material-ui/core/Divider';
 import CallIcon from '@material-ui/icons/Call';
 import RoomIcon from '@material-ui/icons/Room';
 
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 const ContactDetails = () => {
     return (
         <div>
@@ -43,8 +47,16 @@ const ContactDetails = () => {
             <Divider style={{margin: "1em"}}/>
             <div style={{textAlign: "center", fontWeight: "bold", textDecoration: "underline"}}>
                 Visit us on social media
-                <div>
-
+                <div style={{marginTop: "1em"}}>
+                    <a target="_blank" href="https://www.facebook.com/ThreeTreesFlooring/" style={{color: "black"}}>
+                        <FacebookIcon/>
+                    </a>
+                    <a target="_blank" href="https://ca.linkedin.com/company/three-trees-flooring" style={{color: "black"}}>
+                        <LinkedInIcon/>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/threetreesflooring/?hl=en" style={{color: "black"}}>
+                        <InstagramIcon/>
+                    </a>
                 </div>
             </div>
         </div>

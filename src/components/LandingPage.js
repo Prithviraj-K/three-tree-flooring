@@ -32,11 +32,9 @@ const LandingPage = (props) => {
                     color: "white"
                 }}
             />
-            <Fade top>
                 <div style={{margin: '0', marginBottom: "2em"}}>
                     <Gallery/>
                 </div>
-            </Fade>
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
                 <Divider style={{marginTop: "2em"}}/>
