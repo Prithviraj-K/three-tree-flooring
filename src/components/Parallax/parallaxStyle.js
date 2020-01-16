@@ -1,6 +1,6 @@
 const parallaxStyle = {
   parallax: {
-    height: "95vh",
+    height: "90vh",
     width: "100vw",
     overflow: "hidden",
     position: "relative",
@@ -34,6 +34,11 @@ const parallaxStyle = {
     color: "rgba(255,255,255,0.8)",
     marginLeft: "10vw",
     marginTop: "70vh"
+  },
+  '@media (max-width: 770px)': {
+    parallax: {
+      height: "85vh",
+    }
   }
 };
 

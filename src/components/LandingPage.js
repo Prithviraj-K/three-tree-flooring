@@ -13,11 +13,18 @@ import ScrollUpButton from 'react-scroll-up-button';
 import Typography from '@material-ui/core/Typography/Typography';
 import Divider from '@material-ui/core/Divider';
 
+import { makeStyles } from "@material-ui/core/styles";
+import styles from './LandingPageStyle';
+
 const logoWhite = require ('../assets/img/logo-white.png');
 const logoBlack = require ('../assets/img/logo-black-large.png');
 const logos = {logoWhite, logoBlack};
 
+const useStyles = makeStyles(styles);
+
 const LandingPage = (props) => {
+    const classes = useStyles();
+
     return (
         <div>
             <Header
@@ -32,7 +39,7 @@ const LandingPage = (props) => {
                 }}
             />
             <Fade top>
-                <div style={{height: "90vh"}}>
+                <div className={classes.carouselFit}>
                     <Gallery/>
                 </div>
             </Fade>
