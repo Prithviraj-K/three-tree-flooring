@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import Divider from '@material-ui/core/Divider';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -62,8 +63,9 @@ class ContactForm extends Component {
             <div>
                 <FormControl onSubmit={this.handleSubmit.bind(this)} style={{ width: "100%" }}>
                     <Typography variant="h5" style={{ textAlign: "center" }}>
-                        Contact us via e-mail
+                        Get in touch via e-mail
                     </Typography>
+                    <Divider style={{margin: "1em"}}/>
                     <TextField
                         id="outlined-basic"
                         label="Name"
@@ -75,8 +77,8 @@ class ContactForm extends Component {
                         onChange={this.handleChange.bind(this, 'name')}
                     />
                     <TextField
-                        id="outlined-baseic"
-                        label="Email"
+                        id="outlined-basic"
+                        label="Your email"
                         variant="outlined"
                         style={{ width: "90%", margin: "1em" }}
                         type="email"
@@ -88,7 +90,7 @@ class ContactForm extends Component {
                         id="outlined-multiline-static"
                         label="Message"
                         multiline
-                        rows="6"
+                        rows="4"
                         variant="outlined"
                         style={{ width: "90%", margin: "1em" }}
                         type="text"
@@ -104,7 +106,10 @@ class ContactForm extends Component {
                 >
                     Submit
                 </Button>
-                {this.state.submitted ? <p style={{ margin: "1em", color: "red" }}>Submitted</p> : null}
+                { this.state.submitted ? 
+                    <p style={{ margin: "1em", color: "green" }}>Submitted</p> : 
+                    null
+                }
             </div>
         )
     }
