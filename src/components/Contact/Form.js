@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 class ContactForm extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -35,7 +35,7 @@ class ContactForm extends Component {
             'user_rYUCGrXhvcZLLYrrsixOZ'
         ).then(res => {
             console.log('Email successfully sent!')
-            this.setState({submitted: true})
+            this.setState({ submitted: true })
         })
             // Handle errors here however you like, or use a React error boundary
             .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
@@ -55,7 +55,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div>
-                <FormControl onSubmit={this.handleSubmit.bind(this)} style={{width: "100%"}}>
+                <FormControl onSubmit={this.handleSubmit.bind(this)} style={{ width: "100%" }}>
                     <Typography variant="h5" style={{ textAlign: "center" }}>
                         Contact us via e-mail
                     </Typography>
@@ -91,15 +91,14 @@ class ContactForm extends Component {
                         value={this.state.message}
                         onChange={this.handleChange.bind(this, 'message')}
                     />
-                    <Button
-                        type="submit"
-                        style={{ width: "90%", margin: "1em", height: "75px" }}
-                        onClick={this.handleSubmit}
-                    >
-                        Submit
-                    </Button>
-                    {this.state.submitted ? <p style={{margin: "1em", color: "red"}}>Submitted</p> : null}
                 </FormControl>
+                <Button
+                    style={{ width: "90%", margin: "1em", height: "75px" }}
+                    onClick={this.handleSubmit}
+                >
+                    Submit
+                </Button>
+                {this.state.submitted ? <p style={{ margin: "1em", color: "red" }}>Submitted</p> : null}
             </div>
         )
     }
