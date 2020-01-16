@@ -12,7 +12,6 @@ import { makeStyles } from '@material-ui/core';
 import Footer from '../Footer/Footer';
 import Typography from '@material-ui/core/Typography';
 import ContactMap from './ContactMap';
-import ContactForm from './ContactForm';
 import Form from './Form';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';

@@ -11,6 +11,7 @@ class ContactForm extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.resetForm = this.resetForm.bind(this);
+        this.isFormValid = this.isFormValid.bind(this);
     }
     state = {
         name: '',
@@ -51,6 +52,10 @@ class ContactForm extends Component {
     }
     handleChange = (param, e) => {
         this.setState({ [param]: e.target.value })
+    }
+    isFormValid = () => {
+        const { name, email, message } = this.state
+        return name && email && message
     }
     render() {
         return (
@@ -93,8 +98,9 @@ class ContactForm extends Component {
                     />
                 </FormControl>
                 <Button
-                    style={{ width: "90%", margin: "1em", height: "75px" }}
+                    style={{ width: "90%", margin: "1em", height: "75px", border: "1px solid lightGrey" }}
                     onClick={this.handleSubmit}
+                    disabled={!this.isFormValid()}
                 >
                     Submit
                 </Button>
