@@ -5,6 +5,11 @@ import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -13,13 +18,15 @@ class ContactForm extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.resetForm = this.resetForm.bind(this);
         this.isFormValid = this.isFormValid.bind(this);
+        this.handleClose = this.handleClose.bind(this);
     }
     state = {
         name: '',
         email: '',
         subject: '',
         message: '',
-        submitted: false
+        submitted: false,
+        opened: false
     }
     handleSubmit(e) {
         e.preventDefault()
@@ -40,9 +47,15 @@ class ContactForm extends Component {
             this.setState({ submitted: true })
         })
             // Handle errors here however you like, or use a React error boundary
-            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-
+            .catch(err => console.error('Error that occured:', err))
+            .finally(() => this.handleOpen())
         this.resetForm()
+    }
+    handleClose() {
+        this.setState({ opened: false });
+    }
+    handleOpen(){
+        this.setState({opened: true});
     }
     resetForm() {
         this.setState({
@@ -65,7 +78,7 @@ class ContactForm extends Component {
                     <Typography variant="h5" style={{ textAlign: "center" }}>
                         Get in touch via e-mail
                     </Typography>
-                    <Divider style={{margin: "1em"}}/>
+                    <Divider style={{ margin: "1em" }} />
                     <TextField
                         id="outlined-basic"
                         label="Name"
@@ -106,10 +119,31 @@ class ContactForm extends Component {
                 >
                     Submit
                 </Button>
-                { this.state.submitted ? 
-                    <p style={{ margin: "1em", color: "green" }}>Submitted</p> : 
-                    null
-                }
+                <Dialog
+                    open={this.state.opened}
+                    onClose={this.handleClose}
+                >
+                    {this.state.submitted ?
+                        <DialogTitle id="alert-dialog-title">{"Submission successful."}</DialogTitle> :
+                        <DialogTitle id="alert-dialog-title">{"Submission unsuccessful."}</DialogTitle>
+
+                    }
+                    <DialogContent>
+                        {this.state.submitted ?
+                            <DialogContentText id="alert-dialog-description">
+                                We will get back to you ASAP.
+                            </DialogContentText> :
+                            <DialogContentText id="alert-dialog-description">
+                                Please try again.
+                            </DialogContentText>
+                        }
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={this.handleClose} color="primary" autoFocus>
+                            Close
+                        </Button>
+                    </DialogActions>
+                </Dialog>
             </div>
         )
     }
