@@ -13,6 +13,7 @@ import Footer from '../Footer/Footer';
 import Typography from '@material-ui/core/Typography';
 import ContactMap from './ContactMap';
 import ContactForm from './ContactForm';
+import Form from './Form';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Fade from 'react-reveal/Fade';
@@ -61,7 +62,7 @@ const Contact = () => {
                             <Slide left>
                                 <Card className={classes.cardForm}>
                                     <CardContent>
-                                        <ContactForm/>
+                                        <Form/>
                                     </CardContent>
                                 </Card>
                             </Slide>

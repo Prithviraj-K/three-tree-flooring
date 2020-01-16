@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core';
 import styles from './contactFormStyle';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import FormControl from '@material-ui/core/FormControl';
+
 
 const useStyles = makeStyles(styles);
 
@@ -13,7 +15,7 @@ const ContactForm = () => {
 
     return (
         <div>
-            <form>
+            <FormControl>
                 <Typography variant="h5" style={{textAlign: "center"}}>
                     Contact us via e-mail - info@threetreesflooring.ca
                 </Typography>
@@ -28,7 +30,7 @@ const ContactForm = () => {
                     className={classes.fieldText}
                 />                
                 <Button disabled className={classes.fieldButton}>Submit</Button>
-            </form>
+            </FormControl>
         </div>
     );
 }
