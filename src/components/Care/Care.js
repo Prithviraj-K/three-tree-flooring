@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
       height: "wrap",
       boxShadow: "0 4px 20px -12px rgba(0,0,0,0.8) !important",
       margin: "auto",
-      marginBottom: "2em"
+      marginBottom: "2em",
+      padding: "1em"
     },
     textCard: {
         padding: "1em",
@@ -55,14 +56,14 @@ const Care = () => {
                 </Fade>
             </div>
             <Divider style={{margin: "auto", marginBottom: "2em", width: "30%", backgroundColor: "#000000"}}/>
-            <div>]
+            <div>
                 <Grid container
                 spacing={1}
                 alignItems="center"
                 justify="center"
                 >       
                     <Fade bottom>
-                        <Grid item xs={12} md={12} lg={6} xl={6} align="center">
+                        <Grid item xs={12} s={12} md={6} lg={6} xl={6} align="center">
                             <Card className={classes.card}>
                                     <CardContent className={classes.title}>
                                     <Typography variant="h5">
@@ -85,7 +86,7 @@ const Care = () => {
                         </Grid>
                     </Fade>
                     <Fade bottom>
-                        <Grid item xs={12} md={12} lg={6} xl={6} align="center">
+                        <Grid item xs={12} s={12} md={6} lg={6} xl={6} align="center">
                             <Card className={classes.card}>
                                     <CardContent className={classes.title}>
                                         <Typography variant="h5">
@@ -107,7 +108,7 @@ const Care = () => {
                         </Grid>
                     </Fade>
                     <Fade bottom>
-                        <Grid item xs={12} md={12} lg={6} xl={6} align="center">
+                        <Grid item xs={12} s={12} md={6} lg={6} xl={6} align="center">
                             <Card className={classes.card}>
                                 <CardContent className={classes.title}>
                                     <Typography variant="h5">

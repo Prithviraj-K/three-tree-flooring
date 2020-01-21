@@ -26,7 +26,7 @@ class App extends Component {
               <Route path="/Care" component={CarePage}/>
           </Switch>
         </ScrollToTop>  
-    </Router>
+      </Router>
     );
   }
 }

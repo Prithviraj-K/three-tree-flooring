@@ -29,6 +29,7 @@ const retailerStyle = {
     allRetailDiv: {
         height: "70vh", 
         overflowY: "scroll",
+        scrollbarColor: "dark"
     },
     addressText: {
         padding: "1em 2em",
@@ -60,7 +61,7 @@ const retailerStyle = {
         contactBtn: {
             display: "block", 
             margin: "0 auto",
-            width: "100%",
+            width: "80%",
             height: "100%"
         }
     },

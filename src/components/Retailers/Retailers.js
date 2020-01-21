@@ -35,7 +35,7 @@ const Retailers = () => {
                 backgroundImage: `url(${backgroundImg})`, 
                 overflow: "hidden",
                 backgroundAttachment: "fixed",
-                backgroundRepeat: "none"
+                backgroundSize: "cover"
             }}
         >
             <Header

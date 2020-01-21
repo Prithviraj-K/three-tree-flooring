@@ -94,8 +94,7 @@ const HardwoodPage = () => {
                     width: "100%", 
                     height:"100%", 
                     backgroundImage: `url(${imgBg})`, 
-                    backgroundAttachment: "fixed",
-                    backgroundRepeat: "none"
+                    backgroundAttachment: "fixed"
                 }}
             >
                 <Fade top>

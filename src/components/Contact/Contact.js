@@ -37,7 +37,7 @@ const Contact = () => {
             style={{
                 backgroundImage: `url(${backgroundImg})`,
                 backgroundAttachment: "fixed",
-                backgroundRepeat: "no-repeat"
+                backgroundSize: "cover"
             }}
         >
             <Header
