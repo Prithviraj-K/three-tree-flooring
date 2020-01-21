@@ -9,6 +9,7 @@ import LandingPage from './components/LandingPage';
 import HardwoodPage from "./components/HardwoodPage/HardwoodPage";
 import Retailers from './components/Retailers/Retailers';
 import Contact from './components/Contact/Contact';
+import Login from './components/Login/Login';
 
 
 var history = createBrowserHistory();
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path="/Retailers" component={Retailers}/>
               <Route path="/Contact" component={Contact}/>
               <Route path="/Care" component={CarePage}/>
+              <Route path="/Login" component={Login}/>
           </Switch>
         </ScrollToTop>  
       </Router>
