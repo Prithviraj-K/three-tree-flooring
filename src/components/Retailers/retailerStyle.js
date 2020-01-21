@@ -31,7 +31,7 @@ const retailerStyle = {
         overflowY: "scroll",
     },
     addressText: {
-        padding: "2em",
+        padding: "1em 2em",
         paddingBottom: "1em",
         fontWeight: "bold"
     },

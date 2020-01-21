@@ -198,8 +198,8 @@ const Retailers = () => {
                     </GridItem>                                                
                 </Grid>
                 <Divider/>
-                <div style={{margin: "2em 1em", padding:"1em", paddingBottom: "2em", borderRadius: "1em", backgroundColor: "rgba(255,255,255,0.9)"}}>
-                    <Fade bottom>
+                <Fade bottom>
+                    <div style={{margin: "2em 1em", padding:"1em", paddingBottom: "2em", borderRadius: "1em", backgroundColor: "rgba(255,255,255,0.8)"}}>
                         <Typography variant="h5" className={classes.addressText}>
                             Interested in becoming a retailer? Get in touch.
                         </Typography>
@@ -208,10 +208,8 @@ const Retailers = () => {
                                 Contact Us
                             </Button>
                         </Link>
-                        
-                    </Fade>
-                </div>
-                
+                    </div>
+                </Fade>
             </div>
             <Footer/>
         </div>

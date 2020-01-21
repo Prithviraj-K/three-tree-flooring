@@ -33,7 +33,13 @@ const Contact = () => {
     const classes = useStyles();
 
     return (
-        <div style={{backgroundImage: `url(${backgroundImg})`}}>
+        <div 
+            style={{
+                backgroundImage: `url(${backgroundImg})`,
+                backgroundAttachment: "fixed",
+                backgroundRepeat: "no-repeat"
+            }}
+        >
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed

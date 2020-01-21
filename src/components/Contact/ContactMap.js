@@ -46,7 +46,6 @@ class ContactMap extends Component {
                     <Marker 
                         onClick={this.onMarkerClick}
                         position={{ lat: 43.769444, lng: -79.472097}}
-                        label="A"
                     />
 
                     <InfoWindow
