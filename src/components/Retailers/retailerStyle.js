@@ -31,7 +31,14 @@ const retailerStyle = {
         overflowY: "scroll",
     },
     addressText: {
-        padding: "2em"
+        padding: "2em",
+        paddingBottom: "1em",
+        fontWeight: "bold"
+    },
+    contactBtn: {
+        marginLeft: "4em",
+        width: "20vw",
+        height: "8vh"
     },
     '@media (max-width: 1279px)': {
         allRetailDiv: {
@@ -41,6 +48,7 @@ const retailerStyle = {
         },
         addressText: {
             padding: "1em",
+            paddingBottom: "0",
             height: "100%",
             fontSize: "1.5em",
             textAlign: "center",
@@ -48,6 +56,12 @@ const retailerStyle = {
         },
         mapGrid: {
             marginRight: "2em"
+        },
+        contactBtn: {
+            display: "block", 
+            margin: "0 auto",
+            width: "100%",
+            height: "100%"
         }
     },
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //Components
 import Header from '../Header/Header';
 import HeaderLinks from '../Header/HeaderLinks';
@@ -7,6 +8,8 @@ import GridItem from '../Grid/GridItem';
 import Divider from '@material-ui/core/Divider';
 import PaperRetailers from './PaperRetailers';
 import RetailMaps from './RetailMaps';
+import Button from "../CustomButtons/Button.js";
+
 //Styles
 import { makeStyles } from '@material-ui/core';
 import Footer from '../Footer/Footer';
@@ -27,7 +30,14 @@ const Retailers = () => {
     const classes = useStyles();
 
     return (
-        <div style={{backgroundImage: `url(${backgroundImg})`, overflow: "hidden"}}>
+        <div 
+            style={{
+                backgroundImage: `url(${backgroundImg})`, 
+                overflow: "hidden",
+                backgroundAttachment: "fixed",
+                backgroundRepeat: "none"
+            }}
+        >
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
@@ -188,11 +198,20 @@ const Retailers = () => {
                     </GridItem>                                                
                 </Grid>
                 <Divider/>
-                <Fade bottom>
-                    <Typography variant="h5" className={classes.addressText}>
-                        Interested in becoming a retailer? Contact info@threetreesflooring.ca.
-                    </Typography>
-                </Fade>
+                <div style={{margin: "2em 1em", padding:"1em", paddingBottom: "2em", borderRadius: "1em", backgroundColor: "rgba(255,255,255,0.9)"}}>
+                    <Fade bottom>
+                        <Typography variant="h5" className={classes.addressText}>
+                            Interested in becoming a retailer? Get in touch.
+                        </Typography>
+                        <Link to="/Contact" style={{textDecoration: "none"}}>
+                            <Button className={classes.contactBtn}>
+                                Contact Us
+                            </Button>
+                        </Link>
+                        
+                    </Fade>
+                </div>
+                
             </div>
             <Footer/>
         </div>

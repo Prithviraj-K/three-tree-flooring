@@ -89,7 +89,15 @@ const HardwoodPage = () => {
                 logoC={logoBlack}
                 color="white"
             />
-            <div style={{width: "100%", height:"100%", backgroundImage: `url(${imgBg})`}}>
+            <div 
+                style={{ 
+                    width: "100%", 
+                    height:"100%", 
+                    backgroundImage: `url(${imgBg})`, 
+                    backgroundAttachment: "fixed",
+                    backgroundRepeat: "none"
+                }}
+            >
                 <Fade top>
                     <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
                         Collection
