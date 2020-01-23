@@ -2,21 +2,48 @@ import React from 'react';
 import Header from '../Header/Header';
 import HeaderLinks from '../Header/HeaderLinks';
 
+import { makeStyles } from "@material-ui/core/styles";
+import styles from "./panelStyle";
+
+
 import Fade from 'react-reveal/Fade';
-import { Typography} from '@material-ui/core';
+import { Typography, CardContent, Button } from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
 import ScrollUpButton from "react-scroll-up-button";
 import Grid from '@material-ui/core/Grid';
+import CardPanel from './CardPanel';
+
+import Footer from '../Footer/Footer';
+
+import Card from '@material-ui/core/Card';
 
 import imgBg from "../../assets/img/whiteOakTexture.jpg";
 
-const logoBlack = require ('../../assets/img/logo-black-large.png');
+const logoBlack = require('../../assets/img/logo-black-large.png');
 
-const listPanels = [
-    {key: 1, name: "Victoria", description: "European Oak", description2: "Brushed & Bevelled", sizing: "W. 60x60 cm, 80x80 cm, 100x100 cm", tEl: "T: 185 mm"},
+const useStyles = makeStyles(styles);
+
+const panelList = [
+    {key: 1, name: "Victoria"},
+    {key: 2, name: "Cratose"},
+    {key: 3, name: "Carmina"},
+    {key: 4, name: "Gloria"},
+    {key: 5, name: "Galina"},
+    {key: 6, name: "Pisa"},
+    {key: 7, name: "Diana"},
+    {key: 8, name: "Alvina"}
+    
 ];
 
 const Panels = () => {
+
+    const classes = useStyles();
+
+    const listItems = panelList.map((number)=>
+        <Grid item xs={12} s={6} md={4} lg={4} xl={4}>
+            <CardPanel name={number.name} />
+        </Grid>
+    );
 
     return (
         <div>
@@ -26,41 +53,30 @@ const Panels = () => {
                 color="white"
                 logoC={logoBlack}
             />
-            <div 
-                style={{ 
-                    width: "100%", 
-                    height:"100vh", 
-                    backgroundImage: `url(${imgBg})`, 
-                    backgroundAttachment: "fixed"
-                }}
-            >
+            <div className={classes.divBody} style={{backgroundImage: `url(${imgBg})`}}>
                 <Fade top>
-                    <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
+                    <Typography variant="h3" className={classes.titlePad}>
                         Collection
                     </Typography>
-                    <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
+                    <Typography variant="h5" className={classes.subPad}>
                         Versailles Panels
                     </Typography>
                 </Fade>
-                <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#000000"}}/>
-                <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
+                <Divider className={classes.dividerT} />
+                <ScrollUpButton style={{ width: 40, height: 40 }} ToggledStyle={{ right: 10 }} />
                 <div>
-                    <Grid 
+                    <Grid
                         container
                         spacing={1}
                         alignItems="center"
                         justify="center"
-                        style={{margin: "auto", marginTop: "2em", width: "95%"}}
+                        className={classes.gridCont}
                     >
-                        <Grid item xs={12} s={12} md={6} lg={6}>
-                            Panel 1
-                        </Grid>
-                        <Grid item xs={12} s={12} md={6} lg={6}>
-                            Panel 2
-                        </Grid>
+                        {listItems}
                     </Grid>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
