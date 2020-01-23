@@ -40,7 +40,7 @@ const Panels = () => {
     const classes = useStyles();
 
     const listItems = panelList.map((number)=>
-        <Grid item xs={12} s={6} md={4} lg={4} xl={4}>
+        <Grid item xs={12} s={6} md={4} lg={4} xl={3}>
             <CardPanel name={number.name} />
         </Grid>
     );

@@ -27,7 +27,7 @@ const panelStyle = {
     imgCent: {
         display: "block", 
         align: "center", 
-        width: "80%",
+        width: "70%",
         margin: "auto",
     },
     negM: {
