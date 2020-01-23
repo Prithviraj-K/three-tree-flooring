@@ -17,6 +17,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import Contacts from '@material-ui/icons/Contacts';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ViewListIcon from '@material-ui/icons/ViewList';
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -50,13 +51,35 @@ export default function HeaderLinks(props) {
               className: classes.navLink,
               color: "transparent"
             }}
-            buttonIcon={MenuBookIcon}
+            buttonIcon={ViewListIcon}
             dropdownList={[
               <Link to="/Hardwood" className={classes.dropdownLink}>
                 Engineered White Oak Hardwood
               </Link>,
+              <Link to="/Panels" className={classes.dropdownLink}>
+                Versailles Panels
+              </Link>,
+              <Link to="/Accessories" className={classes.dropdownLink}>
+                Accessories
+              </Link>
+            ]}
+          />
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <CustomDropdown
+            noLiPadding
+            buttonText="Learn"
+            buttonProps={{
+              className: classes.navLink,
+              color: "transparent"
+            }}
+            buttonIcon={MenuBookIcon}
+            dropdownList={[
               <Link to="/Care" className={classes.dropdownLink}>
                 Care & Maintenance
+              </Link>,
+              <Link to="/Docs" className={classes.dropdownLink}>
+                Documents
               </Link>,
             ]}
           />
@@ -85,6 +108,7 @@ export default function HeaderLinks(props) {
               </Button>
             </Link>
         </ListItem>
+        
         <ListItem className={classes.listItem}>
             <Link to="/Login" style={{ color: 'inherit', textDecoration: 'inherit'}}>
               <Button

@@ -8,7 +8,7 @@ const retailerStyle = {
         padding: "1em",
         boxShadow: "0 4px 20px -12px rgba(0,0,0,0.8) !important",
         "&:hover": {
-        boxShadow: "0 8px 40px -12.125px rgba(0,0,0,0.8) !important"
+            boxShadow: "0 8px 40px -12.125px rgba(0,0,0,0.8) !important"
         },
         borderRadius: "1em"
     },
@@ -27,7 +27,7 @@ const retailerStyle = {
         height: "70vh"
     },
     allRetailDiv: {
-        height: "70vh", 
+        height: "70vh",
         overflowY: "scroll",
         scrollbarColor: "dark"
     },
@@ -43,10 +43,15 @@ const retailerStyle = {
     },
     '@media (max-width: 1279px)': {
         allRetailDiv: {
-          height: "100%",
-          overflow: "visible",
-          marginTop: "2em",
+            height: "100%",
+            overflow: "visible",
+            marginTop: "2em",
         },
+        mapGrid: {
+            marginRight: "2em"
+        }
+    },
+    '@media (max-width: 700px)': {
         addressText: {
             padding: "1em",
             paddingBottom: "0",
@@ -55,16 +60,13 @@ const retailerStyle = {
             textAlign: "center",
             marginBottom: "1em"
         },
-        mapGrid: {
-            marginRight: "2em"
-        },
         contactBtn: {
-            display: "block", 
+            display: "block",
             margin: "0 auto",
             width: "80%",
             height: "100%"
         }
-    },
+    }
 };
 
 export default retailerStyle;
