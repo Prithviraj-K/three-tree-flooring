@@ -2,6 +2,9 @@ import React from 'react';
 import Header from '../Header/Header';
 import HeaderLinks from '../Header/HeaderLinks';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 
 const logoBlack = require('../../assets/img/logo-black-large.png');
 
@@ -14,11 +17,22 @@ const Login = () => {
                 logoC={logoBlack}
                 color="white"
             />
-            <div style={{textAlign: "center", position: "absolute", top: "50%", marginTop: "5em", width: "100%", height: "100vh"}}>
-                <Typography variant="h1">
-                    Login
-                </Typography>
-            </div>
+            <Grid 
+                container
+                spacing={0}
+                direction="column"
+                alignItems="center"
+                justify="center"
+                style={{minHeight: "100vh"}}
+            >
+                <Grid item xs={8}>
+                    <Card>
+                        <CardContent>
+                            Login
+                        </CardContent>
+                    </Card>
+                </Grid>
+            </Grid>
         </div>
     );
 }
