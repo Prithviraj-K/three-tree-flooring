@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Fade from 'react-reveal/Fade'
 import Modal from '@material-ui/core/Modal';
 import FadeMaterial from '@material-ui/core/Fade';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -37,7 +36,8 @@ const useStyles = makeStyles(theme => ({
     '@media (max-width: 600px)': {
         imgCent: {
             width: "40vw",
-            height: "auto"
+            height: "auto",
+            margin: "0"
         }
     },
     '@media (max-width: 960px)': {
@@ -69,45 +69,41 @@ const CardPanel = (props) => {
     };
 
     return (
-        <Fade bottom>
-            <div>
-                <div style={{ textAlign: "center" }}>
-                    <img src={require(`../../assets/img/panels/${props.name.toLowerCase()}-panel.png`)} className={classes.imgCent} />
-                    <div className={classes.negM}>
-                        <Typography align="center" variant="button">
-                            {props.name}
-                        </Typography>
-                    </div>
+        <div>
+            <div style={{ textAlign: "center" }}>
+                <img src={require(`../../assets/img/panels/${props.name.toLowerCase()}-panel.png`)} className={classes.imgCent} />
+                <div className={classes.negM}>
+                    <Typography align="center" variant="button">
+                        {props.name}
+                    </Typography>
                 </div>
-
-                <Modal
-                    aria-labelledby="simple-modal-title"
-                    aria-describedby="simple-modal-description"
-                    open={open}
-                    onClose={handleClose}
-                    closeAfterTransition
-                    BackdropComponent={Backdrop}
-                    BackdropProps={{
-                        timeout: 500,
-                    }}
-                    className={classes.modalS}
-                >
-                    <FadeMaterial in={open}>
-                        <div style={{ justifyContent: "center" }} className={classes.paper}>
-                            <div visibility={(props.key === 1) ? "visible" : "hidden"}>
-                                First
-                        </div>
-                            <div visibility={(props.key !== 1) ? "visible" : "hidden"}>
-                                Others
-                        </div>
-                        </div>
-
-                    </FadeMaterial>
-                </Modal>
             </div>
-        </Fade>
 
+            <Modal
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500,
+                }}
+                className={classes.modalS}
+            >
+                <FadeMaterial in={open}>
+                    <div style={{ justifyContent: "center" }} className={classes.paper}>
+                        <div visibility={(props.key === 1) ? "visible" : "hidden"}>
+                            First
+                        </div>
+                        <div visibility={(props.key !== 1) ? "visible" : "hidden"}>
+                            Others
+                        </div>
+                    </div>
 
+                </FadeMaterial>
+            </Modal>
+        </div>
     );
 }
 

@@ -22,11 +22,10 @@ const panelStyle = {
     gridCont: {
         margin: "0",
         marginBottom: "2em",
-        width: "100%",
-        minHeight: "100vh"
+        width: "100%"
     },
     imgLeft: {
-        width: "40vw",
+        width: "100%",
         height: "100%"
     },
     gridLeft: {

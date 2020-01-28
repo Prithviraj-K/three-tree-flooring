@@ -5,8 +5,9 @@ import HeaderLinks from '../Header/HeaderLinks';
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "./panelStyle";
 
+import Fade from 'react-reveal';
 
-import Fade from 'react-reveal/Fade';
+
 import { Typography, CardContent, Button } from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
 import ScrollUpButton from "react-scroll-up-button";
@@ -41,70 +42,92 @@ const Panels = () => {
     const classes = useStyles();
 
     return (
-        <div style={{ backgroundImage: `url(${imgBg})`, backgroundAttachment: "fixed" }}>
-            <Header
-                rightLinks={<HeaderLinks />}
-                fixed
-                color="white"
-                logoC={logoBlack}
-            />
-            <div className={classes.divBody}>
-                <Fade top>
+        <Fade>
+            <div style={{ backgroundImage: `url(${imgBg})`, backgroundAttachment: "fixed" }}>
+                <Header
+                    rightLinks={<HeaderLinks />}
+                    fixed
+                    color="white"
+                    logoC={logoBlack}
+                />
+                <div className={classes.divBody}>
                     <Typography variant="h3" className={classes.titlePad}>
                         Collection
-                    </Typography>
+                        </Typography>
                     <Typography variant="h5" className={classes.subPad}>
                         Versailles Panels
-                    </Typography>
-                </Fade>
-                <Divider className={classes.dividerT} />
-            </div>
-            <ScrollUpButton style={{ width: 40, height: 40 }} ToggledStyle={{ right: 10 }} />
-            <div>
-                <Grid
-                    container
-                    spacing={1}
-                    className={classes.gridCont}
-                    alignItems="center"
-                    justify="center"
-                    textAlign="center"
-                >
-                    <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
-                        <Fade bottom>
+                        </Typography>
+                    <Divider className={classes.dividerT} />
+                </div>
+                <div>
+                    <Grid
+                        container
+                        spacing={1}
+                        className={classes.gridCont}
+                        alignItems="center"
+                        justify="center"
+                        textAlign="center"
+                    >
+                        {/* VICTORIA PANELS */}
+                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
                             <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
                             <Typography variant="h3" className={classes.panelTitle}>
                                 Victoria
-                            </Typography>
-                        </Fade>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
-                        <Grid container spacing={1}>
-                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria Bleach" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria Walnut" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria Teak" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria Oak" />
-                            </Grid>
-                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria Merbau" />
+                                </Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
+                            <Grid container spacing={1}>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Victoria" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Victoria Bleach" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Victoria Walnut" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Victoria Teak" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Victoria Oak" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Victoria Merbau" />
+                                </Grid>
                             </Grid>
                         </Grid>
-                    </Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                            <Divider style={{ height: "1em", margin: "2em 0" }} />
+                        </Grid>
+                        <ScrollUpButton style={{ width: 40, height: 40 }} ToggledStyle={{ right: 10 }} />
 
-                    <Divider />
-                </Grid>
+
+                        {/* CRATOSE PANELS */}
+                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
+                            <Grid container spacing={1}>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Cratose" />
+                                </Grid>
+                                
+                            </Grid>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
+                            <img src={require('../../assets/img/panels/cratose-bg.png')} className={classes.imgLeft} />
+                            <Typography variant="h3" className={classes.panelTitle}>
+                                Cratose
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                            <Divider style={{ height: "1em", margin: "2em 0" }} />
+                        </Grid>
+
+
+                    </Grid>
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </Fade>
     );
 }
 
