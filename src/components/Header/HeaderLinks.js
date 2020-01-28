@@ -59,12 +59,15 @@ export default function HeaderLinks(props) {
               <Link to="/Panels" className={classes.dropdownLink}>
                 Versailles Panels
               </Link>,
-              <Link to="/Accessories" className={classes.dropdownLink}>
-                Accessories
-              </Link>
+              {/*}
+                <Link to="/Accessories" className={classes.dropdownLink}>
+                  Accessories
+                </Link>
+              */}
             ]}
           />
         </ListItem>
+        {/*}
         <ListItem className={classes.listItem}>
           <CustomDropdown
             noLiPadding
@@ -83,6 +86,19 @@ export default function HeaderLinks(props) {
               </Link>,
             ]}
           />
+        </ListItem>
+          */}
+        <ListItem className={classes.listItem}>
+          <Link to="/Care" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <Button
+              color="transparent"
+              round
+              className={classes.navLink}
+            >
+              <Store />
+              Learn
+            </Button>
+          </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
           <Link to="/Retailers" style={{ color: 'inherit', textDecoration: 'inherit'}}>
@@ -108,7 +124,7 @@ export default function HeaderLinks(props) {
               </Button>
             </Link>
         </ListItem>
-        
+        {/*
         <ListItem className={classes.listItem}>
             <Link to="/Login" style={{ color: 'inherit', textDecoration: 'inherit'}}>
               <Button
@@ -121,6 +137,7 @@ export default function HeaderLinks(props) {
               </Button>
             </Link>
         </ListItem>
+        */}
     </List>
   );
 }
