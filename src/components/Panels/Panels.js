@@ -12,6 +12,7 @@ import Divider from '@material-ui/core/Divider';
 import ScrollUpButton from "react-scroll-up-button";
 import Grid from '@material-ui/core/Grid';
 import CardPanel from './CardPanel';
+import Parallax from '../Parallax/Parallax';
 
 import Footer from '../Footer/Footer';
 
@@ -76,14 +77,19 @@ const Panels = () => {
                 >
                     <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
                         <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
+                        <Fade>
+                            <Typography variant="h3" style={{ textAlign: "center", marginTop: "-3em", letterSpacing: "10px", color: "white" }}>
+                                Victoria
+                            </Typography>
+                        </Fade>
                     </Grid>
                     <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
                         <Grid container>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Victoria"/>
+                                <CardPanel name="Victoria" />
                             </Grid>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Cratose"/>
+                                <CardPanel name="Cratose" />
                             </Grid>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                                 <CardPanel name="Cratose" />
