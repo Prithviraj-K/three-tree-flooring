@@ -32,6 +32,12 @@ const panelStyle = {
     gridLeft: {
         height: "90vh",
     },
+    panelTitle: {
+        textAlign: "center", 
+        marginTop: "-3em", 
+        letterSpacing: "10px", 
+        color: "white"
+    },
     '@media (max-width: 1279px)': {
         gridLeft: {
             width: "100%",
@@ -41,7 +47,7 @@ const panelStyle = {
             width: "100%",
             height: "100%"
         }
-    }
+    },
 };
 
 export default panelStyle;

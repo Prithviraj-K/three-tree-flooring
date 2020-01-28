@@ -72,7 +72,7 @@ const Panels = () => {
                     <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
                         <Fade bottom>
                             <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
-                            <Typography variant="h3" style={{ textAlign: "center", marginTop: "-3em", letterSpacing: "10px", color: "white" }}>
+                            <Typography variant="h3" className={classes.panelTitle}>
                                 Victoria
                             </Typography>
                         </Fade>

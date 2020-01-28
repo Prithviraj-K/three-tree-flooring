@@ -11,7 +11,8 @@ import Backdrop from '@material-ui/core/Backdrop';
 
 const useStyles = makeStyles(theme => ({
     imgCent: {
-        width: "100%"
+        width: "100%",
+        height: "auto"
     },
     negM: {
         margin: "0"
@@ -33,6 +34,24 @@ const useStyles = makeStyles(theme => ({
         overflow: "scroll",
         overflowX: "hidden"
     },
+    '@media (max-width: 600px)': {
+        imgCent: {
+            width: "40vw",
+            height: "auto"
+        }
+    },
+    '@media (max-width: 960px)': {
+        imgCent: {
+            width: "40vw",
+            height: "auto"
+        }
+    },
+    '@media (max-width: 1280px)': {
+        imgCent: {
+            width: "25vw",
+            height: "auto"
+        }
+    }
 }));
 
 const CardPanel = (props) => {
