@@ -40,12 +40,6 @@ const Panels = () => {
 
     const classes = useStyles();
 
-    const listItems = panelList.map((number) =>
-        <Grid item xs={12} s={6} md={4} lg={4} xl={3}>
-            <CardPanel name={number.name} key={number.key} />
-        </Grid>
-    );
-
     return (
         <div style={{ backgroundImage: `url(${imgBg})`, backgroundAttachment: "fixed" }}>
             <Header
@@ -76,29 +70,32 @@ const Panels = () => {
                     textAlign="center"
                 >
                     <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
-                        <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
-                        <Fade>
+                        <Fade bottom>
+                            <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
                             <Typography variant="h3" style={{ textAlign: "center", marginTop: "-3em", letterSpacing: "10px", color: "white" }}>
                                 Victoria
                             </Typography>
                         </Fade>
                     </Grid>
                     <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
-                        <Grid container>
+                        <Grid container spacing={1}>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                                 <CardPanel name="Victoria" />
                             </Grid>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Cratose" />
+                                <CardPanel name="Victoria Bleach" />
                             </Grid>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Cratose" />
+                                <CardPanel name="Victoria Walnut" />
                             </Grid>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Cratose" />
+                                <CardPanel name="Victoria Teak" />
                             </Grid>
                             <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                <CardPanel name="Cratose" />
+                                <CardPanel name="Victoria Oak" />
+                            </Grid>
+                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                <CardPanel name="Victoria Merbau" />
                             </Grid>
                         </Grid>
                     </Grid>

@@ -11,7 +11,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 
 const useStyles = makeStyles(theme => ({
     imgCent: {
-        height: "40vh"
+        width: "100%"
     },
     negM: {
         margin: "0"
@@ -50,41 +50,44 @@ const CardPanel = (props) => {
     };
 
     return (
-        <div>
-                <div style={{textAlign: "center"}}>
+        <Fade bottom>
+            <div>
+                <div style={{ textAlign: "center" }}>
                     <img src={require(`../../assets/img/panels/${props.name.toLowerCase()}-panel.png`)} className={classes.imgCent} />
                     <div className={classes.negM}>
-                        <Typography align="center" variant="h6">
+                        <Typography align="center" variant="button">
                             {props.name}
                         </Typography>
                     </div>
                 </div>
 
-            <Modal
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
-                open={open}
-                onClose={handleClose}
-                closeAfterTransition
-                BackdropComponent={Backdrop}
-                BackdropProps={{
-                    timeout: 500,
-                }}
-                className={classes.modalS}
-            >
-                <FadeMaterial in={open}>
-                    <div style={{ justifyContent: "center" }} className={classes.paper}>
-                        <div visibility={(props.key === 1) ? "visible" : "hidden"}>
-                            First
+                <Modal
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                    open={open}
+                    onClose={handleClose}
+                    closeAfterTransition
+                    BackdropComponent={Backdrop}
+                    BackdropProps={{
+                        timeout: 500,
+                    }}
+                    className={classes.modalS}
+                >
+                    <FadeMaterial in={open}>
+                        <div style={{ justifyContent: "center" }} className={classes.paper}>
+                            <div visibility={(props.key === 1) ? "visible" : "hidden"}>
+                                First
                         </div>
-                        <div visibility={(props.key !== 1) ? "visible" : "hidden"}>
-                            Others
+                            <div visibility={(props.key !== 1) ? "visible" : "hidden"}>
+                                Others
                         </div>
-                    </div>
-                    
-                </FadeMaterial>
-            </Modal>
-        </div>
+                        </div>
+
+                    </FadeMaterial>
+                </Modal>
+            </div>
+        </Fade>
+
 
     );
 }
