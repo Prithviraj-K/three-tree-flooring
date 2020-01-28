@@ -18,6 +18,7 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import Contacts from '@material-ui/icons/Contacts';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ViewListIcon from '@material-ui/icons/ViewList';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -59,11 +60,11 @@ export default function HeaderLinks(props) {
               <Link to="/Panels" className={classes.dropdownLink}>
                 Versailles Panels
               </Link>,
-              {/*}
+              /*
                 <Link to="/Accessories" className={classes.dropdownLink}>
                   Accessories
                 </Link>
-              */}
+              */
             ]}
           />
         </ListItem>
@@ -95,7 +96,7 @@ export default function HeaderLinks(props) {
               round
               className={classes.navLink}
             >
-              <Store />
+              <InfoOutlinedIcon/>
               Learn
             </Button>
           </Link>

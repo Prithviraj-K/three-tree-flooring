@@ -24,36 +24,36 @@ const logoBlack = require('../../assets/img/logo-black-large.png');
 const useStyles = makeStyles(styles);
 
 const panelList = [
-    {key: 1, name: "Victoria"},
-    {key: 2, name: "Cratose"},
-    {key: 3, name: "Carmina"},
-    {key: 4, name: "Gloria"},
-    {key: 5, name: "Galina"},
-    {key: 6, name: "Pisa"},
-    {key: 7, name: "Diana"},
-    {key: 8, name: "Alvina"}
-    
+    { key: 1, name: "Victoria" },
+    { key: 2, name: "Cratose" },
+    { key: 3, name: "Carmina" },
+    { key: 4, name: "Gloria" },
+    { key: 5, name: "Galina" },
+    { key: 6, name: "Pisa" },
+    { key: 7, name: "Diana" },
+    { key: 8, name: "Alvina" }
+
 ];
 
 const Panels = () => {
 
     const classes = useStyles();
 
-    const listItems = panelList.map((number)=>
+    const listItems = panelList.map((number) =>
         <Grid item xs={12} s={6} md={4} lg={4} xl={3}>
-            <CardPanel name={number.name} />
+            <CardPanel name={number.name} key={number.key} />
         </Grid>
     );
 
     return (
-        <div>
+        <div style={{ backgroundImage: `url(${imgBg})`, backgroundAttachment: "fixed" }}>
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
                 color="white"
                 logoC={logoBlack}
             />
-            <div className={classes.divBody} style={{backgroundImage: `url(${imgBg})`}}>
+            <div className={classes.divBody}>
                 <Fade top>
                     <Typography variant="h3" className={classes.titlePad}>
                         Collection
@@ -63,20 +63,44 @@ const Panels = () => {
                     </Typography>
                 </Fade>
                 <Divider className={classes.dividerT} />
-                <ScrollUpButton style={{ width: 40, height: 40 }} ToggledStyle={{ right: 10 }} />
-                <div>
-                    <Grid
-                        container
-                        spacing={1}
-                        alignItems="center"
-                        justify="center"
-                        className={classes.gridCont}
-                    >
-                        {listItems}
-                    </Grid>
-                </div>
             </div>
-            <Footer/>
+            <ScrollUpButton style={{ width: 40, height: 40 }} ToggledStyle={{ right: 10 }} />
+            <div>
+                <Grid
+                    container
+                    spacing={1}
+                    className={classes.gridCont}
+                    alignItems="center"
+                    justify="center"
+                    textAlign="center"
+                >
+                    <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
+                        <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
+                        <Grid container>
+                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                <CardPanel name="Victoria"/>
+                            </Grid>
+                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                <CardPanel name="Cratose"/>
+                            </Grid>
+                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                <CardPanel name="Cratose" />
+                            </Grid>
+                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                <CardPanel name="Cratose" />
+                            </Grid>
+                            <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                <CardPanel name="Cratose" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+
+                    <Divider />
+                </Grid>
+            </div>
+            <Footer />
         </div>
     );
 }

@@ -38,14 +38,21 @@ export default function Footer(props) {
             <ListItem className={classes.inlineBlock}>
               <Link to="/Hardwood" style={{textDecoration: "none", color: "#FFF"}}>
                 <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
-                  Collection
+                  Hardwood
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <Link to="/Panels" style={{textDecoration: "none", color: "#FFF"}}>
+                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+                  Panels
                 </Button>
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <Link to="/Care" style={{textDecoration: "none", color: "#FFF"}}>
                 <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
-                  Care & Maintenance
+                  Learn
                 </Button>
               </Link>
             </ListItem>

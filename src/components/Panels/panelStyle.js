@@ -10,28 +10,37 @@ const panelStyle = {
         textAlign: "center"
     },
     subPad: {
-        textAlign: "center", 
-        marginBottom: "1em"
+        textAlign: "center",
+        marginBottom: "0"
     },
     dividerT: {
-        margin: "auto", 
-        marginBottom: "2em", 
-        width: "20%", 
+        margin: "auto",
+        marginBottom: "2em",
+        width: "20%",
         backgroundColor: "#000000"
     },
     gridCont: {
-        margin: "auto", 
-        marginTop: "2em", 
-        width: "100%"
+        margin: "0",
+        marginBottom: "2em",
+        width: "100%",
+        minHeight: "100vh"
     },
-    imgCent: {
-        display: "block", 
-        align: "center", 
-        width: "70%",
-        margin: "auto",
+    imgLeft: {
+        width: "40vw",
+        height: "100%"
     },
-    negM: {
-        marginTop: "1em"
+    gridLeft: {
+        height: "90vh",
+    },
+    '@media (max-width: 1279px)': {
+        gridLeft: {
+            width: "100%",
+            height: "80vh"
+        },
+        imgLeft: {
+            width: "100%",
+            height: "100%"
+        }
     }
 };
 
