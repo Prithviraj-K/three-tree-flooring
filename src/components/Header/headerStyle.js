@@ -15,7 +15,7 @@ import {
       display: "flex",
       border: "0",
       borderRadius: "3px",
-      padding: "0.625rem 0",
+      padding: "0 0",
       marginBottom: "20px",
       color: "#555",
       width: "100%",
@@ -36,7 +36,9 @@ import {
       alignItems: "center",
       justifyContent: "space-between",
       display: "flex",
-      flexWrap: "nowrap"
+      flexWrap: "nowrap",
+      padding: "0",
+      margin: "0"
     },
     flex: {
       flex: 1
@@ -48,7 +50,7 @@ import {
       borderRadius: "3px",
       textTransform: "none",
       color: "inherit",
-      padding: "8px 16px",
+      padding: "0px 0px",
       textAlign: "center",
       letterSpacing: "unset",
       "&:hover,&:focus": {
@@ -57,7 +59,7 @@ import {
       }
     },
     appResponsive: {
-      margin: "20px 10px"
+      margin: "0px 0px"
     },
     primary: {
       backgroundColor: primaryColor,
