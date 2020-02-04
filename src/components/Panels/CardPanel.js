@@ -40,7 +40,7 @@ const CardPanel = (props) => {
         <div>
             <div style={{ textAlign: "center" }}>
                 <img 
-                    src={require(`../../assets/img/panels/${props.name.toLowerCase()}-panel.png`)} 
+                    src={require(`../../assets/img/panels/${props.name.toLowerCase()}-panel.jpg`)} 
                     alt="panel" 
                     className={classes.imgCent} 
                 />

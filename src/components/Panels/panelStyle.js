@@ -24,6 +24,10 @@ const panelStyle = {
         marginBottom: "2em",
         width: "100%"
     },
+    imgCent: {
+        width: "100%",
+        height: "auto"
+    },
     imgLeft: {
         maxWidth: "100%",
         maxHeight: "100%"
@@ -39,6 +43,18 @@ const panelStyle = {
         color: "white",
         fontWeight: "lighter"
     },
+    '@media (max-width: 1280px)': {
+        imgCent: {
+            width: "100%",
+            height: "auto"
+        }
+    },
+    '@media (max-width: 960px)': {
+        imgCent: {
+            width: "75%",
+            height: "auto"
+        }
+    },
     '@media (max-width: 600px)': {
         imgLeft: {
             width: "100%",
@@ -46,8 +62,13 @@ const panelStyle = {
         },
         panelTitle: {
             marginBottom: "2em"
+        },
+        imgCent: {
+            width: "60%",
+            height: "auto",
+            margin: "0"
         }
-    }
+    },
 };
 
 export default panelStyle;
