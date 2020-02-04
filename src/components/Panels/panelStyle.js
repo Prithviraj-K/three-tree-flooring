@@ -25,26 +25,31 @@ const panelStyle = {
         width: "100%"
     },
     imgLeft: {
-        width: "100%",
-        height: "100%"
+        width: "90%",
+        height: "auto"
     },
     gridLeft: {
-        height: "90vh",
+        width: "100%",
+        height: "80vh"
     },
     panelTitle: {
         textAlign: "center", 
         marginTop: "-3em", 
-        letterSpacing: "10px", 
-        color: "white"
+        letterSpacing: "3px", 
+        color: "white",
+        fontWeight: "lighter"
     },
     '@media (max-width: 1279px)': {
         gridLeft: {
-            width: "100%",
+            width: "auto",
             height: "80vh"
         },
         imgLeft: {
-            width: "100%",
-            height: "100%"
+            width: "90",
+            height: "auto"
+        },
+        panelTitle: {
+            marginTop: "-5em"
         }
     },
 };

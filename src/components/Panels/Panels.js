@@ -73,7 +73,7 @@ const Panels = () => {
                             <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
                             <Typography variant="h3" className={classes.panelTitle}>
                                 Victoria
-                                </Typography>
+                            </Typography>
                         </Grid>
                         <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
                             <Grid container spacing={1}>
@@ -113,9 +113,9 @@ const Panels = () => {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
-                            <img src={require('../../assets/img/panels/cratose-bg.png')} className={classes.imgLeft} />
+                            <img src={require('../../assets/img/panels/chevron-bg.png')} className={classes.imgLeft} />
                             <Typography variant="h3" className={classes.panelTitle}>
-                                Cratose
+                                Chevron Herringbone
                             </Typography>
                         </Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>

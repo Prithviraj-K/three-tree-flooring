@@ -33,25 +33,25 @@ const useStyles = makeStyles(theme => ({
         overflow: "scroll",
         overflowX: "hidden"
     },
-    '@media (max-width: 600px)': {
+    '@media (max-width: 1280px)': {
         imgCent: {
-            width: "40vw",
-            height: "auto",
-            margin: "0"
+            width: "90%",
+            height: "auto"
         }
     },
     '@media (max-width: 960px)': {
         imgCent: {
-            width: "40vw",
+            width: "90%",
             height: "auto"
         }
     },
-    '@media (max-width: 1280px)': {
+    '@media (max-width: 600px)': {
         imgCent: {
-            width: "25vw",
-            height: "auto"
+            width: "90%",
+            height: "auto",
+            margin: "0"
         }
-    }
+    }   
 }));
 
 const CardPanel = (props) => {
