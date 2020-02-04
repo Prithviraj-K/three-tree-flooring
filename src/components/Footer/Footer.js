@@ -42,13 +42,13 @@ export default function Footer(props) {
                 </Button>
               </Link>
             </ListItem>
-            {/*<ListItem className={classes.inlineBlock}>
+            <ListItem className={classes.inlineBlock}>
               <Link to="/Panels" style={{textDecoration: "none", color: "#FFF"}}>
                 <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
                   Panels
                 </Button>
               </Link>
-  </ListItem>*/}
+            </ListItem>
             <ListItem className={classes.inlineBlock}>
               <Link to="/Care" style={{textDecoration: "none", color: "#FFF"}}>
                 <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>

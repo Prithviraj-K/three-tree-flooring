@@ -35,19 +35,19 @@ const useStyles = makeStyles(theme => ({
     },
     '@media (max-width: 1280px)': {
         imgCent: {
-            width: "90%",
+            width: "100%",
             height: "auto"
         }
     },
     '@media (max-width: 960px)': {
         imgCent: {
-            width: "90%",
+            width: "75%",
             height: "auto"
         }
     },
     '@media (max-width: 600px)': {
         imgCent: {
-            width: "90%",
+            width: "60%",
             height: "auto",
             margin: "0"
         }

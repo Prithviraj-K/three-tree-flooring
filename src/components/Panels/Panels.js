@@ -7,8 +7,11 @@ import styles from "./panelStyle";
 
 import Fade from 'react-reveal';
 
+import Button from "../CustomButtons/Button.js";
 
-import { Typography, CardContent, Button } from '@material-ui/core';
+import panelPDF from '../../assets/versailles-panels.pdf';
+
+import { Typography, CardContent} from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
 import ScrollUpButton from "react-scroll-up-button";
 import Grid from '@material-ui/core/Grid';
@@ -64,12 +67,12 @@ const Panels = () => {
                         container
                         spacing={1}
                         className={classes.gridCont}
-                        alignItems="center"
+                        align="center"
                         justify="center"
                         textAlign="center"
                     >
                         {/* VICTORIA PANELS */}
-                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
+                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
                             <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
                             <Typography variant="h3" className={classes.panelTitle}>
                                 Victoria
@@ -97,33 +100,60 @@ const Panels = () => {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Divider style={{ height: "1em", margin: "2em 0" }} />
-                        </Grid>
                         <ScrollUpButton style={{ width: 40, height: 40 }} ToggledStyle={{ right: 10 }} />
-
-
-                        {/* CRATOSE PANELS */}
+                    </Grid>
+                </div>
+                <Divider style={{ height: "1em", margin: "2em 0" }} />
+                <div>
+                    <Grid
+                        container
+                        spacing={1}
+                        className={classes.gridCont}
+                        align="center"
+                        justify="center"
+                        textAlign="center"
+                    >
+                        {/* CHEVRON PANELS */}
+                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
+                            <img src={require('../../assets/img/panels/chevron-bg.png')} className={classes.imgLeft} />
+                            <Typography variant="h3" className={classes.panelTitle}>
+                                Chevron
+                            </Typography>
+                        </Grid>
                         <Grid item xs={12} sm={12} md={7} lg={7} xl={7} alignItems="center" justify="center" textAlign="center">
                             <Grid container spacing={1}>
                                 <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
-                                    <CardPanel name="Cratose" />
+                                    <CardPanel name="Chevron" />
                                 </Grid>
-                                
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Chevron European Oak" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Chevron Herringbone Oak" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Chevron Ash Brownie" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Chevron Walnut" />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+                                    <CardPanel name="Chevron Silver Metallic" />
+                                </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5} className={classes.gridLeft}>
-                            <img src={require('../../assets/img/panels/chevron-bg.png')} className={classes.imgLeft} />
-                            <Typography variant="h3" className={classes.panelTitle}>
-                                Chevron Herringbone
-                            </Typography>
-                        </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Divider style={{ height: "1em", margin: "2em 0" }} />
-                        </Grid>
-
-
                     </Grid>
+                    <div style={{textAlign: "center", marginBottom: "2em"}}>
+                        <Button 
+                            color="primary"
+                            round
+                            href={panelPDF}
+                            target="_blank"
+                            style={{fontSize: "1.2em"}}
+                        >
+                            View All Panels
+                        </Button>
+                    </div>
                 </div>
                 <Footer />
             </div>
