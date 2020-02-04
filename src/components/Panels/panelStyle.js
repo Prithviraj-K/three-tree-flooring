@@ -25,12 +25,12 @@ const panelStyle = {
         width: "100%"
     },
     imgLeft: {
-        width: "90%",
+        width: "100%",
         height: "auto"
     },
     gridLeft: {
         width: "100%",
-        height: "80vh"
+        height: "83vh"
     },
     panelTitle: {
         textAlign: "center", 
@@ -43,10 +43,6 @@ const panelStyle = {
         gridLeft: {
             width: "auto",
             height: "80vh"
-        },
-        imgLeft: {
-            width: "90",
-            height: "auto"
         },
         panelTitle: {
             marginTop: "-5em"

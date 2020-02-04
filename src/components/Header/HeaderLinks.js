@@ -57,10 +57,10 @@ export default function HeaderLinks(props) {
               <Link to="/Hardwood" className={classes.dropdownLink}>
                 Engineered White Oak Hardwood
               </Link>,
-              <Link to="/Panels" className={classes.dropdownLink}>
+              /*<Link to="/Panels" className={classes.dropdownLink}>
                 Versailles Panels
               </Link>,
-              /*
+              
                 <Link to="/Accessories" className={classes.dropdownLink}>
                   Accessories
                 </Link>
