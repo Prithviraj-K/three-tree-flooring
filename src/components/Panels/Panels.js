@@ -11,34 +11,19 @@ import Button from "../CustomButtons/Button.js";
 
 import panelPDF from '../../assets/versailles-panels.pdf';
 
-import { Typography, CardContent} from '@material-ui/core';
+import { Typography} from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
 import ScrollUpButton from "react-scroll-up-button";
 import Grid from '@material-ui/core/Grid';
 import CardPanel from './CardPanel';
-import Parallax from '../Parallax/Parallax';
 
 import Footer from '../Footer/Footer';
-
-import Card from '@material-ui/core/Card';
 
 import imgBg from "../../assets/img/whiteOakTexture.jpg";
 
 const logoBlack = require('../../assets/img/logo-black-large.png');
 
 const useStyles = makeStyles(styles);
-
-const panelList = [
-    { key: 1, name: "Victoria" },
-    { key: 2, name: "Cratose" },
-    { key: 3, name: "Carmina" },
-    { key: 4, name: "Gloria" },
-    { key: 5, name: "Galina" },
-    { key: 6, name: "Pisa" },
-    { key: 7, name: "Diana" },
-    { key: 8, name: "Alvina" }
-
-];
 
 const Panels = () => {
 
@@ -73,7 +58,11 @@ const Panels = () => {
                     >
                         {/* VICTORIA PANELS */}
                         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                            <img src={require('../../assets/img/panels/victoria-bg.png')} className={classes.imgLeft} />
+                            <img 
+                                src={require('../../assets/img/panels/victoria-bg.png')} 
+                                className={classes.imgLeft} 
+                                alt="Victoria"
+                            />
                             <Typography variant="h3" className={classes.panelTitle}>
                                 Victoria
                             </Typography>
@@ -115,7 +104,11 @@ const Panels = () => {
                     >
                         {/* CHEVRON PANELS */}
                         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                            <img src={require('../../assets/img/panels/chevron-bg.png')} className={classes.imgLeft} />
+                            <img 
+                                src={require('../../assets/img/panels/chevron-bg.png')} 
+                                className={classes.imgLeft}
+                                alt="Chevron"
+                            />
                             <Typography variant="h3" className={classes.panelTitle}>
                                 Chevron
                             </Typography>
