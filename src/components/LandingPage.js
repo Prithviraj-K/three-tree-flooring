@@ -57,7 +57,7 @@ const LandingPage = (props) => {
                 </div>
             </div>
             <div style={{marginBottom: "2em"}}>
-                <div style={{backgroundColor: "#daffad", marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em", paddingBottom: "2em"}}>
+                <div style={{backgroundColor: "#8E8D8A", marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em", paddingBottom: "2em"}}>
                     <SectionPills/>
                 </div>
             </div>

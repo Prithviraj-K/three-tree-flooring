@@ -4,7 +4,7 @@ import image from "../../assets/img/bg.jpg"
 const pillsStyle = {
   section: {
     padding: "0",
-    backgroundColor: "#daffad"
+    backgroundColor: "#8E8D8A"
   },
   container,
   title: {
