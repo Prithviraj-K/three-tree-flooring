@@ -35,7 +35,7 @@ const LandingPage = (props) => {
                 logoC={logos.logoWhite}
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 550,
+                    height: 450,
                     color: "white"
                 }}
             />
@@ -46,22 +46,21 @@ const LandingPage = (props) => {
             </Fade>
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
-                <Divider style={{margin: "2em"}}/>
                 <div>
                     <Fade>
-                        <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>
+                        <Typography variant="h6" align="center" className={classes.pStyle}>
                             Inspired by the company’s European roots we provide engineered hardwood flooring 
                             encompassed with European quality, design and innovation with a Canadian touch.
                         </Typography>
                     </Fade>
                 </div>
             </div>
-            <div style={{marginBottom: "2em"}}>
+            <div>
                 <div style={{backgroundColor: "#8E8D8A", marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em", paddingBottom: "2em"}}>
                     <SectionPills/>
                 </div>
             </div>
-            <div style={{backgroundColor: ""}}>
+            <div style={{paddingTop: "2em", backgroundColor: "#EAE7DC"}}>
                <InstaGallery/>
             </div>
             <Footer/>

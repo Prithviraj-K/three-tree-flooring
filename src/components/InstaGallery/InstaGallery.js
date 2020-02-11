@@ -3,15 +3,17 @@ import InstagramEmbed from 'react-instagram-embed';
 import Flexbox from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Fade from 'react-reveal/Fade';
+import Divider from '@material-ui/core/Divider';
 
 const InstaGallery = () => {
     return (
         <Fade bottom>
-            <div>
-                <Typography variant="h4" align="center" style={{ marginBottom: "1em" }}>
+            <div style={{backgroundColor: "#EAE7DC"}}>
+                <Typography variant="h4" align="center" style={{ }}>
                     Latest From Us
                 </Typography>
-                <div style={{ width: "100%" }}>
+                <Divider style={{margin: "0 5em"}}/>
+                <div style={{ marginTop: "1em", width: "100%" }}>
                     <Flexbox
                         alignItems="center"
                         justifyContent="center"
@@ -19,7 +21,7 @@ const InstaGallery = () => {
                         flexWrap='wrap'
                         flexDirection="row"
                         mx="auto"
-                        bgcolor="white"
+                        bgcolor="#EAE7DC"
                         style={{ paddingBottom: "2em" }}
                     >
                         <Flexbox p={1}>

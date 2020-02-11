@@ -1,10 +1,16 @@
 const LandingPageStyle = {
     carouselFit: {
-        height: "90vh"
+        height: "95vh"
+    },
+    pStyle:{
+        margin: "4em 2em"
     },
     '@media (max-width: 770px)': {
         carouselFit: {
-          height: "85vh"
+          height: "65vh"
+        },
+        pStyle:{
+            margin: "4em 2em"
         }
     }
 };
