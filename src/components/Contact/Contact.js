@@ -25,7 +25,7 @@ import styles from './contactFormStyle';
 
 const useStyles = makeStyles(styles);
 
-const logoBlack = require ('../../assets/img/logo-black-large.png');
+const logoBlack = require ('../../assets/img/logo-black.png');
 
 
 const Contact = () => {

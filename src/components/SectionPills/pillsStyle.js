@@ -3,7 +3,8 @@ import image from "../../assets/img/bg.jpg"
 
 const pillsStyle = {
   section: {
-    padding: "0"
+    padding: "0",
+    backgroundColor: "#daffad"
   },
   container,
   title: {

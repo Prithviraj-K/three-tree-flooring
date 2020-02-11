@@ -54,16 +54,14 @@ const LandingPage = (props) => {
                             encompassed with European quality, design and innovation with a Canadian touch.
                         </Typography>
                     </Fade>
-                    <Divider style={{margin: "2em"}}/>
                 </div>
             </div>
             <div style={{marginBottom: "2em"}}>
-                <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
+                <div style={{backgroundColor: "#daffad", marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em", paddingBottom: "2em"}}>
                     <SectionPills/>
                 </div>
             </div>
-            <Divider style={{margin: "2em"}}/>
-            <div>
+            <div style={{backgroundColor: ""}}>
                <InstaGallery/>
             </div>
             <Footer/>

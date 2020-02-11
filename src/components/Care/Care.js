@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     }
   }));
 
-const logoBlack = require ('../../assets/img/logo-black-large.png');
+const logoBlack = require ('../../assets/img/logo-black.png');
 
 const Care = () => {
 

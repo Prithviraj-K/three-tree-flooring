@@ -19,8 +19,8 @@ const InstaGallery = () => {
                         flexWrap='wrap'
                         flexDirection="row"
                         mx="auto"
-                        bgcolor="background.paper"
-                        style={{ marginBottom: "2em" }}
+                        bgcolor="white"
+                        style={{ paddingBottom: "2em" }}
                     >
                         <Flexbox p={1}>
                             <InstagramEmbed
@@ -162,76 +162,7 @@ const InstaGallery = () => {
                                 onFailure={() => { }}
                             />
                         </Flexbox>
-                        <Flexbox p={1}>
-                            <InstagramEmbed
-                                url='https://www.instagram.com/p/BgWaUdiFz0Q/'
-                                maxWidth={500}
-                                hideCaption={true}
-                                containerTagName='div'
-                                protocol=''
-                                injectScript
-                                onLoading={() => { }}
-                                onSuccess={() => { }}
-                                onAfterRender={() => { }}
-                                onFailure={() => { }}
-                            />
-                        </Flexbox>
-                        <Flexbox p={1}>
-                            <InstagramEmbed
-                                url='https://www.instagram.com/p/Bf92LMtFDpw/'
-                                maxWidth={500}
-                                hideCaption={true}
-                                containerTagName='div'
-                                protocol=''
-                                injectScript
-                                onLoading={() => { }}
-                                onSuccess={() => { }}
-                                onAfterRender={() => { }}
-                                onFailure={() => { }}
-                            />
-                        </Flexbox>
-                        <Flexbox p={1}>
-                            <InstagramEmbed
-                                url='https://www.instagram.com/p/BffKSBYFO88/'
-                                maxWidth={500}
-                                hideCaption={true}
-                                containerTagName='div'
-                                protocol=''
-                                injectScript
-                                onLoading={() => { }}
-                                onSuccess={() => { }}
-                                onAfterRender={() => { }}
-                                onFailure={() => { }}
-                            />
-                        </Flexbox>
-                        <Flexbox p={1}>
-                            <InstagramEmbed
-                                url='https://www.instagram.com/p/BfL4XTMF1Nx/'
-                                maxWidth={500}
-                                hideCaption={true}
-                                containerTagName='div'
-                                protocol=''
-                                injectScript
-                                onLoading={() => { }}
-                                onSuccess={() => { }}
-                                onAfterRender={() => { }}
-                                onFailure={() => { }}
-                            />
-                        </Flexbox>
-                        <Flexbox p={1}>
-                            <InstagramEmbed
-                                url='https://www.instagram.com/p/BetIGCNFJdl/'
-                                maxWidth={500}
-                                hideCaption={true}
-                                containerTagName='div'
-                                protocol=''
-                                injectScript
-                                onLoading={() => { }}
-                                onSuccess={() => { }}
-                                onAfterRender={() => { }}
-                                onFailure={() => { }}
-                            />
-                        </Flexbox>
+                        
                     </Flexbox>
                 </div>
             </div>
