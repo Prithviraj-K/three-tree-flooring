@@ -46,7 +46,7 @@ const LandingPage = (props) => {
             </Fade>
             <ScrollUpButton style={{width: 40, height: 40}} ToggledStyle={{right: 10}}/>
             <div>
-                <Divider style={{marginTop: "2em"}}/>
+                <Divider style={{margin: "2em"}}/>
                 <div>
                     <Fade>
                         <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>
@@ -54,7 +54,7 @@ const LandingPage = (props) => {
                             encompassed with European quality, design and innovation with a Canadian touch.
                         </Typography>
                     </Fade>
-                    <Divider style={{marginTop: "2em"}}/>
+                    <Divider style={{margin: "2em"}}/>
                 </div>
             </div>
             <div style={{marginBottom: "2em"}}>
@@ -62,6 +62,7 @@ const LandingPage = (props) => {
                     <SectionPills/>
                 </div>
             </div>
+            <Divider style={{margin: "2em"}}/>
             <div>
                <InstaGallery/>
             </div>

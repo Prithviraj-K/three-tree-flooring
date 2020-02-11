@@ -1,94 +1,241 @@
 import React from 'react';
 import InstagramEmbed from 'react-instagram-embed';
-import Grid from '@material-ui/core/Grid';
+import Flexbox from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import Fade from 'react-reveal/Fade';
 
 const InstaGallery = () => {
     return (
-        <div>
-            <Typography variant="h3">
-                Latest
-            </Typography>
-            <Grid 
-                container 
-                spacing={1}
-                alignItems="center"
-                justify="center"
-                style={{marginTop: "2em", width: "100%"}}
-            >
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <InstagramEmbed
-                        url='https://www.instagram.com/p/B7q-v5VgqhT/'
-                        maxWidth={320}
-                        hideCaption={true}
-                        containerTagName='div'
-                        protocol=''
-                        injectScript
-                        onLoading={() => { }}
-                        onSuccess={() => { }}
-                        onAfterRender={() => { }}
-                        onFailure={() => { }}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <InstagramEmbed
-                        url='https://www.instagram.com/p/B7bD-uSAKn6/'
-                        maxWidth={320}
-                        hideCaption={true}
-                        containerTagName='div'
-                        protocol=''
-                        injectScript
-                        onLoading={() => { }}
-                        onSuccess={() => { }}
-                        onAfterRender={() => { }}
-                        onFailure={() => { }}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <InstagramEmbed
-                        url='https://www.instagram.com/p/B1XmnH6gduE/'
-                        maxWidth={320}
-                        hideCaption={true}
-                        containerTagName='div'
-                        protocol=''
-                        injectScript
-                        onLoading={() => { }}
-                        onSuccess={() => { }}
-                        onAfterRender={() => { }}
-                        onFailure={() => { }}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <InstagramEmbed
-                        url='https://www.instagram.com/p/BzgGmGBAqZb/'
-                        maxWidth={320}
-                        hideCaption={true}
-                        containerTagName='div'
-                        protocol=''
-                        injectScript
-                        onLoading={() => { }}
-                        onSuccess={() => { }}
-                        onAfterRender={() => { }}
-                        onFailure={() => { }}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <InstagramEmbed
-                        url='https://www.instagram.com/p/By8G6EgAQyh/'
-                        maxWidth={500}
-                        hideCaption={true}
-                        containerTagName='div'
-                        protocol=''
-                        injectScript
-                        onLoading={() => { }}
-                        onSuccess={() => { }}
-                        onAfterRender={() => { }}
-                        onFailure={() => { }}
-                    />
-                </Grid>
-            </Grid>
-
-        </div>
+        <Fade bottom>
+            <div>
+                <Typography variant="h4" align="center" style={{ marginBottom: "1em" }}>
+                    Latest From Us
+                </Typography>
+                <div style={{ width: "100%" }}>
+                    <Flexbox
+                        alignItems="center"
+                        justifyContent="center"
+                        display='flex'
+                        flexWrap='wrap'
+                        flexDirection="row"
+                        mx="auto"
+                        bgcolor="background.paper"
+                        style={{ marginBottom: "2em" }}
+                    >
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/B7q-v5VgqhT/'
+                                maxWidth={320}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/B7bD-uSAKn6/'
+                                maxWidth={320}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/B1XmnH6gduE/'
+                                maxWidth={320}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BzgGmGBAqZb/'
+                                maxWidth={320}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/By8G6EgAQyh/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BqN4rXEgp4o/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/Bp5DDZ4AtXK/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BoZs6B2grlf/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/Bi5joPblNsc/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BigPnGfF5Gl/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BgWaUdiFz0Q/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/Bf92LMtFDpw/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BffKSBYFO88/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BfL4XTMF1Nx/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                        <Flexbox p={1}>
+                            <InstagramEmbed
+                                url='https://www.instagram.com/p/BetIGCNFJdl/'
+                                maxWidth={500}
+                                hideCaption={true}
+                                containerTagName='div'
+                                protocol=''
+                                injectScript
+                                onLoading={() => { }}
+                                onSuccess={() => { }}
+                                onAfterRender={() => { }}
+                                onFailure={() => { }}
+                            />
+                        </Flexbox>
+                    </Flexbox>
+                </div>
+            </div>
+        </Fade>
     );
 }
 
