@@ -7,7 +7,6 @@ import Divider from '@material-ui/core/Divider';
 
 const InstaGallery = () => {
     return (
-        <Fade bottom>
             <div style={{backgroundColor: "#EAE7DC"}}>
                 <Typography variant="h4" align="center" style={{ }}>
                     Latest From Us
@@ -168,7 +167,6 @@ const InstaGallery = () => {
                     </Flexbox>
                 </div>
             </div>
-        </Fade>
     );
 }
 
