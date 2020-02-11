@@ -48,13 +48,13 @@ const ContactDetails = () => {
             <div style={{textAlign: "center", fontWeight: "bold", textDecoration: "underline"}}>
                 Visit us on social media
                 <div style={{marginTop: "1em"}}>
-                    <a target="_blank" href="https://www.facebook.com/ThreeTreesFlooring/" style={{color: "black"}}>
+                    <a target="_blank" href="https://www.facebook.com/ThreeTreesFlooring/" rel="noopener noreferrer" style={{color: "black"}}>
                         <FacebookIcon/>
                     </a>
-                    <a target="_blank" href="https://ca.linkedin.com/company/three-trees-flooring" style={{color: "black"}}>
+                    <a target="_blank" href="https://ca.linkedin.com/company/three-trees-flooring" rel="noopener noreferrer" style={{color: "black"}}>
                         <LinkedInIcon/>
                     </a>
-                    <a target="_blank" href="https://www.instagram.com/threetreesflooring/?hl=en" style={{color: "black"}}>
+                    <a target="_blank" href="https://www.instagram.com/threetreesflooring/?hl=en" rel="noopener noreferrer" style={{color: "black"}}>
                         <InstagramIcon/>
                     </a>
                 </div>

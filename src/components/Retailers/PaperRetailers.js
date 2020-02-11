@@ -13,7 +13,7 @@ const PaperRetailers = (props) => {
     const classes = useStyles();
     return(
         <div>
-            <a href={props.link} target="_blank" style={{textDecoration: "none"}}>
+            <a href={props.link} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
                 <Paper elevation={3} variant="outlined" className={classes.gridPaper}>
                     <Typography variant="body1" className={classes.retailTitle}>
                         <div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
 import HeaderLinks from '../Header/HeaderLinks';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
