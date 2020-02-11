@@ -7,6 +7,7 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
 import Fade from 'react-reveal/Fade';
+import InstaGallery from './InstaGallery/InstaGallery';
 
 import ScrollUpButton from 'react-scroll-up-button';
 //Material
@@ -47,7 +48,7 @@ const LandingPage = (props) => {
             <div>
                 <Divider style={{marginTop: "2em"}}/>
                 <div>
-                    <Fade bottom>
+                    <Fade>
                         <Typography variant="h6" align="center" style={{padding: "2em", marginTop:"2em"}}>
                             Inspired by the company’s European roots we provide engineered hardwood flooring 
                             encompassed with European quality, design and innovation with a Canadian touch.
@@ -60,6 +61,9 @@ const LandingPage = (props) => {
                 <div style={{marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em"}}>
                     <SectionPills/>
                 </div>
+            </div>
+            <div>
+               <InstaGallery/>
             </div>
             <Footer/>
         </div>
