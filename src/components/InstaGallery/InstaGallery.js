@@ -35,7 +35,6 @@ const InstaGallery = () => {
                                 onSuccess={() => { }}
                                 onAfterRender={() => { }}
                                 onFailure={() => { }}
-                                style={{boxShadow: "-3px 10px 10px 12px rgba(0,0,0,0.6)"}}
                             />
                         </Flexbox>
                         <Flexbox p={1}>
