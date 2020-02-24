@@ -15,7 +15,7 @@ import layerImg from '../../assets/img/woodLayers.png';
 import styles from './styleCare';
 const useStyles = makeStyles(styles);
 
-const logoBlack = require('../../assets/img/logo-black.png');
+const logoBlack = require('../../assets/img/logo-black-large.png');
 
 const Care = () => {
     const classes = useStyles();

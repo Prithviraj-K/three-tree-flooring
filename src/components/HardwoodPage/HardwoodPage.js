@@ -53,7 +53,7 @@ const construction = "2-Ply construction - Marine grade – Baltic Birch 3-ply c
 const plankL = "5.7 ft - 7.7 ft";
 const cert = "100% FSC Certified";
 
-const logoBlack = require ('../../assets/img/logo-black.png');
+const logoBlack = require ('../../assets/img/logo-black-large.png');
 
 
 const HardwoodPage = () => {

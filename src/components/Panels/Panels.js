@@ -21,7 +21,7 @@ import Footer from '../Footer/Footer';
 
 import imgBg from "../../assets/img/whiteOakTexture.jpg";
 
-const logoBlack = require('../../assets/img/logo-black.png');
+const logoBlack = require('../../assets/img/logo-black-large.png');
 
 const useStyles = makeStyles(styles);
 

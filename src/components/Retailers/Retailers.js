@@ -23,7 +23,7 @@ import styles from './retailerStyle';
 
 const useStyles = makeStyles(styles);
 
-const logoBlack = require ('../../assets/img/logo-black.png');
+const logoBlack = require ('../../assets/img/logo-black-large.png');
 
 const Retailers = () => {
 
