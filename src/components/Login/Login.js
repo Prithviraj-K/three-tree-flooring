@@ -70,12 +70,6 @@ const Login = () => {
                                     <Button className={classes.btnCard}>
                                         Login
                                     </Button>
-                                    <Typography variant="body" style={{textAlign: "center"}}>
-                                        Dont have an account?
-                                    </Typography>
-                                    <Button className={classes.btnCard}>
-                                        Register
-                                    </Button>
                                 </FormControl>
                                 <div className={classes.divBtn}>
                                     <Button color="primary" className={classes.loginBtn}>
@@ -87,6 +81,16 @@ const Login = () => {
                                     <Button className={classes.loginBtn}>
                                         <img className={classes.googleBtn} src={GoogleIcon} alt="Google" /> Sign in with Google
                                 </Button>
+                                </div>
+                                <div style={{textAlign: "center"}}>
+                                    <Typography variant="body" style={{textAlign: "center"}}>
+                                        Don't have an account?
+                                    </Typography>
+                                </div>
+                                <div style={{textAlign: "center", marginBottom: "2em"}}>
+                                    <Button className={classes.btnCard}>
+                                        Register
+                                    </Button>
                                 </div>
                             </Card>
                         </Jump>

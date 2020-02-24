@@ -5,8 +5,7 @@ const styleLogin = {
     loginCard: {
         boxShadow: "0 8px 40px -12px rgba(0,0,0,0.8) !important",
         borderRadius: "2em",
-        width: "30vw",
-        padding: "2em"
+        width: "30vw"
     },
     textCard: {
         textAlign: "center",
@@ -26,7 +25,7 @@ const styleLogin = {
     btnCard: {
         width: "40%",
         height: "3em",
-        margin: "1em auto 0 auto",
+        margin: "0 auto",
         border: "1px solid black"
     },
     loginBtn: {
@@ -44,6 +43,9 @@ const styleLogin = {
     googleBtn: {
         height: "1.5em",
         paddingRight: "1em"
+    },
+    registerStyle: {
+
     },
     '@media (max-width: 1280px)': {
         loginCard: {
