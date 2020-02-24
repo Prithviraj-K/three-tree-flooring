@@ -1,7 +1,6 @@
 const styleLogin = {
     containerGrid: {
-        minHeight: "100vh",
-        backgroundColor: "#99968e"
+        minHeight: "100vh"
     },
     loginCard: {
         boxShadow: "0 8px 40px -12px rgba(0,0,0,0.8) !important",
@@ -27,11 +26,12 @@ const styleLogin = {
     btnCard: {
         width: "40%",
         height: "3em",
-        margin: "1em auto 1em auto",
+        margin: "1em auto 0 auto",
         border: "1px solid black"
     },
     loginBtn: {
-        padding:"1em 2em"
+        marginTop: "0.33em",
+        padding:"1em 1em"
     },
     divBtn: {
         width: "100%",
@@ -64,7 +64,7 @@ const styleLogin = {
     '@media (max-width: 600px)': {
         loginCard: {
             width: "80vw",
-            padding: "2em"
+            padding: "0.7em"
         },
         btnCard: {
             width: "70%"

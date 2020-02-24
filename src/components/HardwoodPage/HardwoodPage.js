@@ -81,7 +81,7 @@ const HardwoodPage = () => {
     );
 
     return(
-        <div>
+        <div style={{backgroundImage: `url(${imgBg})`, backgroundAttachment: "fixed"}}>
             <Header
                 rightLinks={<HeaderLinks />}
                 fixed
@@ -92,8 +92,6 @@ const HardwoodPage = () => {
                 style={{ 
                     width: "100%", 
                     height:"100%", 
-                    backgroundImage: `url(${imgBg})`, 
-                    backgroundAttachment: "fixed"
                 }}
             >
                 <Fade top>

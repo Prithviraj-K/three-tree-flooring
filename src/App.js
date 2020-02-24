@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import { Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
 import ScrollToTop from './ScrollToTop';
-
 
 import CarePage from './components/Care/Care';
 import LandingPage from './components/LandingPage';
@@ -14,12 +13,9 @@ import Panels from './components/Panels/Panels';
 import Docs from './components/Docs/Docs';
 import Accessories from './components/Accessories/Accessories';
 
-var history = createBrowserHistory();
-
 class App extends Component {
   render(){
     return(
-      <Router history={history}>
         <ScrollToTop>
           <Switch>
               <Route path="/" exact component={LandingPage} />
@@ -32,10 +28,16 @@ class App extends Component {
               <Route path="/Docs" component={Docs}/>
               <Route path="/Accessories" component={Accessories}/>
           </Switch>
-        </ScrollToTop>  
-      </Router>
+        </ScrollToTop>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    isAuthenticated: state.auth.isAuthenticated,
+    isVerifying: state.auth.isVerifying
+  };
+}
+
+export default connect(mapStateToProps)(App);
