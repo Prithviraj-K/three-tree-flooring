@@ -69,10 +69,13 @@ const Login = () => {
                                     />
                                     <Button className={classes.btnCard}>
                                         Login
-                                </Button>
+                                    </Button>
+                                    <Typography variant="body" style={{textAlign: "center"}}>
+                                        Dont have an account?
+                                    </Typography>
                                     <Button className={classes.btnCard}>
                                         Register
-                                </Button>
+                                    </Button>
                                 </FormControl>
                                 <div className={classes.divBtn}>
                                     <Button color="primary" className={classes.loginBtn}>

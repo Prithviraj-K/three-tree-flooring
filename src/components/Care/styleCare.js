@@ -4,8 +4,8 @@ const styleCare = {
         overflow: "hidden"
     },
     sectionTop: {
-        marginTop: "6em", 
-        marginBottom: "3em"
+        minHeight: "400px",
+        margin: "6em auto 2em auto"
     },
     engTitle: {
         margin: "auto", 
@@ -16,10 +16,9 @@ const styleCare = {
         backgroundColor: "black"
     },
     layerImg: {
-        width: "60%", 
+        height: "400px", 
         verticalAlign: "middle", 
-        justify: "center", 
-        paddingRight: "2em"
+        justify: "center"
     },
     titleEng: {
         color: "white"
@@ -30,9 +29,25 @@ const styleCare = {
         width: "20%", 
         backgroundColor: "#000000"
     },
-    '@media (max-width: 770px)': {
+    '@media (max-width: 960px)': {
+        layerImg: {
+            width: "80%",
+            margin: "auto",
+            height: "auto"
+        },
+        sectionTop: {
+            height: "auto",
+            minHeight: "300px"
+        }
+    },
+    '@media (max-width: 600px)': {
       layerImg:{
-        width: "100%"
+        width: "100%",
+        height: "auto"
+      },
+      sectionTop: {
+        height: "auto",
+        minHeight: "250px"
       },
       titleDivide: {
         width: "80%"
