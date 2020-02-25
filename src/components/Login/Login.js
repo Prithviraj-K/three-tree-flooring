@@ -174,7 +174,7 @@ class Login extends Component {
         else {
             return (
                 <Fade>
-                    <div style={{ backgroundImage: `url(${imgBg})`, backgroundSize: "cover", overflow: "hidden" }}>
+                    <div style={{ backgroundImage: `url(${imgBg})`, backgroundSize: "cover", overflow: "hidden", height: "100vh" }}>
                         <Header
                             rightLinks={<HeaderLinks />}
                             fixed
@@ -253,7 +253,7 @@ class Login extends Component {
                                                     Register Now
                                                 </Typography>
                                                 <Divider style={{ marginTop: "1em" }} />
-                                                <FormControl className={classes.formCard} >
+                                                <FormControl className={classes.formCard}>
                                                     <TextField
                                                         className={classes.textfieldCard}
                                                         id="outlined-basic-2"
