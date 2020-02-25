@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { loginUser } from '../../actions';
+import { registerUser } from '../../actions';
+
 import { withStyles } from "@material-ui/styles";
 
 import Header from '../Header/Header';
@@ -18,7 +20,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GoogleIcon from '../../assets/img/google-login.png';
 import Jump from 'react-reveal/Jump';
 import Fade from 'react-reveal/Fade';
-import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ReactCardFlip from 'react-card-flip';
 
 import imgBg from '../../assets/img/wet-wood.jpg';
@@ -49,8 +52,7 @@ const styles = () => ({
     btnCard: {
         width: "40%",
         height: "3em",
-        margin: "0 auto",
-        border: "1px solid black"
+        margin: "0 auto"
     },
     loginBtn: {
         marginTop: "0.33em",
@@ -111,10 +113,10 @@ class Login extends Component {
         this.state = {
             isFlipped: false
         };
-        this.handleClick = this.handleClick.bind(this);
+        this.handleFlipClick = this.handleFlipClick.bind(this);
     };
 
-    handleClick(event) {
+    handleFlipClick(event) {
         event.preventDefault();
         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
     }
@@ -147,8 +149,15 @@ class Login extends Component {
         dispatch(loginUser(email, password));
     };
 
+    handleRegister = () => {
+        console.log("Register");
+        const { dispatch } = this.props;
+        const { signEmail, signPassword } = this.state;
+        dispatch(registerUser(signEmail, signPassword));
+    };
+
     render() {
-        const { classes, loginError, isAuthenticated } = this.props;
+        const { classes, loginError, isAuthenticated, registerError } = this.props;
 
         if (isAuthenticated) {
             return <Redirect to="/Profile" />;
@@ -180,7 +189,7 @@ class Login extends Component {
                                                     Welcome Back
                                                 </Typography>
                                             </CardContent>
-                                            <Divider style={{width: "95%", margin: "0em auto"}}/>
+                                            <Divider style={{ width: "95%", margin: "0em auto" }} />
                                             <FormControl className={classes.formCard}>
                                                 <TextField
                                                     className={classes.textfieldCard}
@@ -191,19 +200,20 @@ class Login extends Component {
                                                 />
                                                 <TextField
                                                     className={classes.textfieldCard}
-                                                    id="outlined-basic"
+                                                    id="outlined-basic-1"
                                                     label="Password"
                                                     variant="outlined"
                                                     type="password"
                                                     onChange={this.handlePasswordChange}
                                                 />
                                                 {loginError && (
-                                                    <Typography component="p" className={classes.incorrectTxt}>Passwords don't match</Typography>
+                                                    <Typography component="p" className={classes.incorrectTxt}>Incorrect email or password</Typography>
                                                 )}
-                                                <Button className={classes.btnCard} onClick={this.handleSubmit}>
+                                                <Button disabled={(this.state.email == "") || (this.state.password == "")} className={classes.btnCard} onClick={this.handleSubmit}>
                                                     Login
                                                 </Button>
                                             </FormControl>
+                                            {/* TODO: LINK GOOGLE SIGN IN AND FACEBOOK SIGN IN
                                             <div className={classes.divBtn}>
                                                 <Button color="primary" className={classes.loginBtn}>
                                                     <FacebookIcon style={{ paddingRight: "0.5em" }} />
@@ -215,55 +225,65 @@ class Login extends Component {
                                                     <img className={classes.googleBtn} src={GoogleIcon} alt="Google" /> Sign in with Google
                                                 </Button>
                                             </div>
-                                            <div style={{ textAlign: "center" }}>
+                                            */}
+                                            <div style={{marginTop: "4em", textAlign: "center" }}>
                                                 <Typography variant="body" style={{ textAlign: "center" }}>
                                                     Don't have an account?
                                                 </Typography>
                                             </div>
                                             <div style={{ textAlign: "center", marginBottom: "2em" }}>
-                                                <Button className={classes.btnCard} onClick={this.handleClick}>
+                                                <Button className={classes.btnCard} onClick={this.handleFlipClick}>
                                                     Register
+                                                    <ArrowForwardIcon />
                                                 </Button>
                                             </div>
                                         </Card>
                                         <Card className={classes.loginCard}>
-                                            <CardContent className={classes.textCard}>
+                                            <CardContent className={classes.textCard} style={{ margin: "2em 0" }}>
                                                 <Typography variant="h5">
-                                                    <KeyboardBackspaceIcon onClick={this.handleClick} style={{float: "left"}}/>
+                                                    <ArrowBackIcon onClick={this.handleFlipClick} style={{ float: "left" }} />
                                                     Register Now
                                                 </Typography>
-                                                <Divider style={{marginTop: "1em"}}/>
-                                                <FormControl className={classes.formCard}>
-                                                <TextField
-                                                    className={classes.textfieldCard}
-                                                    id="outlined-basic"
-                                                    label="Email"
-                                                    variant="outlined"
-                                                    onChange={this.handleSignEmailChange}
-                                                />
-                                                <TextField
-                                                    className={classes.textfieldCard}
-                                                    id="outlined-basic"
-                                                    label="Password"
-                                                    variant="outlined"
-                                                    type="password"
-                                                    onChange={this.handleSignPasswordChange}
-                                                />
-                                                <TextField
-                                                    className={classes.textfieldCard}
-                                                    id="outlined-basic"
-                                                    label="Confirm Password"
-                                                    variant="outlined"
-                                                    type="password"
-                                                    onChange={this.handleConfirmPasswordChange}
-                                                />
-                                                {(this.state.signPassword != this.state.confirmPassword) && (
-                                                    <Typography component="p" className={classes.incorrectTxt}>Passwords don't match</Typography>
-                                                )}
-                                                <Button className={classes.btnCard}>
-                                                    Sign Up
-                                                </Button>
-                                            </FormControl>
+                                                <Divider style={{ marginTop: "1em" }} />
+                                                <FormControl className={classes.formCard} >
+                                                    <TextField
+                                                        className={classes.textfieldCard}
+                                                        id="outlined-basic-2"
+                                                        label="Email"
+                                                        variant="outlined"
+                                                        onChange={this.handleSignEmailChange}
+                                                    />
+                                                    <TextField
+                                                        className={classes.textfieldCard}
+                                                        id="outlined-basic-3"
+                                                        label="Password"
+                                                        variant="outlined"
+                                                        type="password"
+                                                        onChange={this.handleSignPasswordChange}
+                                                    />
+                                                    <TextField
+                                                        className={classes.textfieldCard}
+                                                        id="outlined-basic-4"
+                                                        label="Confirm Password"
+                                                        variant="outlined"
+                                                        type="password"
+                                                        onChange={this.handleConfirmPasswordChange}
+                                                    />
+                                                    {registerError && (
+                                                        <Typography component="p" className={classes.incorrectTxt}>Invalid Email</Typography>
+                                                    )}
+                                                    {(this.state.signPassword !== this.state.confirmPassword) && (
+                                                        <Typography component="p" className={classes.incorrectTxt}>Passwords don't match</Typography>
+                                                    )}
+                                                    <Button 
+                                                        disabled={(this.state.signPassword !== this.state.confirmPassword)}
+                                                        className={classes.btnCard} 
+                                                        onClick={this.handleRegister}
+                                                        type="submit"
+                                                    >
+                                                            Sign Up
+                                                    </Button>
+                                                </FormControl>
                                             </CardContent>
                                         </Card>
                                     </ReactCardFlip>
@@ -281,7 +301,8 @@ function mapStateToProps(state) {
     return {
         isLoggingIn: state.auth.isLoggingIn,
         loginError: state.auth.loginError,
-        isAuthenticated: state.auth.isAuthenticated
+        isAuthenticated: state.auth.isAuthenticated,
+        registerError: state.auth.registerError
     };
 }
 
