@@ -33,7 +33,7 @@ const styles = () => ({
         marginTop: "1em"
     },
     loginCard: {
-        boxShadow: "0 8px 40px -12px rgba(0,0,0,0.8) !important",
+        boxShadow: "20px 20px 40px 30px rgba(0,0,0,0.6) !important",
         borderRadius: "2em",
         width: "30vw"
     },
@@ -156,6 +156,16 @@ class Login extends Component {
         dispatch(registerUser(signEmail, signPassword));
     };
 
+    isLoginFormValid = () => {
+        const { email, password } = this.state;
+        return email, password;
+    };
+
+    isRegisterFormValid = () => {
+        const {signEmail, signPassword, confirmPassword} = this.state;
+        return signEmail, signPassword, confirmPassword;
+    };
+
     render() {
         const { classes, loginError, isAuthenticated, registerError } = this.props;
 
@@ -196,6 +206,7 @@ class Login extends Component {
                                                     id="outlined-basic"
                                                     label="Email"
                                                     variant="outlined"
+                                                    value={this.state.email}
                                                     onChange={this.handleEmailChange}
                                                 />
                                                 <TextField
@@ -204,12 +215,13 @@ class Login extends Component {
                                                     label="Password"
                                                     variant="outlined"
                                                     type="password"
+                                                    value={this.state.password}
                                                     onChange={this.handlePasswordChange}
                                                 />
                                                 {loginError && (
                                                     <Typography component="p" className={classes.incorrectTxt}>Incorrect email or password</Typography>
                                                 )}
-                                                <Button disabled={(this.state.email == "") || (this.state.password == "")} className={classes.btnCard} onClick={this.handleSubmit}>
+                                                <Button disabled={!this.isLoginFormValid()} className={classes.btnCard} onClick={this.handleSubmit}>
                                                     Login
                                                 </Button>
                                             </FormControl>
@@ -252,6 +264,7 @@ class Login extends Component {
                                                         label="Email"
                                                         variant="outlined"
                                                         onChange={this.handleSignEmailChange}
+                                                        value={this.state.signEmail}
                                                     />
                                                     <TextField
                                                         className={classes.textfieldCard}
@@ -260,6 +273,7 @@ class Login extends Component {
                                                         variant="outlined"
                                                         type="password"
                                                         onChange={this.handleSignPasswordChange}
+                                                        value={this.state.signPassword}
                                                     />
                                                     <TextField
                                                         className={classes.textfieldCard}
@@ -268,6 +282,7 @@ class Login extends Component {
                                                         variant="outlined"
                                                         type="password"
                                                         onChange={this.handleConfirmPasswordChange}
+                                                        value={this.state.confirmPassword}
                                                     />
                                                     {registerError && (
                                                         <Typography component="p" className={classes.incorrectTxt}>Invalid Email</Typography>
@@ -276,12 +291,11 @@ class Login extends Component {
                                                         <Typography component="p" className={classes.incorrectTxt}>Passwords don't match</Typography>
                                                     )}
                                                     <Button 
-                                                        disabled={(this.state.signPassword !== this.state.confirmPassword)}
+                                                        disabled={!this.isRegisterFormValid()}
                                                         className={classes.btnCard} 
                                                         onClick={this.handleRegister}
-                                                        type="submit"
                                                     >
-                                                            Sign Up
+                                                        Sign Up
                                                     </Button>
                                                 </FormControl>
                                             </CardContent>
