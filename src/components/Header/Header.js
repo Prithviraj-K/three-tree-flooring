@@ -17,7 +17,7 @@ import Menu from "@material-ui/icons/Menu";
 import styles from "./headerStyle.js";
 
 const logoWhite = require ('../../assets/img/logo-white.png');
-const logoBlack = require ('../../assets/img/logo-black.png');
+const logoBlack = require ('../../assets/img/logo-black-large.png');
 const logos = {logoWhite, logoBlack};
 
 const useStyles = makeStyles(styles);

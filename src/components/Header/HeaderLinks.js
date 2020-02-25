@@ -125,6 +125,7 @@ export default function HeaderLinks(props) {
               </Button>
             </Link>
         </ListItem>
+        {/*
         <ListItem className={classes.listItem}>
             <Link to="/Login" style={{ color: 'inherit', textDecoration: 'inherit'}}>
               <Button
@@ -137,6 +138,7 @@ export default function HeaderLinks(props) {
               </Button>
             </Link>
         </ListItem>
+        */}
     </List>
   );
 }
