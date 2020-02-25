@@ -9,8 +9,10 @@ import Button from '@material-ui/core/Button';
 
 const styles = () => ({
     divBtn: {
-        margin: "4em auto auto auto",
-        textAlign: "center"
+        margin: "auto",
+        textAlign: "center",
+        height: "5em",
+        width: "100%"
     }
 });
 
@@ -33,8 +35,11 @@ class Profile extends Component {
                     logoC={logoBlack}
                     color="white"
                 />
-                <div className={classes.divBtn}>
-                    <Button onClick={this.handleLogout}>Logout</Button>
+                <div style={{height: "80vh", backgroundColor: "#DEDEDE"}}>
+
+                </div>
+                <div>
+                    <Button onClick={this.handleLogout} className={classes.divBtn}>Logout</Button>
                     {isLoggingOut && <p>Logging out...</p>}
                     {logoutError && <p>Error logging out</p>}
                 </div>

@@ -150,7 +150,6 @@ class Login extends Component {
     };
 
     handleRegister = () => {
-        console.log("Register");
         const { dispatch } = this.props;
         const { signEmail, signPassword } = this.state;
         dispatch(registerUser(signEmail, signPassword));
@@ -162,7 +161,7 @@ class Login extends Component {
     };
 
     isRegisterFormValid = () => {
-        const {signEmail, signPassword, confirmPassword} = this.state;
+        const { signEmail, signPassword, confirmPassword } = this.state;
         return signEmail, signPassword, confirmPassword;
     };
 
@@ -206,7 +205,6 @@ class Login extends Component {
                                                     id="outlined-basic"
                                                     label="Email"
                                                     variant="outlined"
-                                                    value={this.state.email}
                                                     onChange={this.handleEmailChange}
                                                 />
                                                 <TextField
@@ -215,7 +213,6 @@ class Login extends Component {
                                                     label="Password"
                                                     variant="outlined"
                                                     type="password"
-                                                    value={this.state.password}
                                                     onChange={this.handlePasswordChange}
                                                 />
                                                 {loginError && (
@@ -225,35 +222,34 @@ class Login extends Component {
                                                     Login
                                                 </Button>
                                             </FormControl>
-                                            {/* TODO: LINK GOOGLE SIGN IN AND FACEBOOK SIGN IN
                                             <div className={classes.divBtn}>
-                                                <Button color="primary" className={classes.loginBtn}>
+                                                <Button disabled color="primary" className={classes.loginBtn}>
                                                     <FacebookIcon style={{ paddingRight: "0.5em" }} />
                                                     Continue with Facebook
                                                 </Button>
                                             </div>
-                                            <div className={classes.divBtn} style={{ marginBottom: "1.5em" }}>
-                                                <Button className={classes.loginBtn}>
+                                            <div className={classes.divBtn}>
+                                                <Button disabled className={classes.loginBtn}>
                                                     <img className={classes.googleBtn} src={GoogleIcon} alt="Google" /> Sign in with Google
                                                 </Button>
                                             </div>
-                                            */}
-                                            <div style={{marginTop: "4em", textAlign: "center" }}>
-                                                <Typography variant="body" style={{ textAlign: "center" }}>
-                                                    Don't have an account?
-                                                </Typography>
-                                            </div>
-                                            <div style={{ textAlign: "center", marginBottom: "2em" }}>
-                                                <Button className={classes.btnCard} onClick={this.handleFlipClick}>
-                                                    Register
+                                            <div style={{float: "right", margin: "1em"}}>
+                                                <div style={{marginTop: "0.5em", textAlign: "center" }}>
+                                                    <Typography variant="body1" style={{ textAlign: "center" }}>
+                                                        Don't have an account?
+                                                    </Typography>
+                                                </div>
+                                                <div style={{ textAlign: "center"}}>
+                                                    <Button  onClick={this.handleFlipClick}>
+                                                        Register
                                                     <ArrowForwardIcon />
-                                                </Button>
+                                                    </Button>
+                                                </div>
                                             </div>
                                         </Card>
                                         <Card className={classes.loginCard}>
                                             <CardContent className={classes.textCard} style={{ margin: "2em 0" }}>
                                                 <Typography variant="h5">
-                                                    <ArrowBackIcon onClick={this.handleFlipClick} style={{ float: "left" }} />
                                                     Register Now
                                                 </Typography>
                                                 <Divider style={{ marginTop: "1em" }} />
@@ -264,7 +260,6 @@ class Login extends Component {
                                                         label="Email"
                                                         variant="outlined"
                                                         onChange={this.handleSignEmailChange}
-                                                        value={this.state.signEmail}
                                                     />
                                                     <TextField
                                                         className={classes.textfieldCard}
@@ -273,7 +268,6 @@ class Login extends Component {
                                                         variant="outlined"
                                                         type="password"
                                                         onChange={this.handleSignPasswordChange}
-                                                        value={this.state.signPassword}
                                                     />
                                                     <TextField
                                                         className={classes.textfieldCard}
@@ -282,22 +276,25 @@ class Login extends Component {
                                                         variant="outlined"
                                                         type="password"
                                                         onChange={this.handleConfirmPasswordChange}
-                                                        value={this.state.confirmPassword}
                                                     />
                                                     {registerError && (
-                                                        <Typography component="p" className={classes.incorrectTxt}>Invalid Email</Typography>
+                                                        <Typography component="p" className={classes.incorrectTxt}>Invalid Email or Password</Typography>
                                                     )}
                                                     {(this.state.signPassword !== this.state.confirmPassword) && (
                                                         <Typography component="p" className={classes.incorrectTxt}>Passwords don't match</Typography>
                                                     )}
-                                                    <Button 
+                                                    <Button
                                                         disabled={!this.isRegisterFormValid()}
-                                                        className={classes.btnCard} 
+                                                        className={classes.btnCard}
                                                         onClick={this.handleRegister}
                                                     >
                                                         Sign Up
                                                     </Button>
                                                 </FormControl>
+                                                <Button  onClick={this.handleFlipClick} style={{margin: "2em", float: "left"}}>
+                                                    <ArrowBackIcon/>
+                                                    Back
+                                                </Button>
                                             </CardContent>
                                         </Card>
                                     </ReactCardFlip>

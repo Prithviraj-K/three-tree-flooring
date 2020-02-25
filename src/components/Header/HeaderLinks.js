@@ -4,7 +4,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
-
+import { connect } from 'react-redux';
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -28,7 +28,7 @@ import styles from "./headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function HeaderLinks(props) {
+const HeaderLinks = ({isAuthenticated}) => {
   const classes = useStyles();
   return (
       <List className={classes.list}>
@@ -133,10 +133,16 @@ export default function HeaderLinks(props) {
                 className={classes.navLink}
               >
                 <AccountCircleIcon />
-                  Profile
+                  {isAuthenticated ? 'Profile' : 'Login'}
               </Button>
             </Link>
         </ListItem>
     </List>
   );
 }
+
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+
+export default connect(mapStateToProps)(HeaderLinks);
