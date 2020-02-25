@@ -125,20 +125,18 @@ export default function HeaderLinks(props) {
               </Button>
             </Link>
         </ListItem>
-        {/*
         <ListItem className={classes.listItem}>
-            <Link to="/Login" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <Link to="/Profile" style={{ color: 'inherit', textDecoration: 'inherit'}}>
               <Button
                 color="transparent"
                 round
                 className={classes.navLink}
               >
                 <AccountCircleIcon />
-                  Login
+                  Profile
               </Button>
             </Link>
         </ListItem>
-        */}
     </List>
   );
 }
