@@ -30,7 +30,7 @@ function App(props) {
         <Route path="/Panels" component={Panels} />
         <Route path="/Docs" component={Docs} />
         <Route path="/Accessories" component={Accessories} />
-        <ProtectedRoute exact path="/Profile" component={Profile} isAuthenticated={isAuthenticated} isVerifying={isVerifying} />
+        {/*<ProtectedRoute exact path="/Profile" component={Profile} isAuthenticated={isAuthenticated} isVerifying={isVerifying} />*/}
       </Switch>
     </ScrollToTop>
   );
