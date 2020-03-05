@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions';
-import { withStyles } from "@material-ui/styles";
 import UserInformation from './UserInformation';
 import UserMenu from './UserMenu.js';
 import Grid from '@material-ui/core/Grid';
@@ -10,10 +9,15 @@ import Header from '../Header/Header';
 import HeaderLinks from '../Header/HeaderLinks';
 import Footer from '../Footer/Footer';
 
+import { makeStyles } from "@material-ui/core/styles";
+import styles from './styleProfile';
+
+const useStyles = makeStyles(styles);
+
 const logoBlack = require('../../assets/img/logo-black-large.png');
 
-class Profile extends Component {
-    render() {
+const Profile = () => {
+        const classes = useStyles();
         return (
             <div>
                 <Header
@@ -22,7 +26,7 @@ class Profile extends Component {
                     logoC={logoBlack}
                     color="white"
                 />
-                <div style={{ height: "70vh", padding: "5em", backgroundColor: "#DEDEDE" }}>
+                <div className={classes.divBG}>
                     <Grid
                         container
                         spacing={1}
@@ -38,7 +42,6 @@ class Profile extends Component {
                 <Footer />
             </div>
         );
-    }
 }
 
 

@@ -45,7 +45,6 @@ const headerLinksStyle = theme => ({
   },
   paper: {
     position: 'absolute',
-    height: "80%",
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],

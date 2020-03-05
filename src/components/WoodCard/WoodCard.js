@@ -113,7 +113,7 @@ export default function MediaCard(props) {
           <div style={{ textAlign: "center", justifyContent: "center" }} className={classes.paper}>
             <Typography variant="h5" align="center" style={{ marginBottom: "1em" }}>{props.name}</Typography>
             {imgModal}
-            {/*<Button className={classes.sampleBtn} style={{ borderBottom: "1px solid green" }}>Add to Cart</Button>*/}
+            <Button className={classes.sampleBtn} style={{ borderBottom: "1px solid green" }}>Add to Cart</Button>
             <Button onClick={handleClose} className={classes.sampleBtn} style={{ borderBottom: "1px solid red" }}>Close</Button>
           </div>
         </FadeMaterial>

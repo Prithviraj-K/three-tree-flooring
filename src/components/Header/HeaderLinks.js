@@ -31,6 +31,7 @@ import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button.js";
 
 import styles from "./headerLinksStyle.js";
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(styles);
 
@@ -58,7 +59,7 @@ const HeaderLinks = ({ isAuthenticated }) => {
             className={classes.navLink}
           >
             <HomeIcon />
-              Home
+            Home
             </Button>
         </Link>
       </ListItem>
@@ -161,7 +162,7 @@ const HeaderLinks = ({ isAuthenticated }) => {
           Cart
         </Button>
       </ListItem>
-      
+
       <Modal
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
@@ -176,8 +177,9 @@ const HeaderLinks = ({ isAuthenticated }) => {
       >
         <FadeMaterial in={open}>
           <div style={{ justifyContent: "center" }} className={classes.paper}>
-            <h3 style={{ textAlign: "center" }}>Cart</h3>
-            <Divider/>
+            <Typography variant="h6" align="center">Cart</Typography>
+            <Divider style={{ marginBottom: "2em" }} />
+            Cart is empty.
           </div>
         </FadeMaterial>
       </Modal>

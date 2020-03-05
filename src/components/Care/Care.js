@@ -65,7 +65,7 @@ const Care = () => {
                             <Divider className={classes.titleDivide} />
                         </Fade>
                         <Fade bottom>
-                            <Card style={{ margin: "1em" }}>
+                            <Card style={{ margin: "0 0 1em 0" }}>
                                 <CardContent>
                                     <TableContainer>
                                         <Table>
@@ -149,37 +149,37 @@ const Care = () => {
                                                     PROTECTION
                                                 </Typography>
                                                 <div>
-                                                    <Typography variant="h6">
+                                                    <Typography variant="h6" >
                                                         A. Post-installation
                                                     </Typography>
                                                     <Divider style={{ width: "80%", margin: "auto" }} />
-                                                    <div className={classes.textCard}>
-                                                        <Typography variant="body1">
+                                                    <div>
+                                                        <Typography variant="body1" align="left">
                                                             <span style={{ fontWeight: "bold" }}>1.</span> After installation, if you choose to protectively cover the floor,
                                                             cover the floor completely. Some species are light-sensitive and
                                                             uncovered areas may change color.
                                                         </Typography>
                                                     </div>
                                                     <div>
-                                                        <Typography variant="body1">
+                                                        <Typography variant="body1" align="left">
                                                             <span style={{ fontWeight: "bold" }}>2. </span>Covering a glue-down application may not allow some adhesives to properly
                                                             cure. Follow the flooring and adhesive manufacturers' recommendations.
                                                         </Typography>
                                                     </div>
                                                     <div>
-                                                        <Typography variant="body1">
+                                                        <Typography variant="body1" align="left">
                                                             <span style={{ fontWeight: "bold" }}>3. </span>Use a covering material with a vapor permeance (perm rating) of no less
                                                             than 1 perm (class III vapor retarder).
                                                         </Typography>
                                                     </div>
                                                     <div>
-                                                        <Typography variant="body1">
+                                                        <Typography variant="body1" align="left">
                                                             <span style={{ fontWeight: "bold" }}>4. </span>Any covering should be taped, using a low-adhesion tape, to base or shoe
                                                             mouldings. Do not tape to finished flooring. When taping paper or sheets together, tape them to each other not to the floor.
                                                         </Typography>
                                                     </div>
                                                     <div>
-                                                        <Typography variant="body1">
+                                                        <Typography variant="body1" align="left">
                                                             <span style={{ fontWeight: "bold" }}>5. </span>Do not allow the floor covering to sit on the installed floor for an extended
                                                             period of time.
                                                         </Typography>
@@ -191,14 +191,14 @@ const Care = () => {
                                 </Grid>
                                 <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
                                     <Fade bottom cascade>
-                                        <Card style={{marginTop: "1em"}}>
+                                        <Card>
                                             <CardContent className={classes.title}>
                                                 <Typography variant="h5">
                                                     OSMO WASH & CARE CONCENTRATE
                                                 </Typography>
                                                 <Divider style={{ width: "80%", margin: "auto" }} />
                                                 <div className={classes.textCard}>
-                                                    <Typography variant="body1">
+                                                    <Typography variant="body1" align="left">
                                                         Osmo Wash and Care is a special every day cleaning concentrate for
                                                         wooden and cork floors treated with Osmo Polyx®-Oil. Also suitable
                                                         for varnished, stone, plastic, PVC and other water resistant surfaces.
@@ -213,14 +213,14 @@ const Care = () => {
                                 </Grid>
                                 <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
                                     <Fade bottom>
-                                        <Card style={{marginTop: "1em"}}>
+                                        <Card>
                                             <CardContent className={classes.title}>
                                                 <Typography variant="h5">
                                                     OSMO MAINTENANCE OIL
                                                 </Typography>
                                                 <Divider style={{ width: "80%", margin: "auto" }} />
                                                 <div className={classes.textCard}>
-                                                    <Typography variant="body1">
+                                                    <Typography variant="body1" align="left">
                                                         For periodic maintenance, floors can be treated with Osmo Polyx®-Oil.
                                                         Floors with expected high tread and quick wear can be regenerated and
                                                         cleaned at the same time with Maintenance Oil. Based on natural vegetable
