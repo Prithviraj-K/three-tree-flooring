@@ -8,6 +8,8 @@ import EcoIcon from '@material-ui/icons/Eco';
 import FormatColorFillIcon from '@material-ui/icons/FormatColorFill';
 import BuildIcon from '@material-ui/icons/Build';
 
+import Typography from '@material-ui/core/Typography';
+
 import FSCLogo from "../../assets/img/FSC.png";
 import osmoLogo from "../../assets/img/osmo-logo.png"
 
@@ -30,7 +32,7 @@ export default function SectionPills() {
         <GridContainer>
           <GridItem xs={12} s={12} md={12} lg={12}>
             <div className={classes.title}>
-              <h2 style={{color: "black"}}>Why Choose Three Trees?</h2>
+              <Typography variant="h5" style={{color: "black", fontWeight: "bold"}}>Why Choose Three Trees?</Typography>
             </div>
               <NavPills
                 color="primary"
@@ -44,7 +46,7 @@ export default function SectionPills() {
                     tabIcon: FormatColorFillIcon,
                     tabContent: (
                       <span>
-                        <p>
+                        <Typography variant="body1">
                           Osmo® Hardwax-Oil is trusted world-wide for its quality reputation.
                           Hardwax Oil soaks in, lightly colors the wood and forms a protective film 
                           on the surface of the wood. wood finish that is derived from natural vegetable 
@@ -56,7 +58,7 @@ export default function SectionPills() {
                           <div style={{padding: "0",margin: "0", textAlign: "center"}}>
                             <img src={osmoLogo} alt="Osmo"/>
                           </div>
-                        </p>
+                        </Typography>
                         <div style={{padding: "0",margin: "0", textAlign: "center"}}>
                             <Button
                               color="primary"
@@ -75,7 +77,7 @@ export default function SectionPills() {
                     tabIcon: EcoIcon,
                     tabContent: (
                       <span>
-                        <p style={{marginBottom: "0", padding: "0"}}>
+                        <Typography variant="body1" style={{marginBottom: "0", padding: "0"}}>
                           Three Trees Flooring’s Eco-Friendly promise starts from the raw material to the finish of our flooring.
                           Our flooring is imported unfinished directly from Europe. We use only the highest quality white oak to 
                           produce our flooring sourcing the wood directly from FSC certified (Forest Stewardship Council) forests 
@@ -84,7 +86,7 @@ export default function SectionPills() {
                           <div style={{padding: "0",margin: "0", textAlign: "center"}}>
                             <img src={FSCLogo} alt="FSC"/>
                           </div>
-                        </p>
+                        </Typography>
                           <div style={{padding: "0",margin: "0", textAlign: "center"}}>
                             <Button
                               color="primary"
@@ -103,7 +105,7 @@ export default function SectionPills() {
                     tabIcon: BuildIcon,
                     tabContent: (
                       <span>
-                        <p>
+                        <Typography variant="body1">
                           Three Tree products are easy to take care of. Hardwood flooring can last a lifetime if maintained
                           properly. The key to successfully keep your flooring in the best shape is to ensure care and
                           maintenance is carried throughout the life of the hardwood. The process begins at Three Tree.
@@ -117,7 +119,7 @@ export default function SectionPills() {
                               </Button>
                             </Link>                            
                           </div>
-                        </p>
+                        </Typography>
                         <br/>
                         {/*<p>
                           Humidity Levels: Changes in humidity levels can cause any wood flooring to shrink or expand. In order 

@@ -149,7 +149,7 @@ const Care = () => {
                                                     PROTECTION
                                                 </Typography>
                                                 <div>
-                                                    <Typography variant="body1">
+                                                    <Typography variant="h6">
                                                         A. Post-installation
                                                     </Typography>
                                                     <Divider style={{ width: "80%", margin: "auto" }} />

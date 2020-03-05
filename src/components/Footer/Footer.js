@@ -9,7 +9,7 @@ import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from '../CustomButtons/Button';
 import NewReleasesIcon from '@material-ui/icons/NewReleases';
-
+import Typography from '@material-ui/core/Typography';
 import styles from "./footerStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -21,51 +21,53 @@ export default function Footer(props) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
   });
-  
+
   return (
-    <footer className={footerClasses} style={{backgroundColor: "black", color: "#FFF", boxShadow:
-    "0 -2px 20px 0px rgba(0, 0, 0, 0.14), 0 -4px 12px 5px rgba(33, 33, 33, 0.46)"}}>
+    <footer className={footerClasses} style={{
+      backgroundColor: "black", color: "#FFF", boxShadow:
+        "0 -2px 20px 0px rgba(0, 0, 0, 0.14), 0 -4px 12px 5px rgba(33, 33, 33, 0.46)"
+    }}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/" style={{ textDecoration: "none", color: "#FFF" }}>
+                <Button color="transparent" style={{ marginRight: "3px", borderBottom: "1px solid white" }}>
                   Home
                 </Button>
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/Hardwood" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Hardwood" style={{ textDecoration: "none", color: "#FFF" }}>
+                <Button color="transparent" style={{ marginRight: "3px", borderBottom: "1px solid white" }}>
                   Hardwood
                 </Button>
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/Panels" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Panels" style={{ textDecoration: "none", color: "#FFF" }}>
+                <Button color="transparent" style={{ marginRight: "3px", borderBottom: "1px solid white" }}>
                   Panels
                 </Button>
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/Care" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Care" style={{ textDecoration: "none", color: "#FFF" }}>
+                <Button color="transparent" style={{ marginRight: "3px", borderBottom: "1px solid white" }}>
                   Learn
                 </Button>
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/Retailers" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent" style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Retailers" style={{ textDecoration: "none", color: "#FFF" }}>
+                <Button color="transparent" style={{ marginRight: "3px", borderBottom: "1px solid white" }}>
                   Retailers
                 </Button>
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <Link to="/Contact" style={{textDecoration: "none", color: "#FFF"}}>
-                <Button color="transparent"style={{marginRight: "3px", borderBottom: "1px solid white"}}>
+              <Link to="/Contact" style={{ textDecoration: "none", color: "#FFF" }}>
+                <Button color="transparent" style={{ marginRight: "3px", borderBottom: "1px solid white" }}>
                   Contact Us
                 </Button>
               </Link>
@@ -73,23 +75,35 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
-          20 Alness, Unit 1
-          Toronto, ON
-          Canada
+          <Typography variant="body1">
+            20 Alness, Unit 1
+            Toronto, ON
+            Canada
+          </Typography>
           <div>
-            Monday - Friday:
+            <Typography variant="body2">
+              Monday - Friday:
+            </Typography>
             <div>
-              9:00 am - 5:00 pm
+              <Typography variant="body1">
+                9:00 am - 5:00 pm
+            </Typography>
             </div>
             <div>
-              Saturday - Sunday:
+              <Typography variant="body2">
+                Saturday - Sunday:
+              </Typography>
               <div>
-                Closed
+                <Typography variant="body1">Closed</Typography>
                 <div>
-                  <NewReleasesIcon style={{justify: "center", marginRight: "0.5em"}}/>
-                  We are not open to the public, please email for a meeting
+                  <NewReleasesIcon style={{ justify: "center", marginRight: "0.5em" }} />
+                  <Typography variant="h6">
+                    We are not open to the public, please email for a meeting
+                  </Typography>
                   <div>
-                    Website under construction
+                    <Typography variant="subtitle2">
+                      Website under construction
+                    </Typography>
                   </div>
                 </div>
               </div>
@@ -97,7 +111,7 @@ export default function Footer(props) {
           </div>
         </div>
       </div>
-    </footer>    
+    </footer >
   );
 }
 
