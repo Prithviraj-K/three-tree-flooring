@@ -75,10 +75,10 @@ export default function Header(props) {
         <Link to="/" className={classes.linkBtn}>
           <img src={logoSrc} alt="logo"/>
         </Link>
-        <Hidden smDown implementation="css">
+        <Hidden mdDown implementation="css">
           {rightLinks}
         </Hidden>
-        <Hidden mdUp>
+        <Hidden lgUp>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -88,7 +88,7 @@ export default function Header(props) {
           </IconButton>
         </Hidden>
       </Toolbar>
-      <Hidden mdUp implementation="js">
+      <Hidden lgUp implementation="js">
         <Drawer
           variant="temporary"
           anchor={"right"}

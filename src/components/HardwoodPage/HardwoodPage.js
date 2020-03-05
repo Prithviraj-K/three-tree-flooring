@@ -39,19 +39,6 @@ const listDetails = [
     {key: 24, name: "Vittorio", description: "Veneto"}
 ];
 
-const species = "White Oak";
-const grades = "Character, Select & Better";
-const origin = "Europe";
-const width = "4 1/4, 5 1/2, 7 1/2, 9 1/2";
-const thickness = "3/4, 5/8";
-const wearLayer = "4mm";
-const bevel = "Micro-bevel";
-const texture = "Wire-brush";
-const gloss = "Matte";
-const finish = "Osmo Hardwax-Oil";
-const construction = "2-Ply construction - Marine grade – Baltic Birch 3-ply construction core";
-const plankL = "5.7 ft - 7.7 ft";
-const cert = "100% FSC Certified";
 
 const logoBlack = require ('../../assets/img/logo-black-large.png');
 
@@ -62,20 +49,7 @@ const HardwoodPage = () => {
             <WoodCard
                 key={number.key}
                 name={number.name} 
-                description={number.description} 
-                species={species}
-                grades={grades}
-                origin={origin}
-                width={width}
-                thickness={thickness}
-                wearLayer={wearLayer}
-                bevel={bevel}
-                texture={texture}
-                gloss={gloss}
-                finish={finish}
-                construction={construction}
-                plankL={plankL}
-                cert={cert}
+                description={number.description}
             />
         </Grid>
     );
@@ -98,8 +72,8 @@ const HardwoodPage = () => {
                     <Typography variant="h3" style={{paddingTop: "2em", textAlign: "center"}}>
                         Collection
                     </Typography>
-                    <Typography variant="h5" style={{textAlign: "center", marginBottom: "1em"}}>
-                        Contact us for free samples
+                    <Typography variant="body1" style={{textAlign: "center", marginBottom: "1em"}}>
+                        Contact us for a <span style={{fontWeight: "bold"}}>free sample</span>
                     </Typography>
                 </Fade>
                 <Divider style={{margin: "auto", marginBottom: "2em", width: "20%", backgroundColor: "#000000"}}/>

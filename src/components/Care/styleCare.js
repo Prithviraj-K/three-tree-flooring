@@ -26,7 +26,7 @@ const styleCare = {
     titleDivide:{
         margin: "auto", 
         marginBottom: "2em", 
-        width: "20%", 
+        width: "30%", 
         backgroundColor: "#000000"
     },
     '@media (max-width: 960px)': {

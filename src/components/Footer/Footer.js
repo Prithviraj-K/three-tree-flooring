@@ -87,9 +87,9 @@ export default function Footer(props) {
                 Closed
                 <div>
                   <NewReleasesIcon style={{justify: "center", marginRight: "0.5em"}}/>
-                  We are not open to the public. Please email for a meeting.
+                  We are not open to the public, please email for a meeting
                   <div>
-                    Website under construction.
+                    Website under construction
                   </div>
                 </div>
               </div>

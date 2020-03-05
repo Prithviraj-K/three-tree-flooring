@@ -9,12 +9,7 @@ import Modal from '@material-ui/core/Modal';
 import FadeMaterial from '@material-ui/core/Fade';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from 'react-reveal/Fade'
-
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableRow from '@material-ui/core/TableRow';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -25,22 +20,18 @@ const useStyles = makeStyles(theme => ({
     },
     borderRadius: "1em"
   },
-  media: {
-    height: 300,
-  },
   sampleBtn: {
-    width: "100%",
+    width: "40%",
+    margin: "1em",
     textAlign: "center"
   },
   paper: {
     position: 'absolute',
-    height: "80%",
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    overflow: "scroll",
-    overflowX: "hidden"
+    overflow: "hidden"
   },
   modalS: {
     position: "absolute",
@@ -49,8 +40,25 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "center"
   },
-  zoom: {
-    alignContent: "center"
+  imgModal: {
+    height: "80vh",
+    display: "block",
+    margin: "auto"
+  },
+  '@media (max-width: 1280px)': {
+    imgModal: {
+      height: "70vh"
+    }
+  },
+  '@media (max-width: 960px)': {
+    imgModal: {
+      height: "40vh"
+    }
+  },
+  '@media (max-width: 600px)': {
+    imgModal: {
+      height: "30vh"
+    }
   }
 }));
 
@@ -58,6 +66,9 @@ export default function MediaCard(props) {
   const classes = useStyles();
 
   const [open, setOpen] = React.useState(false);
+
+  const imgModal = <img className={classes.imgModal} src={require(`../../assets/img/hardwood/${props.name.toLowerCase()}.jpg`)} />;
+
 
   const handleOpen = () => {
     setOpen(true);
@@ -72,9 +83,9 @@ export default function MediaCard(props) {
       <Fade bottom>
         <Card className={classes.card}>
           <CardActionArea onClick={handleOpen}>
-            <CardMedia style = {{ height: 250}}
-              image={require (`../../assets/img/hardwood/${props.name.toLowerCase()}-icon.jpg`)}/>
-            <CardContent style={{marginTop: "0", padding: "0.5em", backgroundColor: "#000000", color: "#FFF"}}>
+            <CardMedia style={{ height: 250 }}
+              image={require(`../../assets/img/hardwood/${props.name.toLowerCase()}-icon.jpg`)} />
+            <CardContent style={{ marginTop: "0", padding: "0.5em", backgroundColor: "#000000", color: "#FFF" }}>
               <Typography gutterBottom variant="h6">
                 {props.name}
               </Typography>
@@ -84,8 +95,8 @@ export default function MediaCard(props) {
             </CardContent>
           </CardActionArea>
         </Card>
-      </Fade>   
-      
+      </Fade>
+
       <Modal
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
@@ -99,72 +110,15 @@ export default function MediaCard(props) {
         className={classes.modalS}
       >
         <FadeMaterial in={open}>
-          <div style={{justifyContent: "center"}} className={classes.paper}>
-            <h3 style={{textAlign: "center"}}>{props.name} Specifications</h3>
-            <div>
-              <TableContainer>
-                <Table>
-                  <TableBody>
-                    <TableRow hover>
-                      <TableCell>Species</TableCell>
-                      <TableCell align="right">{props.species}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Grades</TableCell>
-                      <TableCell align="right">{props.grades}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Origin of Wood</TableCell>
-                      <TableCell align="right">{props.origin}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Width</TableCell>
-                      <TableCell align="right">{props.width}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Thickness</TableCell>
-                      <TableCell align="right">{props.thickness}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Wear Layer</TableCell>
-                      <TableCell align="right">{props.wearLayer}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Bevel</TableCell>
-                      <TableCell align="right">{props.bevel}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Texture</TableCell>
-                      <TableCell align="right">{props.texture}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Gloss</TableCell>
-                      <TableCell align="right">{props.gloss}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Finish</TableCell>
-                      <TableCell align="right">{props.finish}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Construction</TableCell>
-                      <TableCell align="right">{props.construction}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Plank Lengths</TableCell>
-                      <TableCell align="right">{props.plankL}</TableCell>
-                    </TableRow>
-                    <TableRow hover>
-                      <TableCell>Certification</TableCell>
-                      <TableCell align="right">{props.cert}</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </TableContainer>
-            </div>
+          <div style={{ textAlign: "center", justifyContent: "center" }} className={classes.paper}>
+            <Typography variant="h5" align="center" style={{ marginBottom: "1em" }}>{props.name}</Typography>
+            {imgModal}
+            {/*<Button className={classes.sampleBtn} style={{ borderBottom: "1px solid green" }}>Add to Cart</Button>*/}
+            <Button onClick={handleClose} className={classes.sampleBtn} style={{ borderBottom: "1px solid red" }}>Close</Button>
           </div>
-        </FadeMaterial>        
+        </FadeMaterial>
       </Modal>
     </div>
-     
+
   );
 }
