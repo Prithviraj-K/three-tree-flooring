@@ -29,6 +29,7 @@ import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button.js";
+import Cart from '../Cart/Cart';
 
 import styles from "./headerLinksStyle.js";
 import Typography from '@material-ui/core/Typography';
@@ -176,12 +177,7 @@ const HeaderLinks = ({ isAuthenticated }) => {
         className={classes.modalS}
       >
         <FadeMaterial in={open}>
-          <div style={{ justifyContent: "center" }} className={classes.paper}>
-            <Typography variant="h6" align="center">Selected Samples</Typography>
-            <Divider style={{ marginBottom: "2em" }} />
-            <Typography variant="body1" align="center">Cart is empty.</Typography>
-            <Button color="primary" disabled>Checkout</Button>
-          </div>
+          <Cart/>
         </FadeMaterial>
       </Modal>
     </List>
