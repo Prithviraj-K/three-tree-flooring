@@ -1,6 +1,6 @@
 const styleCare = {
     divFull: {
-        backgroundColor: "#8E8D8A", 
+        backgroundColor: "#889696", 
         overflow: "hidden"
     },
     sectionTop: {

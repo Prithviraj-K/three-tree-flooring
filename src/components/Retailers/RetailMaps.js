@@ -2,7 +2,9 @@ import React from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 const mapStyles = {
-    boxShadow: "0 8px 10px -2px rgba(0,0,0,0.8)"
+    boxShadow: "0 8px 10px -2px rgba(0,0,0,0.8)",
+    width: "90vw",
+    margin: "auto"
 };
 
 const RetailMaps = (props) => {

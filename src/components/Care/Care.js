@@ -41,205 +41,207 @@ const cert = "100% FSC Certified";
 const Care = () => {
     const classes = useStyles();
     return (
-        <div className={classes.divFull}>
-            <div>
-                <Header
-                    rightLinks={<HeaderLinks />}
-                    fixed
-                    logoC={logoBlack}
-                    color="white"
-                />
-                <div className={classes.sectionTop}>
-                    <Zoom>
-                        <div style={{ textAlign: "center" }}>
-                            <img src={layerImg} alt="layer" className={classes.layerImg} />
-                        </div>
-                    </Zoom>
+        <Fade>
+            <div className={classes.divFull}>
+                <div>
+                    <Header
+                        rightLinks={<HeaderLinks />}
+                        fixed
+                        logoC={logoBlack}
+                        color="white"
+                    />
+                    <div className={classes.sectionTop}>
+                        <Zoom>
+                            <div style={{ textAlign: "center" }}>
+                                <img src={layerImg} alt="layer" className={classes.layerImg} />
+                            </div>
+                        </Zoom>
+                    </div>
                 </div>
-            </div>
-            <div style={{ backgroundColor: "#EAE7DC", paddingTop: "2em", paddingBottom: "2em" }}>
-                <Grid container spacing={1}>
-                    <Grid item xs={12} sm={12} md={6}>
-                        <Fade>
-                            <Typography variant="h4" align="center">Specifications</Typography>
-                            <Divider className={classes.titleDivide} />
-                        </Fade>
-                        <Fade bottom>
-                            <Card style={{ margin: "0 0 1em 0" }}>
-                                <CardContent>
-                                    <TableContainer>
-                                        <Table>
-                                            <TableBody>
-                                                <TableRow hover>
-                                                    <TableCell>Species</TableCell>
-                                                    <TableCell align="right">{species}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Grades</TableCell>
-                                                    <TableCell align="right">{grades}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Origin of Wood</TableCell>
-                                                    <TableCell align="right">{origin}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Width</TableCell>
-                                                    <TableCell align="right">{width}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Thickness</TableCell>
-                                                    <TableCell align="right">{thickness}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Wear Layer</TableCell>
-                                                    <TableCell align="right">{wearLayer}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Bevel</TableCell>
-                                                    <TableCell align="right">{bevel}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Texture</TableCell>
-                                                    <TableCell align="right">{texture}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Gloss</TableCell>
-                                                    <TableCell align="right">{gloss}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Finish</TableCell>
-                                                    <TableCell align="right">{finish}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Construction</TableCell>
-                                                    <TableCell align="right">{construction}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Plank Lengths</TableCell>
-                                                    <TableCell align="right">{plankL}</TableCell>
-                                                </TableRow>
-                                                <TableRow hover>
-                                                    <TableCell>Certification</TableCell>
-                                                    <TableCell align="right">{cert}</TableCell>
-                                                </TableRow>
-                                            </TableBody>
-                                        </Table>
-                                    </TableContainer>
-                                </CardContent>
-                            </Card>
-                        </Fade>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={6}>
-                        <div>
+                <div style={{ backgroundColor: "#D2D4C8", paddingTop: "2em", paddingBottom: "2em" }}>
+                    <Grid container spacing={1}>
+                        <Grid item xs={12} sm={12} md={6}>
                             <Fade>
-                                <Typography variant="h4" align="center">
-                                    Maintenance & Care
-                                </Typography>
+                                <Typography variant="h4" align="center">Specifications</Typography>
                                 <Divider className={classes.titleDivide} />
                             </Fade>
-                            <Grid
-                                container
-                                spacing={1}
-                            >
-                                <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
-                                    <Fade bottom>
-                                        <Card>
-                                            <CardContent>
-                                                <Typography variant="h5">
-                                                    PROTECTION
+                            <Fade bottom>
+                                <Card style={{ margin: "0 0 1em 0" }}>
+                                    <CardContent>
+                                        <TableContainer>
+                                            <Table>
+                                                <TableBody>
+                                                    <TableRow hover>
+                                                        <TableCell>Species</TableCell>
+                                                        <TableCell align="right">{species}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Grades</TableCell>
+                                                        <TableCell align="right">{grades}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Origin of Wood</TableCell>
+                                                        <TableCell align="right">{origin}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Width</TableCell>
+                                                        <TableCell align="right">{width}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Thickness</TableCell>
+                                                        <TableCell align="right">{thickness}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Wear Layer</TableCell>
+                                                        <TableCell align="right">{wearLayer}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Bevel</TableCell>
+                                                        <TableCell align="right">{bevel}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Texture</TableCell>
+                                                        <TableCell align="right">{texture}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Gloss</TableCell>
+                                                        <TableCell align="right">{gloss}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Finish</TableCell>
+                                                        <TableCell align="right">{finish}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Construction</TableCell>
+                                                        <TableCell align="right">{construction}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Plank Lengths</TableCell>
+                                                        <TableCell align="right">{plankL}</TableCell>
+                                                    </TableRow>
+                                                    <TableRow hover>
+                                                        <TableCell>Certification</TableCell>
+                                                        <TableCell align="right">{cert}</TableCell>
+                                                    </TableRow>
+                                                </TableBody>
+                                            </Table>
+                                        </TableContainer>
+                                    </CardContent>
+                                </Card>
+                            </Fade>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6}>
+                            <div>
+                                <Fade>
+                                    <Typography variant="h4" align="center">
+                                        Maintenance & Care
+                                </Typography>
+                                    <Divider className={classes.titleDivide} />
+                                </Fade>
+                                <Grid
+                                    container
+                                    spacing={1}
+                                >
+                                    <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
+                                        <Fade bottom>
+                                            <Card>
+                                                <CardContent>
+                                                    <Typography variant="h5">
+                                                        PROTECTION
                                                 </Typography>
-                                                <div>
-                                                    <Typography variant="h6" >
-                                                        A. Post-installation
+                                                    <div>
+                                                        <Typography variant="h6" >
+                                                            A. Post-installation
                                                     </Typography>
+                                                        <Divider style={{ width: "80%", margin: "auto" }} />
+                                                        <div>
+                                                            <Typography variant="body1" align="left">
+                                                                <span style={{ fontWeight: "bold" }}>1.</span> After installation, if you choose to protectively cover the floor,
+                                                                cover the floor completely. Some species are light-sensitive and
+                                                                uncovered areas may change color.
+                                                        </Typography>
+                                                        </div>
+                                                        <div>
+                                                            <Typography variant="body1" align="left">
+                                                                <span style={{ fontWeight: "bold" }}>2. </span>Covering a glue-down application may not allow some adhesives to properly
+                                                                cure. Follow the flooring and adhesive manufacturers' recommendations.
+                                                        </Typography>
+                                                        </div>
+                                                        <div>
+                                                            <Typography variant="body1" align="left">
+                                                                <span style={{ fontWeight: "bold" }}>3. </span>Use a covering material with a vapor permeance (perm rating) of no less
+                                                                than 1 perm (class III vapor retarder).
+                                                        </Typography>
+                                                        </div>
+                                                        <div>
+                                                            <Typography variant="body1" align="left">
+                                                                <span style={{ fontWeight: "bold" }}>4. </span>Any covering should be taped, using a low-adhesion tape, to base or shoe
+                                                                mouldings. Do not tape to finished flooring. When taping paper or sheets together, tape them to each other not to the floor.
+                                                        </Typography>
+                                                        </div>
+                                                        <div>
+                                                            <Typography variant="body1" align="left">
+                                                                <span style={{ fontWeight: "bold" }}>5. </span>Do not allow the floor covering to sit on the installed floor for an extended
+                                                                period of time.
+                                                        </Typography>
+                                                        </div>
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        </Fade>
+                                    </Grid>
+                                    <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
+                                        <Fade bottom cascade>
+                                            <Card>
+                                                <CardContent className={classes.title}>
+                                                    <Typography variant="h5">
+                                                        OSMO WASH & CARE CONCENTRATE
+                                                </Typography>
                                                     <Divider style={{ width: "80%", margin: "auto" }} />
-                                                    <div>
+                                                    <div className={classes.textCard}>
                                                         <Typography variant="body1" align="left">
-                                                            <span style={{ fontWeight: "bold" }}>1.</span> After installation, if you choose to protectively cover the floor,
-                                                            cover the floor completely. Some species are light-sensitive and
-                                                            uncovered areas may change color.
-                                                        </Typography>
-                                                    </div>
-                                                    <div>
-                                                        <Typography variant="body1" align="left">
-                                                            <span style={{ fontWeight: "bold" }}>2. </span>Covering a glue-down application may not allow some adhesives to properly
-                                                            cure. Follow the flooring and adhesive manufacturers' recommendations.
-                                                        </Typography>
-                                                    </div>
-                                                    <div>
-                                                        <Typography variant="body1" align="left">
-                                                            <span style={{ fontWeight: "bold" }}>3. </span>Use a covering material with a vapor permeance (perm rating) of no less
-                                                            than 1 perm (class III vapor retarder).
-                                                        </Typography>
-                                                    </div>
-                                                    <div>
-                                                        <Typography variant="body1" align="left">
-                                                            <span style={{ fontWeight: "bold" }}>4. </span>Any covering should be taped, using a low-adhesion tape, to base or shoe
-                                                            mouldings. Do not tape to finished flooring. When taping paper or sheets together, tape them to each other not to the floor.
-                                                        </Typography>
-                                                    </div>
-                                                    <div>
-                                                        <Typography variant="body1" align="left">
-                                                            <span style={{ fontWeight: "bold" }}>5. </span>Do not allow the floor covering to sit on the installed floor for an extended
-                                                            period of time.
-                                                        </Typography>
-                                                    </div>
-                                                </div>
-                                            </CardContent>
-                                        </Card>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
-                                    <Fade bottom cascade>
-                                        <Card>
-                                            <CardContent className={classes.title}>
-                                                <Typography variant="h5">
-                                                    OSMO WASH & CARE CONCENTRATE
-                                                </Typography>
-                                                <Divider style={{ width: "80%", margin: "auto" }} />
-                                                <div className={classes.textCard}>
-                                                    <Typography variant="body1" align="left">
-                                                        Osmo Wash and Care is a special every day cleaning concentrate for
-                                                        wooden and cork floors treated with Osmo Polyx®-Oil. Also suitable
-                                                        for varnished, stone, plastic, PVC and other water resistant surfaces.
-                                                        It is highly effective and water soluble for quick, easy and thorough
-                                                        floor maintenance – even for large and high traffic areas. Keeping
-                                                        wooden floors hydrated, due to natural oil content within the product.
+                                                            Osmo Wash and Care is a special every day cleaning concentrate for
+                                                            wooden and cork floors treated with Osmo Polyx®-Oil. Also suitable
+                                                            for varnished, stone, plastic, PVC and other water resistant surfaces.
+                                                            It is highly effective and water soluble for quick, easy and thorough
+                                                            floor maintenance – even for large and high traffic areas. Keeping
+                                                            wooden floors hydrated, due to natural oil content within the product.
                                                     </Typography>
-                                                </div>
-                                            </CardContent>
-                                        </Card>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
-                                    <Fade bottom>
-                                        <Card>
-                                            <CardContent className={classes.title}>
-                                                <Typography variant="h5">
-                                                    OSMO MAINTENANCE OIL
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        </Fade>
+                                    </Grid>
+                                    <Grid item xs={12} s={12} md={12} lg={12} xl={12} align="center">
+                                        <Fade bottom>
+                                            <Card>
+                                                <CardContent className={classes.title}>
+                                                    <Typography variant="h5">
+                                                        OSMO MAINTENANCE OIL
                                                 </Typography>
-                                                <Divider style={{ width: "80%", margin: "auto" }} />
-                                                <div className={classes.textCard}>
-                                                    <Typography variant="body1" align="left">
-                                                        For periodic maintenance, floors can be treated with Osmo Polyx®-Oil.
-                                                        Floors with expected high tread and quick wear can be regenerated and
-                                                        cleaned at the same time with Maintenance Oil. Based on natural vegetable
-                                                        waxes – the timely use can prevent time consuming sanding or renovation
-                                                        work in public spaces and commercial buildings such as restaurants, shopping
-                                                        centres and even in airports!
+                                                    <Divider style={{ width: "80%", margin: "auto" }} />
+                                                    <div className={classes.textCard}>
+                                                        <Typography variant="body1" align="left">
+                                                            For periodic maintenance, floors can be treated with Osmo Polyx®-Oil.
+                                                            Floors with expected high tread and quick wear can be regenerated and
+                                                            cleaned at the same time with Maintenance Oil. Based on natural vegetable
+                                                            waxes – the timely use can prevent time consuming sanding or renovation
+                                                            work in public spaces and commercial buildings such as restaurants, shopping
+                                                            centres and even in airports!
                                                     </Typography>
-                                                </div>
-                                            </CardContent>
-                                        </Card>
-                                    </Fade>
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        </Fade>
+                                    </Grid>
                                 </Grid>
-                            </Grid>
-                        </div>
+                            </div>
+                        </Grid>
                     </Grid>
-                </Grid>
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </Fade>
     );
 }
 

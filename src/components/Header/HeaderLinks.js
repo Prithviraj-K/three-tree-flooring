@@ -144,6 +144,7 @@ const HeaderLinks = ({ isAuthenticated }) => {
               </Button>
         </Link>
       </ListItem>
+      {/*
       <ListItem className={classes.listItem}>
         <Link to="/Profile" style={{ color: 'inherit', textDecoration: 'inherit' }}>
           <Button
@@ -183,6 +184,7 @@ const HeaderLinks = ({ isAuthenticated }) => {
           </div>
         </FadeMaterial>
       </Modal>
+      */}
     </List>
   );
 }

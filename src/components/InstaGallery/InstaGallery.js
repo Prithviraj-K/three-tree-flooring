@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 
 const InstaGallery = () => {
     return (
-            <div style={{backgroundColor: "#EAE7DC"}}>
+            <div style={{backgroundColor: "#E0E2DB"}}>
                 <Typography variant="h4" align="center" style={{ }}>
                     Latest From Us
                 </Typography>
@@ -20,7 +20,7 @@ const InstaGallery = () => {
                         flexWrap='wrap'
                         flexDirection="row"
                         mx="auto"
-                        bgcolor="#EAE7DC"
+                        bgcolor="#E0E2DB"
                         style={{ paddingBottom: "2em" }}
                     >
                         <Flexbox p={1}>

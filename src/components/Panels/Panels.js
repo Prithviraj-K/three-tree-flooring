@@ -145,6 +145,7 @@ const Panels = () => {
                             round
                             href={panelPDF}
                             target="_blank"
+                            style={{width: "15vw", height: "4em", fontSize: "1em"}}
                         >
                             View All Panels
                         </Button>

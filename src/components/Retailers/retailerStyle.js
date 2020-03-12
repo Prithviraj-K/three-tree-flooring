@@ -1,7 +1,8 @@
 const retailerStyle = {
     gridItem: {
         textAlign: "center",
-        alignItems: "center"
+        alignItems: "center",
+        marginTop: "0em"
     },
     gridPaper: {
         margin: "1em",
@@ -13,7 +14,7 @@ const retailerStyle = {
         borderRadius: "1em"
     },
     location: {
-        marginTop: "0.5em"
+        marginTop: "0em"
     },
     retailTitle: {
         fontWeight: "bold"
@@ -24,12 +25,11 @@ const retailerStyle = {
         marginBottom: "1em"
     },
     mapGrid: {
-        height: "70vh"
+        height: "70vh",
+        justify: "center"
     },
     allRetailDiv: {
-        height: "70vh",
-        overflowY: "scroll",
-        scrollbarColor: "dark"
+        margin: "0"
     },
     addressText: {
         padding: "1em 2em",
@@ -39,7 +39,8 @@ const retailerStyle = {
     contactBtn: {
         marginLeft: "4em",
         width: "20vw",
-        height: "8vh"
+        height: "10vh",
+        borderRadius: "1em"
     },
     '@media (max-width: 1279px)': {
         allRetailDiv: {

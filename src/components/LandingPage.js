@@ -56,11 +56,11 @@ const LandingPage = (props) => {
                 </div>
             </div>
             <div>
-                <div style={{backgroundColor: "#8E8D8A", marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em", paddingBottom: "2em"}}>
+                <div style={{backgroundColor: "#b8bdb5", marginTop: "0em", paddingTop: "0", paddingRight: "2em", paddingLeft: "2em", paddingBottom: "2em"}}>
                     <SectionPills/>
                 </div>
             </div>
-            <div style={{paddingTop: "2em", backgroundColor: "#EAE7DC"}}>
+            <div style={{paddingTop: "2em", backgroundColor: "#E0E2DB"}}>
                <InstaGallery/>
             </div>
             <Footer/>
