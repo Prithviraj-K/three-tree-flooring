@@ -144,7 +144,6 @@ const HeaderLinks = ({ isAuthenticated }) => {
               </Button>
         </Link>
       </ListItem>
-      {/*
       <ListItem className={classes.listItem}>
         <Link to="/Profile" style={{ color: 'inherit', textDecoration: 'inherit' }}>
           <Button
@@ -178,19 +177,19 @@ const HeaderLinks = ({ isAuthenticated }) => {
       >
         <FadeMaterial in={open}>
           <div style={{ justifyContent: "center" }} className={classes.paper}>
-            <Typography variant="h6" align="center">Cart</Typography>
+            <Typography variant="h6" align="center">Selected Samples</Typography>
             <Divider style={{ marginBottom: "2em" }} />
-            Cart is empty.
+            <Typography variant="body1" align="center">Cart is empty.</Typography>
+            <Button color="primary" disabled>Checkout</Button>
           </div>
         </FadeMaterial>
       </Modal>
-      */}
     </List>
   );
 }
 
 const mapStateToProps = (state) => ({
-  isAuthenticated: state.auth.isAuthenticated,
+  isAuthenticated: state.auth.isAuthenticated
 });
 
 export default connect(mapStateToProps)(HeaderLinks);
