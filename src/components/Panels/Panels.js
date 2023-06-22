@@ -72,7 +72,7 @@ const Panels = () => {
                                 <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                                     <div style={{ textAlign: "center" }}>
                                         <img
-                                            src={require(`../../assets/img/panels/victoria-panel.png`)}
+                                            src={require(`../../assets/img/panels/Victoria-Panel.png`)}
                                             alt="panel"
                                             className={classes.imgCent}
                                         />
